@@ -1,0 +1,994 @@
+"title","author","source","date","original url","body"
+"Prompt Engineering Embraces New Technique Called Skeleton-Of-Thought As Bonus On Chain-Of-Thought Reasoning For Generative AI","Lance Eliot","forbes.com","2023-08-06","https://www.forbes.com/sites/lanceeliot/2023/08/06/prompt-engineering-embraces-new-technique-called-skeleton-of-thought-as-bonus-on-chain-of-thought-reasoning-for-generative-ai/?sh=32bd10fa2bfd","Sometimes less is more.
+
+Another oft-used proverb is that at times you ought to prime the pump.
+
+We will be using those valued pieces of sage advice so please keep them in mind.
+
+In today’s column, I am further extending my ongoing series about the latest advances in prompt engineering. My focus this time will be on a plain sailing but amazingly powerful new advance known as skeleton-of-thought (SoT), a creative adaptation of the exceedingly popular chain-of-thought (CoT) prompting technique. I’ll explain what this is and why it is a crucial method that you ought to include in your prompt engineering strategies and tactics.
+
+The use of skeleton-of-thought can substantively boost your generative AI results, though please be aware that it is a specialized technique and has its own right time and place for being exercised.
+
+As a quick background, SoT builds upon the greatly popular chain-of-thought approach that often is used by those aiming to get generative AI to stepwise showcase its presumed logic when answering a question or solving a problem. You merely instruct generative AI to explain step-by-step what it is doing. This is easy-peasy to request. Why do so? Well, remarkedly, research studies have indicated that this is not only insightful for you (i.e., being able to see detailed explanations produced by AI), but it also tends to get generative AI to produce seemingly more reliable and on-target answers.
+
+I’ve covered the basics of chain-of-thought approaches previously, see the link here. Readers have ardently requested more details and seem eager to know more about the latest advances regarding this fundamental technique.
+
+I am pleased to oblige.
+
+Before I dive into the crux of the innovative skeleton-of-thought method, let’s make sure we are all on the same page when it comes to the keystones of prompt engineering and generative AI.
+
+Prompt Engineering Is A Cornerstone For Generative AI
+
+As a quick backgrounder, prompt engineering or also referred to as prompt design is a rapidly evolving realm and is vital to effectively and efficiently using generative AI. Anyone using generative AI such as the widely and wildly popular ChatGPT by AI maker OpenAI, or akin AI such as GPT-4 (OpenAI), Bard (Google), Claude 2 (Anthropic), etc. ought to be paying close attention to the latest innovations for crafting viable and pragmatic prompts.
+
+Moving on, here’s a bold statement that pretty much has become a veritable golden rule these days:
+
+The use of generative AI can altogether succeed or fail based on the prompt that you enter.
+If you provide a prompt that is poorly composed, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being demonstrably specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+AI Ethics and AI Law also stridently enter into the prompt engineering domain. For example, whatever prompt you opt to compose can directly or inadvertently elicit or foster the potential of generative AI to produce essays and interactions that imbue untoward biases, errors, falsehoods, glitches, and even so-called AI hallucinations (I do not favor the catchphrase of AI hallucinations, though it has admittedly tremendous stickiness in the media; here’s my take on AI hallucinations at the link here).
+
+There is also a marked chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of generative AI. Regarding prompt engineering, there are likely going to be heated debates over putting boundaries around the kinds of prompts you can use. This might include requiring AI makers to filter and prevent certain presumed inappropriate or unsuitable prompts, a cringe-worthy issue for some that borders on free speech considerations. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+With the above as an overarching perspective, we are ready to jump into today’s discussion.
+
+When Outlines Rule The World
+
+The skeleton-of-thought method relies on the same premises that you would encounter when being urged to craft an outline on a given topic or any open matter at hand. A skeleton in this instance is simply another way of referring to an outline. A skeleton or an outline is a veritable guide or map. It is the axiomatic forest for the trees.
+
+We copiously make use of outlines or skeletons in all facets of our daily lives.
+
+Imagine that at work you are asked to prepare a memo that discusses your latest activities and accomplishments. You begin with a blank sheet of paper (or, more likely, an online document that is empty). Do you rush into pounding out the words that fully describe all of the wonderful things you’ve been doing? You might, but on the other hand, sometimes starting by creating an outline or skeleton is a better route.
+
+Why make use of an outline or skeleton?
+
+I think we all know that the beauty of first devising an outline or skeleton is that you can pencil out the crucial aspects of what you want to say. This will hopefully allow you to organize your thoughts into a coherent overall structure. If you impatiently start by impulsively babbling and opt to write wantonly, off the top of your head, the odds are that your essay or narrative will be kludgy, muddled, and confounding.
+
+Now then, one supposes that there are in fact some people that can spotlessly spew out a full-on lengthy essay as though being produced akin to flowing crystal clean water. Good for them. And, if the essay or narrative is relatively short and sweet, once again the top of the head wing-it approach might be suitable. Anyway, all I’m saying is that outlines or skeletons are a useful way to get things done and that though it isn’t a cure-all can heroically be advantageous at times (a lot of the time, I brazenly proclaim).
+
+Famed mystery and crime writer Jeffery Deaver has said this about outlines: “I spend eight months outlining and researching a novel before I begin to write a single word of the prose.”
+
+Imagine the kind of steely nerves required when sketching out an outline or skeleton. You are in some sense delaying the task in front of you. The temptation to get into the zone and start your writing right away is enormous. Each moment that you devote to the outline or skeleton is seemingly a moment stolen from the act of writing out fully the essay or narrative being devised.
+
+But we also have to realize that dashing madcap into the act of writing can immensely backfire. You write a bunch of words and then realize that they aren’t going to be relevant to the matter at hand. Ouch, you now delete those words and have wasted precious time composing them. Or maybe you write a bunch of stuff and it is unorganized and meandering. You then spend an inordinate amount of time trying to straighten things out accordingly.
+
+The gist is that doing an outline or skeleton upfront can be highly beneficial. You are making a bet that the time and effort of constructing the sketch will be worthwhile and overall outdo the potential woes and downsides of just leaping into the fray. Sometimes this is a truly smart bet. You need to determine for any particular situation whether the outline or skeleton will be a payoff.
+
+Let’s also agree that the inherent benefits of outlines apply to a lot of settings, beyond merely writing an essay or narrative. Suppose you are going camping. If you do so without first identifying what you need to take with you, there is a possibility that you’ll be empty-handed or have difficulties when you arrive at your camping destination. So, the astute thing to do is make a list of what you need to take along. The list might begin as an outline or skeleton. After the list is drafted, you then fill in the details such as whether you own the item or need to purchase it, whether each item is in suitable shape for camping, and so on.
+
+A few other salient considerations about outlining come to mind too.
+
+You often will do an outline or skeleton based on an initial high-level perspective. Upon mulling over and inspecting the outline, there is a leading chance you might move items around or reword them. In that sense, you are likely to iterate, make changes, and evolve the structure. There’s nothing wrong with doing so, which I mention because some people seem to get out of sorts if their outline isn’t pristine at the get-go. Chill out and let the process play out, you’ll undoubtedly get a better result (well, not always, but enough of the time).
+
+Sometimes you can opt to craft an outline or skeleton and call it a day. You don’t need to do anything else to it. Stamp it as accomplished and completed. More likely, though, will be that you will take a subsequent outing at expanding the outline. You will make use of the skeleton to then pour out your words of wisdom onto the page. Ergo, the overt and likely expansion of an outline or skeleton is part-and-parcel of this process.
+
+You usually do not ardently lock yourself into your outline. Safer is the realization that you need to remain flexible once you get into the throes of doing the writing. During the expansion phase of an outline, you might be triggered to rethink and rejigger the skeleton. If you doggedly refuse to adjust, you are potentially undermining the genuine spirit of an outline. Normally, an outline is a guide and not an irrefutable inarguable concrete wall that is set in stone.
+
+J. K. Rowling, the esteemed author of the Harry Potter series, notably indicated this about outlining: “I always have a basic plot outline, but I like to leave some things to be decided while I write.”
+
+An effort to create an outline will nearly always have an underlying basis or purpose. Rarely would you out of thin air just decide to piece together such an artifact. The crux is that the skeleton has a foundational goal or aspiration as to what it is supposed to encompass. These aren’t just random wordings or random making of lists. It is all undertaken with a purpose in mind.
+
+In recap, we can assert these precepts about outlines and skeletons:
+
+Serves as a guide or map to what an essay or plan is likely to consist of.
+Often done iteratively and subject to change while being evolved.
+Can be composed on a sky-high level or a more detailed level.
+Should conventionally exhibit coherence and be logically sound.
+Typically based on an overarching aspect or question.
+Subsequently expanded into deeper levels of detail and specificity.
+Can be serious business and merits demonstrative due attention.
+At this juncture, I am sure that you are waiting with bated breath to see how those principles apply to generative AI amid the formulation and use of the new prompt engineering technique known as skeleton-of-thought.
+
+Wait no more, we are next heading into that exciting elucidation.
+
+Skeleton-Of-Thought Brings Smart Outlining To Generative AI
+
+Here’s the deal.
+
+Those using generative AI are usually bent on getting the AI to spew out an answer or essay in its entirety. You can also tell the AI app to use chain-of-thought reasoning as an approach to prod the generative AI toward showcasing the poured-out answer or essay on a stepwise or step-at-a-time basis. All in all, you are still seeking to get the whole kit-and-kaboodle done all at once. The big bang attitude toward using generative AI.
+
+Sometimes less is more, namely that we might be willing to have the generative AI first produce an outline or skeleton of what the essay or answer is likely to consist of (you might recall, I mentioned at the start of this discussion that the catchphrase of less is more would be worthy of remembrance).
+
+Doing an outline or skeleton in generative AI has several vital benefits.
+
+First, you never really know beforehand whether the generative AI will sufficiently or properly grasp whatever question or instruction you are giving to it. You might ask for an essay about banks and be surprised that the AI app generates a thousand words about the banks of a river or stream, rather than about financial institutions and banking. Generative AI is like a box of chocolates. You never know precisely how it is going to respond.
+
+This can be exasperating to get an essay or narrative that is off base what you wanted. Furthermore, it can be costly if you are paying for your use of generative AI. You just tossed away dough on a useless and irrelevant generated result. It is unlikely that the AI maker will offer you a refund.
+
+What can we do about this overall box of chocolate dilemma?
+
+Please tighten your seat belt and get ready for the big reveal (actually, I’m sure you’ve garnered the drift of where I am headed).
+
+Here’s what you can do:
+
+Instruct the generative AI to first produce an outline or skeleton for whatever topic or question you have at center stage, employing a skeleton-of-thought method to do so.
+Voila, you can then inspect the skeleton to see if the generative AI is on-target or off-target of your interests. Assuming that the generative AI is on-target, you can tell it to expand the outline and thus get the rest of your verbiage. If the generative AI is off-target, you can instruct it to change direction or maybe start clean if things are really fouled up.
+
+Another plus to this skeleton issuance is that you’ll presumably avoid those costly wrong-topic essays or narratives that the generative AI might inadvertently produce for you. You will nip things in the bud. Admittedly, that being said, there is the cost of the outline being generated and then a second cost to do the expansion, but the odds are that this will be roughly the same as having requested the entire essay at the get-go. The savings come from averting the generation of content that you didn’t intend to get.
+
+There is a potential hidden added plus to using the skeleton-of-thought approach. I earlier noted that the chain-of-thought technique seems to improve the AI-generated results. The same seems to be feasible for the skeleton-of-thought technique. Research so far tentatively suggests that the production of an outline or skeleton will prime the pump for the generative AI (I trust that you noticed I used the proverb of prime the pump, a tasty hint mentioned at the start of this discussion). Once the generative AI has generated the skeleton, it seems to be likelier to stay on course and produce the rest of the answer or essay as befits the now-produced skeleton.
+
+I’m not asserting that the SoT will always be meritorious, which can similarly be said about the use of CoT. They both on-the-balance seem to be quite helpful. Whether this is always the case is certainly debatable. You will need to judge based on your own efforts in using CoT and using SoT.
+
+One aspect to keep in mind is that the outline or skeleton alone might have keen merit for you.
+
+Suppose you are asked by your boss to create a plan for revamping the enterprise system network (let’s assume that your company approves of the use of generative AI for work purposes; some don’t, so be careful about using generative AI in a work context). You are to come up with the key steps of the plan at a high level. This will then be reviewed by your boss. All manner of timing, budgeting, and the rest will need to be done, long before the plan is carried out.
+
+You turn to generative AI and ask the AI app to generate a plan for this purpose, instructing the AI to do so in a skeleton form. The generated outline is all that you need in this instance. You aren’t anticipating expanding it, at least not at this time. Notice that you can ergo use the skeleton-of-thought technique to produce solely a skeleton or outline, doing so without asking for an expansion. Sometimes you’ll seek an expansion, sometimes not.
+
+I urge you to consider adding SoT to your prompt engineering repertoire.
+
+Here is my recommended set of 10 steps to undertake when making use of the skeleton-of-thought (SoT) method while using generative AI:
+
+(1) Compose and enter a prompt that initiates the skeleton mode.
+(2) Indicate what you mean by referring to a skeleton or outline since this could be wildly misinterpreted by the AI.
+(3) Then, go ahead and ask a question or enter your prompt pertaining to something of particular interest for the generative AI to create a skeleton or outline for.
+(4) Inspect the AI-generated skeleton and ascertain whether you got what you intended.
+(5) Repeat the skeleton or outlining request with further clarification or refinement, if needed.
+(6) Assuming you want to delve into the details of the skeleton, go ahead and enter a prompt that asks for an expansion.
+(7) You can choose to do the expansion on a one-step at a time basis or you can ask for several or all of the expansions all at once (keep in mind parallelism, as mentioned next below).
+(8) Inspect what the expansions indicate.
+(9) You might have to do even deeper expansions, iteratively, depending on what you are getting from the AI.
+(10) At the end, do a personal reflection on lessons learned so that you can refine and improve your SoT proficiency.
+Follow those recommended steps carefully and mindfully.
+
+Here’s why. Those that opt to toss around the skeleton-of-thought (SoT) method and do so willy-nilly are bound to get willy-nilly results. Your best course of action is to be systematic. Use this new technique judiciously and in a classic Goldilocks frame of mind, not being overly hot or overly cold.
+
+I’ve got yet another trick up my sleeve as to why the skeleton-of-thought can be advantageous. It has to do with the speed of processing that underlies the execution of your requests to a generative AI app. The typical generative AI app will be devised to work on your request on a serial basis, generating a result on a do-one-thing and then do-the-next-thing basis.
+
+AI makers and AI researchers aim to speed up how generative AI functions under the hood. If possible, it would be nifty if parallelism could be enacted. The idea is that your request might be parceled out to multiple computer processors and be acted on in a simultaneous or parallel fashion.
+
+A somewhat simplified viewpoint is that the generative AI might conventionally use a computer processor by inching along a long pipeline of generating your result. If the generating activities could be undertaken simultaneously, this could immensely speed up getting your results produced. Most of us might not notice this faster response time, especially if doing rudimentary actions with generative AI. Nonetheless, this parallelism could be significant for heftier uses of generative AI. There is also something to be said about being able to across the board be more efficient when having thousands or millions of users that are seeking to use a generative AI app.
+
+I mention this because one clever trick would be for the generative AI to do the expansion of the produced skeleton or outline by expanding each of the identified elements on a parallel basis. Let’s imagine that I have an outline that was generated by AI and the outline has eight major elements. I ask the AI to expand the eight elements. The usual internal mechanics might be that the first item gets expanded, then the second item, then the third, and so on. A generative AI with a parallelism capacity might be able to expand all eight simultaneously. The expansion will likely happen behind the scenes and you won’t see anything happen other than that the expanded version shows up on your screen. You’ll have no clue whether it was done on a serial basis or a parallel basis (unless this is revealed to you by the generative AI app).
+
+A hitch to this parallelism is that it might not be viable if the elements of the skeleton are co-dependent or interdependent of each other. Depending upon the circumstance, serial internal processing might be the only suitable recourse.
+
+AI Research Explores Those Dancing Skeletons
+
+With the fundamentals of SoT now on the table for you, we can do a deeper dive into the nature of skeleton-of-thought prompts, along with exploring a recent research paper on some important nuances of this new technique for generative AI.
+
+The research study is entitled “Skeleton-of-Thought: Large Language Models Can Do Parallel Decoding” by Xuefei Ning, Zinan Lin, Zixuan Zhou, Huazhong Yang, and Yu Wang, and was posted online on July 28, 2023. I’ll be citing various excerpts from the study. Make sure to consider reading the full paper to get all the intricacies of this latest AI research.
+
+Here’s what they opted to explore in their research:
+
+“Humans do not always think about questions and write answers sequentially. In contrast, for many types of questions, we first derive the skeleton according to some protocols and strategies and then add evidence and details to refine and explicate each point. This is especially the case on formal occasions like offering consultancy, taking tests, writing papers, and so on.”
+“To this end, we propose Skeleton-of-Thought (SoT). Specifically, we guide the LLM to derive a skeleton first by itself. Based on the skeleton, the LLMs can complete each point in parallel so that we get a speed up. SoT can be utilized to accelerate both open-source models with batched decoding and closed-source models with parallel API calls.”
+I trust that you can see from those excerpts that they are on the hunt to ascertain some key advantages for using this technique, especially the leveraging of parallelism to speed-up processing.
+
+In a nutshell, here’s their overall results:
+
+“We test SoT on 11 recently released LLMs. Not only does SoT provide considerable speed-up (up to 2.39×), but it can also improve the answer quality on several question categories in terms of diversity and relevance.”
+“Currently, SoT cannot answer math questions well. This is reasonable since the current SoT solution is somehow contradictory with CoT: CoT relies on the expanded details of each step to continue the following reasoning, while SoT hopes to strategically list out the skeleton in advance.”
+The speed-up can occur, though if the type of questions being asked do not lend to answers that are readily parallelized, you might not get the speed-up bump.
+
+They provided the various prompts that they used as part of their experimentation, which also kindly illustrates how to craft prompts to get generative AI into a skeleton-of-thought mode.
+
+Consider for example this prompt:
+
+“You’re an organizer responsible for only giving the skeleton (not the full content) for answering the question. Provide the skeleton in a list of points (numbered 1., 2., 3., etc.) to answer the question. Instead of writing a full sentence, each skeleton point should be very short with only 3 to 5 words. Generally, the skeleton should have 3 to 10 points.”
+Note that the prompt tries to give guidance to the generative AI about how to compose a skeleton response. This is important, or else the generative AI might go in some unexpected direction. Another thing to keep in mind is that you can potentially do the SoT prompt as a primer or establisher, whereby you might say this at the start of each conversation and then invoke it later on in a conversation via a trigger keyword or catchphrase, see my coverage at the link here.
+
+When you want to do the expansion of a generated skeleton, here’s an example of how they did so:
+
+“Continue and only continue the writing of point {point index}. Write it **very shortly** in 1 to 2 sentences and do not continue with other points!”
+You can express the same nuances about the expansion in other styles as befits your approach to writing prompts. The research study made use of some AI industry-established prompts too.
+
+For example, here’s a prompt expressing a preference for coherence in the expansion:
+
+“The response should be coherent and flow logically from one point to the next that is easy to read and understand without major gaps or inconsistencies.”
+Here’s a prompt indicating a preference for a multitude of perspectives to be encompassed (diversity):
+
+“The response should be comprehensive and provide a range of information that is not limited to a single perspective. More perspectives are better.”
+Yet another prompt that seeks to ensure relevancy in the response:
+
+“The response should be closely related to the question and answer the question accurately with sufficient details without repetition or redundancy. The more relevant they are, the better.”
+You can play around with those prompts and use them when the situation seems applicable.
+
+One question that requires noodling on is whether you want the skeleton to be repeated verbatim during the expansion or whether you want the expansion to potentially be changed up by the generative AI. Usually, the generative AI will do a verbatim repeat of the outline. This seems befitting since you can then see exactly what the original structure was, and that the expansion appears to be abiding by the original structure. Changes to the original structure might be annoying and cause suspicion that the generative AI has lost its way. The counterargument is that if the generative AI is allowed to vary the original structure, this might perhaps be useful, assuming that the generative AI is adding value as a result of doing the expansion.
+
+Mull that over and decide case-by-case what works for you.
+
+An Example Of Skeleton-Of-Thought To Showcase How It Works
+
+The research encompassed a number of experiments to gauge how SoT seems to do. The prompts and questions that were entered into the generative AI apps were generally somewhat short and relatively straightforward. In their conclusion remarks, they call upon AI researchers to go in additional directions to see how SoT functions under a variety of supplementary settings.
+
+I opted to do a series of akin experiments using a somewhat complex problem. In prior columns, I had taken a look at prompt engineering techniques showcased via a legal scenario involving questions of fiduciary duty by corporate officers, see the link here. Specifically, I examined legal matters involving company duty of loyalty and company duty of care.
+
+I repeated those efforts by using SoT. Due to space limitations herein, I am not able to include the details, but please know that I did discern that the SoT approach adds value and has utility in the right situations and when used in the right way.
+
+Let’s take a look at an example from the research paper to see how their use of generative AI turned out. I already showed you the SoT prompt that sets the stage for the generative AI to go into a skeleton-of-thought mode, so I won’t repeat that here. Assume that the generative AI is now engaged in the SoT mode. The example I’ve excerpted involves a question about how to determine if someone is genuine or simply being polite.
+
+Here we go.
+
+The prompt question that was entered into generative AI consisted of:
+
+“How can you determine if a person is genuinely interested in a conversation or simply being polite?”
+Generative AI generated this answer as a skeleton or outline:
+
+“1. Pay attention to body language.”
+“2. Listen for engaged responses.”
+“3. Observe eye contact.”
+“4. Look for follow-up questions.”
+“5. Notice tone of voice.”
+Generative AI subsequently was asked to generate an expansion of the answer:
+
+“1. Pay attention to body language. Notice if their posture is open or closed, if they are facing towards you or away, and if they are fidgeting or relaxed. These can all indicate their level of interest in the conversation.”
+“2. Listen for engaged responses. If the person is genuinely interested in the conversation, they will respond with thoughtful and relevant comments or questions rather than short, generic responses.”
+“3. Observe eye contact. If the person maintains steady eye contact and their gaze is focused on you, they are likely genuinely interested in the conversation. On the other hand, if they frequently look away or seem distracted, they may just be being polite.”
+“4. Look for follow-up questions. If the person asks follow-up questions and seems genuinely interested in what you’re saying, then they are likely interested in the conversation and not just being polite.”
+“5. Notice tone of voice. A person who is genuinely interested in a conversation will often have a more enthusiastic and animated tone of voice, compared to someone who is simply being polite and giving short, monotone responses.”
+Here, in contrast, is the conventional use of generative AI when producing a non-SoT essay answer:
+
+“As an AI assistant, I cannot determine a person’s true intentions or feelings. However, there are some social cues that can indicate whether a person is genuinely interested in a conversation or not. For example, if they maintain eye contact, lean in, nod their head and ask follow-up questions, it can be a sign that they are engaged in the conversation. On the other hand, if they avoid eye contact, give short or vague responses, or seem distracted, it may indicate that they are not as interested. Ultimately, it’s important to remember that everyone has different communication styles, and it can be difficult to accurately interpret someone’s intentions without directly asking them.”
+The example above shows the skeleton that was derived, and shows the expansion of the skeleton, plus provides a handy-dandy comparison via a conventional essay answer that was generated. Each of those variations has merit. None is intrinsically better or worse than the other. Your circumstance at hand ought to signal which method is applicable for your generative AI use.
+
+Conclusion
+
+I hope that this discussion about this new technique sparks you into considering making use of it, from time to time and as relevant to do so. If you were intending to preferably get a conventional essay, the SoT would probably not be the direct way to go. If an outline is needed, and potentially an expansion of the outline, the SoT is your erstwhile course of action.
+
+A few final remarks for now.
+
+Outlines are great. They serve a useful purpose. Most people use them quite frequently. You don’t always use outlines or skeletons. I am reminded of the famous line that if all that you have is a hammer, everything in the world is treated like it is a nail. You go around hammering things that don’t require hammering. Worse still, you might hammer something that via another tool would serve a useful purpose and achieve whatever aim it has.
+
+Skeleton-of-thought is an interesting and useful tool for prompt engineering. Use it well. Use it wisely. I’d advise that you have SoT in your toolbox of prompt engineering techniques and methods. Leverage SoT as seems befitting.
+
+Sometimes less is more and priming the pump is grandly fruitful."
+"Prompt Engineering Embraces Tree-Of-Thoughts As Latest New Technique To Solve Generative AI Toughest Problems","Lance Eliot","forbes.com","2023-09-08","https://www.forbes.com/sites/lanceeliot/2023/09/08/prompt-engineering-embraces-tree-of-thoughts-as-latest-new-technique-to-solve-generative-ai-toughest-problems/?sh=c1d7de22c8b2","Trees, you’ve got to love them.
+
+We seem to talk about trees quite a bit these days, especially as a markedly helpful metaphor or comparator. You undoubtedly have heard of the tree of knowledge and the symbolism thereof. We also speak of people who if they grow up suitably will be stout and stand tall like a resplendent tree. Joyce Kilmer, the famed poet, notably made this remark comparing poems and trees: “I think that I shall never see a poem lovely as a tree.”
+
+Turns out that trees or at least the conceptualization of trees are an important underpinning for the latest innovation in prompt engineering and generative AI.
+
+In today’s column, I am continuing my ongoing and popular series on advances in prompt engineering and will be covering the newest and especially exciting emergence of the so-called Tree of Thoughts (ToT) technique when using generative AI. This technique is definitely worthy of being mindfully considered and given proper due for anyone aiming to enhance their prompt engineering skills. I will walk you through the keystones of the Tree of Thoughts approach and also include examples to get you started on using this clever advancement.
+
+Consider first how the concept of trees is leveraged for computing purposes.
+
+You already know that a natural tree has a slew of branches, extending upward or outward from the base of a tree. It is also well-understood that trees have roots that branch out underneath the ground and help keep the tree well-rooted and grounded. Keep that imagery in mind.
+
+For those of you versed in the field of computer science, you undoubtedly have learned that a type of data structure known as a tree is commonly used to organize and search amongst data. The analogy to a nature-based tree is that the data structure has various branches or might have roots that extend from a base or key topic of interest. You can then use the computer to store the data and search the data by exploiting a tree-like capacity.
+
+Trees Exemplified Via Chess Playing
+
+Let’s use chess as a vivid indicator of computer-based data structures composed of trees.
+
+You are staring at a chessboard and trying to decide what move to next make. Your eyes glance at your chess pieces. Perhaps the next move ought to consist of using your pawn to threaten the queen of your adversary. If you move the pawn forward, the queen will be endangered. Is this a good move to make or might you be making a blunder?
+
+In your mind, you would likely want to think ahead about what might happen if you move your pawn. The queen could opt to take your pawn. If so, what should your follow-up move be? You consider what the consequences might consist of. All in all, you are mentally pursuing one line of thinking, namely the consequences or further steps that extend as a result of moving your pawn.
+
+Count that as a line of thinking or a series of thoughts shaped around a particular base or root. The base or root is that you are mulling over the possibilities that might arise due to moving your pawn. This might be likened to a branch of a tree. The branch extends outward and there might be offshoots of the branch. The branch has a bunch of offshoots such as in this case the queen might take the pawn or maybe a rook might take the pawn, and so on.
+
+Okay, that line of thinking is entirely about moving your pawn. Set that to the side for the moment. It could be that other possibilities exist such as moving your knight instead of moving your pawn. Well, any good chess player would want to ponder that move and whether it is a suitable choice to make. You then pursue mentally a branch of sorts about moving your knight and considering all the ramifications downstream by doing so.
+
+I trust that you can see that we now have two lines of thought, consisting of our having thought about moving the pawn and a second line of thought about moving the knight. We can keep doing this with all of our other pieces on the chessboard. We might end up with numerous lines of thought. They each have their own respective focus.
+
+What are we to do with these numerous lines of thought?
+
+One aspect would be to try and compare them to each other.
+
+The moving of the pawn might be advantageous over the moving of our knight. By examining those two lines of thought, hopefully, a decision can be made about which of the two is most meritorious. In general, you might want to somehow compare and contrast each of the distinctive lines of thought. There are many ways to do this. For example, you could try to use numeric weights and mentally calculate the winning potential of each line of thought. That would be one method. Another approach could be to directly compare side-by-side the lines of these thoughts. Etc.
+
+Suppose we develop an app that can play chess. The odds are that we would program the app to do something akin to how humans seem to play chess. When considering what next move to make, the chess-playing program would examine a potential candidate for a move, such as moving the pawn, and consider the consequences that might arise. This would all be done computationally.
+
+The data structure used to bring this about might consist of a tree-like structure. We have at the base the existing state of the chess game. The program chooses a piece such as the pawn and computationally explores what might happen if the pawn is moved. That is considered a branch now of this tree. The program chooses another piece, such as the knight, and computationally analyses what will happen if the knight is moved. This is another branch being explored. Rinse and repeat.
+
+Some would suggest that these are computationally based “thoughts” in the sense of being likened to how humans make use of thinking when they process such situations. There is heartburn over using that terminology. We cannot say for sure what goes on in the human mind when thinking about things such as which chess move to make. In any case, we all have agreed to refer to those human ponderance as thoughts.
+
+If we mimic this in a computer, is it fair or reasonable to label these as “thoughts” in the same sense as human thoughts?
+
+A commanding apprehension to be made is that this is an anthropomorphizing of the computing process. We are ascribing potentially a sense of sentience to the computer program by reusing a word that is normally reserved for sentient beings. Referring to the computer program making use of “thoughts” is disconcerting because it overly implies that the app is able to think.
+
+Despite those qualms, by and large most have gone along with referring to these computational confabulations as thoughts. I will do so here too. I wanted though for you to be aware that there is controversy over the use of such wording. Please do keep in mind that the alleged thoughts associated with a computer or computational process are not necessarily akin to that of human thoughts and therefore try to differentiate this throughout the rest of this discussion, thanks.
+
+I have now introduced you to an overarching foundational idea that we can in a program or app establish a computational means of composing “thoughts” and organizing them into a tree-like structure. Chess playing helps to illustrate this. You have the existing state of the game. The app examines the possibilities of moving a particular piece. This is a branch from the base or existing state of the game. The branch will be construed as a thought. Another branch is formed by examining the moving of a different piece. This is considered an additional thought. We will end up with lots of these so-called thoughts and they are being arranged in a tree-like manner.
+
+Ergo, we will boldly proclaim that these can be referred to as a Tree of Thoughts.
+
+A chess-playing app would leverage the Tree of Thoughts structure and mechanism to try and calculate what the best move is. As mentioned earlier, this could consist of a variety of ways to examine the tree. I will cover this in more detail shortly.
+
+All in all, we can use this same computationally based Tree of Thoughts capability when using generative AI and do so via clever prompt engineering. Before I dive into my in-depth exploration of this vital topic, let’s make sure we are all on the same page when it comes to the keystones of prompt engineering and generative AI. Doing so will put us all on an even keel.
+
+Prompt Engineering Is A Cornerstone For Generative AI
+
+As a quick backgrounder, prompt engineering or also referred to as prompt design is a rapidly evolving realm and is vital to effectively and efficiently using generative AI or the use of large language models (LLMs). Anyone using generative AI such as the widely and wildly popular ChatGPT by AI maker OpenAI, or akin AI such as GPT-4 (OpenAI), Bard (Google), Claude 2 (Anthropic), etc. ought to be paying close attention to the latest innovations for crafting viable and pragmatic prompts.
+
+Moving on, here’s a bold statement that pretty much has become a veritable golden rule these days:
+
+The use of generative AI can altogether succeed or fail based on the prompt that you enter.
+If you provide a prompt that is poorly composed, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being demonstrably specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+AI Ethics and AI Law also stridently enter into the prompt engineering domain. For example, whatever prompt you opt to compose can directly or inadvertently elicit or foster the potential of generative AI to produce essays and interactions that imbue untoward biases, errors, falsehoods, glitches, and even so-called AI hallucinations (I do not favor the catchphrase of AI hallucinations, though it has admittedly tremendous stickiness in the media; here’s my take on AI hallucinations at the link here).
+
+There is also a marked chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of generative AI. Regarding prompt engineering, there are likely going to be heated debates over putting boundaries around the kinds of prompts you can use. This might include requiring AI makers to filter and prevent certain presumed inappropriate or unsuitable prompts, a cringe-worthy issue for some that borders on free speech considerations. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+With the above as an overarching perspective, we are ready to jump into today’s discussion.
+
+Digging Into Tree Of Thoughts As A Special Prompt Engineering Technique
+
+Imagine that you are using generative AI to answer a question or solve a problem. Let’s try something relatively simple. You enter a prompt that asks the AI app to figure out whether a ball that was placed into a cup is still in the cup after having moved the cup around several times. This is a typical word problem that might be asked on a test.
+
+The answer presented by the generative AI might indicate that the ball is still in the cup. The AI app might be right, or it might be wrong. You have no guarantee that any generative AI will always be right. You have to be wary when using generative AI. The AI can fail to solve things or might encounter an AI issue such as an internal error, bias, glitch, and so on.
+
+A means to try and get generative AI to do a better job at answering consists of invoking a so-called Chain Of Thought (CoT) approach. You essentially tell the AI app to do a stepwise effort and showcase what steps were undertaken. By doing so, it seems that the AI app will be more computationally cautious and likely end up with a better answer. This doesn’t always bear out but it is often enough that doing so is likely worthwhile, see my detailed analysis at the link here.
+
+In a sense, noted via my earlier caveats in mind, you are getting the AI app to devise a “thought” that shows the steps or a chain-link of what logical item led to the next logical item. Consider how this relates to my chess analogy. The chain of steps about what happens when moving a pawn is a kind of single thought, as it were.
+
+The Chain of Thought typically deals with essentially one thought. A particular thought is being shown on a stepwise basis. As I said above, telling generative AI to do so can be helpful in possibly garnering better answers.
+
+I am betting that you might know where I am heading on this. If articulating one thought can be potentially beneficial, perhaps a multitude of thoughts might be even better. The more the merrier is an oft-used piece of sage advice. But you don’t want to just have a messy unformulated heaping of thoughts. They should be organized in some useful fashion.
+
+We can use a Tree of Thoughts for that purpose.
+
+Here’s the deal.
+
+We will ask generative AI a question or try to get it to solve a problem. In addition, we will tell it to pursue multiple avenues (i.e., thoughts) when doing so. On top of that, we will get the AI app to then use those multiple avenues to figure out which one is likely the best answer. Welcome to the Tree of Thoughts technique of prompt engineering.
+
+A prompt that will get this to occur is easily conveyed. There are various ways to accomplish this, of which the most common consists of making use of multi-personas. I’ve covered multi-personas previously, see the link here and the link here. The gist of multi-personas is that you tell the AI app to pretend it is several people and then get the AI to try and use those pretend people to solve a problem for you.
+
+We are going to simplify things by acting as though each of those personas will have one line of thinking. Pretend person A has one line of thinking. Person B has one line of thinking. Person C has one line of thinking. And so on, for as many personas as we want the AI to pretend to undertake. They are each a branch of our Tree of Thoughts. We will then also tell the AI app how we want those branches or distinct lines of thought to be combined or assessed.
+
+A sample prompt that serves as a template for you might be like this:
+
+Sample prompt to invoke a Tree of Thoughts — “Imagine that five different experts are going to answer the following question. They will work on one step at a time and share their steps with each other as they proceed. The experts will write down each step of their thinking and share it with the group. The experts will take a moment to examine each other’s steps and compare the stated steps. An expert can change their opinion based on seeing what another expert stated. Then all experts will go on to the next step. At the very end, the experts are to reach a final decision based on having seen each other’s stated steps throughout the problem-solving process. The question is as follows: {put your question here}.”
+The sample prompt is merely an example and was inspired by the work of Hulbert as will be mentioned later herein.
+
+You can play with the prompt.
+
+For example, the prompt shown refers to five experts. You might opt to ask for two experts rather than five, or fifty rather than five. We don’t yet know experimentally whether the number of pretending experts makes much of a difference. Namely, it could be that you might ask for too many or ask for too few. You will want to try different settings based on the problem at hand and the particular generative AI app that you are using.
+
+Speaking of the generative AI app, please realize that each generative AI app is different from the other generative AI app. Thus, you might compose a prompt for Tree of Thoughts that seems to work well for one generative AI app but flounders when using the same prompt on another generative AI app. Again, play around to see what works best for you and your circumstances.
+
+You can likely discern that the prompt is nudging the AI app toward doing a Chain of Thought approach, doing so by emphasizing that the experts are to work on a step-at-a-time basis. We are going beyond the typical Chain of Thought by having the Tree of Thoughts invoke multi-personas at once and getting the AI app to have each do a stepwise solving process.
+
+In terms of how to get the multi-personas to reach a final answer, the prompt in this case merely provides a vague indication. Doing so will let the AI app ascertain what way might be suitable. If you have a specific consolidation or firming-up approach that you want generative AI to undertake, you will want to mention it as such in the prompt.
+
+Ways To Implement Tree Of Thoughts For Generative AI
+
+I’ve shown you how to do a Tree of Thoughts approach by entering a prompt into a conventional generative AI app. I consider this to be a vanilla flavor of Tree of Thoughts.
+
+It is the easiest way to go.
+
+Another means consists of purposely augmenting a generative AI app to have an add-on capability that explicitly implements a Tree of Thoughts capability. You are likely to get a more robust result. The downside is that installing the add-on might be arduous or create other complications. I’m not suggesting you should avoid such add-on’s and only realistically point out that the newness of those add-on’s can involve twists and turns. I gladly declare that if you are serious about Tree of Thoughts, you would be wise to pursue an add-on.
+
+You can also anticipate that some AI makers are likely to build a Tree of Thoughts specialized component into their generative AI for future versions of their app. We will gradually all become used to readily being able to invoke an in-depth Tree of Thoughts capacity. Not right now, but in later iterations of generative AI.
+
+I’ve identified that there are four major approaches to a Tree of Thoughts implementation:
+
+(1) Conventional. Prompting in a conventional generative AI that lacks a specialized ToT capability and performs generically (this is the easiest, presently).
+(2) Add-on. Use a generative AI app that has a ToT add-on and then enter a prompt to invoke the add-on (mainly done by researchers right now).
+(3) Revamp. Revamping a conventional generative AI app to include a ToT specialized component and utilize the capability via a prompt (future).
+(4) Bulit-in. Build specialized ToT directly into a generative AI app and invoke the functionality via a prompt (further in the future).
+Be on the watch for Tree of Thoughts gaining attention and traction.
+
+Be Mindful When Invoking Tree Of Thoughts
+
+There are important caveats worth considering about Tree of Thoughts.
+
+First, if you are paying for the use of your generative AI app, there is a possibility that trying to use a Tree of Thoughts technique or technology might incur added costs. The same applies generally to doing any advanced prompting techniques such as Chain of Thought, Skeleton of Thought (see my coverage at the link here), multi-personas, mega-personas, etc. It is conceivable that the generative AI will undertake more computational activity to undertake those techniques.
+
+For those of you who are paying for your generative AI by utilization such as computing cycles, this might boost your costs. That’s the sad face side of things. The happy face is that you might find any such added costs to be negligible, or the added cost is worthwhile because you might end up with better answers out of the generative AI. Your mileage may vary.
+
+Second, you have no ironclad assurance that the use of Tree of Thoughts will make one wit of a difference. The Tree of Thoughts might produce the same answer that would have been produced otherwise. Worse still, the Tree of Thoughts might adversely inadvertently stir the AI astray and you will generate an answer that is not only wrong but was not the right answer that you might have gotten by avoiding using the technique at the get-go. That hurts.
+
+Third, a Tree of Thoughts might be like trying to use an elephant when you only needed an ant. The Tree of Thoughts could be an overkill in whatever you are doing with generative AI. If the cost is free, I suppose you might not care. Some though have argued that we should be economical with our use of generative AI due to various environmental and societal implications, see my coverage at the link here.
+
+You ought to weigh the value of using Tree of Thoughts and the tradeoff of these caveats and other potential downsides. I urge that you take the classic Goldilocks perspective. Try to use the Tree of Thoughts thoughtfully. Don’t do so when the porridge is too cold or too hot.
+
+Research At The Cutting Edge Of Tree Of Thoughts
+
+Tree of Thoughts for generative AI is a cutting-edge endeavor. You can anticipate that AI researchers will continue to examine what works and what doesn’t work when it comes to ToT. In an upcoming column, I will cover some additional newly emerging prompt engineering and generative AI advanced pursuits such as Graph of Thoughts and Algorithm of Thoughts that are perceived as either variants of ToT or considered close cousins of ToT.
+
+Be on the watch for my additional coverage.
+
+Let’s right now take a quick look at some of the latest AI research underlying the Tree of Thoughts approach. I’ll start with a research paper entitled “Tree Of Thoughts: Deliberate Problem Solving With Large Language Models” by Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, and Karthik Narasimhan, posted online on May 17, 2023.
+
+Here are some key excerpts from that AI research paper:
+
+“Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role.”
+“To surmount these challenges, we introduce a new framework for language model inference, “Tree of Thoughts” (ToT), which generalizes over the popular “Chain of Thought” approach to prompting language models, and enables exploration over coherent units of text (“thoughts”) that serve as intermediate steps toward problem solving.”
+“ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models’ problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of tasks, our method achieved a success rate of 74%.”
+As you can observe from the above excerpts, the AI researchers performed experiments that suggested the Tree of Thoughts technique can indeed make a substantive difference toward generative AI problem-solving. They used three particular tasks, consisting of a game-playing setting, a writing setting, and a crossword-solving setting. The generative AI app used was OpenAI’s GPT-4.
+
+Most experiments assessing the Tree of Thoughts will be designed to compare ToT to doing an everyday Chain of Thought (CoT) approach. This makes abundant sense. We generally know that Chain of Thought is easy to do and doesn’t seem to raise much-added cost when invoked. If Tree of Thoughts can’t do better than Chain of Thought, you might as well stick with Chain of Thought. No sense in going the extra mile unless needed.
+
+A difficulty with doing these kinds of research studies is that the nature of the problem being solved can make a huge difference in terms of whether Tree of Thoughts is worthy or not. Furthermore, the particular generative AI app being used can also make a big difference. As stated earlier, each generative AI app will perform differently. Just because a particular generative AI app does well on some selected set of problems in an experiment doesn’t necessarily indicate that the same will hold true in other generative AI apps.
+
+Moving on, I’ve explained herein what the Tree of Thoughts generally refers to. For those of you who are keenly inquisitive, you might be desirous of a somewhat crisp definition for Tree of Thoughts. If so, here is this handy definition that was posted online in a piece entitled “Tree of Thoughts (ToT)”, Prompt Engineering Guide:
+
+“ToT maintains a tree of thoughts, where thoughts represent coherent language sequences that serve as intermediate steps toward solving a problem. This approach enables an LM to self-evaluate the progress intermediate thoughts make toward solving a problem through a deliberate reasoning process. The LM's ability to generate and evaluate thoughts is then combined with search algorithms (e.g., breadth first search and depth-first search) to enable systematic exploration of thoughts with lookahead and backtracking.” (via DAIR.AI, 2023).
+I mention this definition to highlight that so far I’ve not especially covered the various methods that can be used to consolidate or arrive at a final answer from the multitude of thoughts that are populated into a Tree of Thoughts. Those of you who are computer science-oriented might already know that there are breadth-first searches (BFS), depth-first searches (DFS), and a variety of computational methods that can be used. If there is sufficient interest in this subtopic, I’ll cover those details in a subsequent column posting.
+
+Another research paper that you might find of interest because it delineates an effort to implement the Tree of Thoughts as an add-on to generative AI was depicted in “Large Language Model Guided Tree-of-Thought” by Jieyi Long, posted online on May 15, 2023.
+
+Here’s an excerpt:
+
+“To implement ToT as a software system, we augment an LLM with additional modules including a prompter agent, a checker module, a memory module, and a ToT controller. In order to solve a given problem, these modules engage in a multi-round conversation with the LLM. The memory module records the conversation and state history of the problem solving process, which allows the system to backtrack to the previous steps of the thought process and explore other directions from there. To verify the effectiveness of the proposed technique, we implemented a ToT-based solver for the Sudoku Puzzle. Experimental results show that the ToT framework can significantly increase the success rate of Sudoku puzzle solving.”
+As noted in the above excerpt, an add-on to generative AI that consists of several modules was devised and then tested using a problem-solving setting involving figuring out Sudoku puzzles. The researchers provided results that once again suggest the Tree of Thoughts technique and technology can be beneficial.
+
+I had mentioned that the easiest way to invoke the Tree of Thoughts consists of using an ordinary prompt in conventional generative AI rather than seeking out a generative AI that has been augmented with ToT per se. An interesting set of experiments using ChatGPT was undertaken as noted in an online posting entitled “Using Tree-of-Thought Prompting To Boost ChatGPT's Reasoning” by Dave Hulbert, GitHub, May 2023.
+
+I will in a moment take you through some ad hoc experiments that I also performed, doing so by leveraging the same approach and trying to see what I could also get ChatGPT to do regarding ToT.
+
+Here’s the prompt used by Hulbert to perform the ToT experiments:
+
+“Imagine three different experts are answering this question. All experts will write down 1 step of their thinking, then share it with the group. Then all experts will go on to the next step, etc. If any expert realizes they're wrong at any point then they leave. The question is...”
+The problem to be solved consisted of this issue associated with a cup and a ball in the cup:
+
+“Bob is in the living room. He walks to the kitchen, carrying a cup. He puts a ball in the cup and carries the cup to the bedroom. He turns the cup upside down, then walks to the garden. He puts the cup down in the garden, then walks to the garage. Where is the ball?”
+We’ll come back to that shortly.
+
+You can find online additional variants of the prompt proffered in the above work, including these variations posted by kyegomez/tree-of-thoughts on GitHub:
+
+“Simulate three brilliant, logical experts collaboratively answering a question. Each one verbosely explains their thought process in real-time, considering the prior explanations of others and openly acknowledging mistakes. At each step, whenever possible, each expert refines and builds upon the thoughts of others, acknowledging their contributions. They continue until there is a definitive answer to the question. For clarity, your entire response should be in a markdown table. The question is...”
+“Imagine three highly intelligent experts working together to answer a question. They will follow a tree of thoughts approach, where each expert shares their thought process step by step. They will consider the input from others, refine their thoughts, and build upon the group's collective knowledge. If an expert realizes their thought is incorrect, they will acknowledge it and withdraw from the discussion. Continue this process until a definitive answer is reached. Present the entire response in a markdown table. The question is...”
+“Three experts with exceptional logical thinking skills are collaboratively answering a question using a tree of thoughts method. Each expert will share their thought process in detail, taking into account the previous thoughts of others and admitting any errors. They will iteratively refine and expand upon each other's ideas, giving credit where it's due. The process continues until a conclusive answer is found. Organize the entire response in a markdown table format. The question is...”
+“Envision a group of three experts working in unison to tackle a question by employing a tree of thoughts strategy. Each expert will thoroughly explain their line of thinking at every step, while also considering the insights provided by their peers. They will openly recognize any mistakes and build upon the group's shared understanding. This iterative process will continue until a definitive solution is reached. Structure the entire response as a markdown table. The question is...”
+I show several sample prompts to encourage you to consider how you might want to formulate your own favored prompt to invoke the Tree of Thoughts when using conventional generative AI. Those demonstrative examples give you a semblance of various ways to compose such a prompt.
+
+Using Tree Of Thoughts In ChatGPT On A Classic Puzzle Problem
+
+We are now ready to undertake a deep dive into an engaging and informative exploration of the use of the Tree of Thoughts as a promising and productive prompt engineering technique.
+
+I noted earlier that a cup and a ball problem was used to experiment with the Tree of Thoughts in ChatGPT, illustrating ToT prompting in essentially a conventional generative AI setting. Here again, is the stated problem to be solved:
+
+“Bob is in the living room. He walks to the kitchen, carrying a cup. He puts a ball in the cup and carries the cup to the bedroom. He turns the cup upside down, then walks to the garden. He puts the cup down in the garden, then walks to the garage. Where is the ball?”
+I’d like you to ruminate on the cup and ball problem.
+
+The cut-to-the-chase viewpoint is that a ball is put into a cup. The cup later gets turned upside down. We would normally expect that the ball would fall out of the cup. This is gravity doing what it does best. The cup is then presumably empty at that pivotal juncture. In this story, the ball is somewhere in the bedroom after having fallen out of the cup (well, we assume this to be the case). Next, when the now empty cup is taken to the garden and placed in the garden, the ball is apparently still sitting there back in the bedroom. That’s what we seem to be able to discern from the imprecise facts given to us.
+
+Our logically derived answer to the final question is that the ball is in the bedroom, as best as we can determine. Congrats, because you’ll be happy to know that indeed the ball being in the bedroom is considered the prevailing correct answer. Score a thousand points for our ingenious insight and glorious mind-bending puzzle-solving prowess.
+
+There is though room for doubt.
+
+A smarmy person could argue that maybe the cup contains fast-acting glue and the ball is therefore in the cup forever. Thus, the answer is that the ball is still in the cup which is in the garden. Or, if the fast-acting glue idea seems farfetched, maybe the ball barely fits into the cup and has become lodged inside the cup. Once again, the proper answer in that scenario would seem to be that the ball is still in the cup and the garden. We could also debate whether this whole tale is even taking place on Earth. If the situation involves being on a planet with a different gravitational pull, perhaps the ball didn’t have time to fall out. Etc.
+
+I am only getting started on these various other perceived possibilities (I’ll go with a Prince Bride series of possibilities!). Suppose that we concede that the ball fell out of the cup in the bedroom. We’ll grant that. But turns out that the ball rolled out of the bedroom and landed in the kitchen. Aha, the answer in that case is that the ball is in the kitchen. Then again, perhaps the ball rolled through the kitchen and finally came to a stop in the living room. The living room is our final answer.
+
+On and on this zany puzzle goes.
+
+The presumed correct answer is that the ball is in the bedroom. We’ll stick with that for the moment. You are welcome to disagree vehemently and do so until the cows come home. I’ll wait.
+
+Anyway, I decided to see what ChatGPT has to say. I entered a prompt with the Bob-related question. I did not do any other prompting. We are not yet going to invoke a Tree of Thoughts activity.
+
+Here is the answer from ChatGPT:
+
+“The ball is in the cup, which is currently in the garden.”
+The garden!
+
+The ball is not in the bedroom instead it is in the garden (and still inside the cup).
+
+Yikes, it seems as though ChatGPT has gone the route of somehow computationally figuring out that the ball didn’t leave the cup and therefore it is in the garden where the cup was finally placed. We might wonder how this conclusion was arrived at. Did fast-acting glue come into play? Was the ball lodged inextricably into the cup?
+
+Inquiring minds want to know.
+
+I opted to compose an additional prompt that would get ChatGPT to do a Chain of Thought approach on this answer. Maybe we can see what logic the generative AI is using to arrive at the garden as an answer.
+
+My prompt to ChatGPT was this:
+
+“Double-check your answer by doing a step-by-step explanation of how the answer is being determined.”
+ChatGPT responded with this:
+
+“Certainly! Let's break down the sequence of events step by step to determine where the ball is:”
+“Bob is in the living room.”
+“He walks to the kitchen, carrying a cup.”
+“He puts a ball in the cup (implied).”
+“He carries the cup to the bedroom.”
+“He turns the cup upside down (but the presence of the ball is not mentioned).”
+“He walks to the garden.”
+“He puts the cup down in the garden.”
+“He walks to the garage.”
+“Now, we need to determine where the ball is based on the given information:”
+“Step 3 implies that Bob placed a ball in the cup in the kitchen.”
+“Step 5 mentions that he turned the cup upside down, but it doesn't mention anything about removing the ball.”
+“In Step 7, Bob puts the cup down in the garden.”
+“Since there is no information provided that suggests the ball was removed from the cup at any point after Bob put it in, we can conclude that the ball is still in the cup. Therefore, the ball is in the cup, which is currently in the garden.”
+Surprisingly, the logic shown isn’t one of those zany or smarmy countervailing schemes that I had previously listed. Thankfully so. ChatGPT seems to be saying that since the story doesn’t explicitly state that the ball came out of the cup, we cannot assume that the ball was “removed” from the cup.
+
+The word “remove” might be an indication or telltale clue that the “logic” of ChatGPT is that a ball can only be manually or overtly taken out of a cup. There is no seeming indication that a ball could have simply fallen out of a cup. Is this due to a lack of being data-trained about gravity and what gravity can do? Or is this one of those circumstances of expecting to be told on a rote basis the precise aspects of a situation, such that if the scenario doesn’t openly say that the ball came out, we can be under the base assumption that the ball is still securely ensconced in the cup?
+
+I suppose you could argue that the logic displayed by ChatGPT is at least semi-logical, despite not arriving at the decreed correct answer. If ChatGPT had stated that the ball was still in the cup because of magical magnetic forces from outer space, we would have reason to be concerned that maybe the AI app was suffering from AI hallucinations or some error in data training. A bit of relief is that Chain of Thought logic has logic and isn’t on the face of things entirely crazily illogical.
+
+Hulbert tried the same kind of experimental steps with ChatGPT and then opted to use a Tree of Thoughts prompting strategy. Here’s what he indicated happened (I’ve included some bracketed lines to help showcase the key elements of the response):
+
+“Imagine three different experts are answering this question. All experts will write down 1 step of their thinking, then share it with the group. Then all experts will go on to the next step, etc. If any expert realizes they're wrong at any point then they leave. The question is...”
+{Here is the first step}
+“Expert 1: The ball is in the living room.”
+“Expert 2: The ball is in the kitchen.”
+“Expert 3: The ball is in the bedroom.”
+{Here is the next step}
+“Expert 1: Bob carries the cup to the bedroom, so the ball must be in the cup.”
+“Expert 2: Oh, I see my mistake. Yes, the ball is in the cup.”
+“Expert 3: Agreed, the ball is in the cup in the bedroom.”
+{Here is the next step}
+“Expert 1: Next, Bob turns the cup upside down in the bedroom.”
+“Expert 2: After that, Bob walks to the garden and puts the cup down.”
+“Expert 3: Therefore, the ball must have fallen out of the cup when Bob turned it upside down in the bedroom. So, the ball is in the bedroom, not in the cup anymore.”
+{Here is the next step}
+“Expert 1: Oh, you're right. I made a mistake. The ball is in the bedroom, not in the cup.”
+“Expert 2: Agreed, the ball is in the bedroom.”
+“Expert 3: Bob then walks to the garage, so the ball remains in the bedroom. It is not in the garden or the garage.”
+{Here is the next step}
+“Expert 1: Absolutely, the ball is still in the bedroom.”
+“Expert 2: Yes, the ball hasn't moved from the bedroom.”
+“Expert 3: Therefore, the ball is in the bedroom, not in the garden or the garage.”
+{Final answer}
+“All three experts agree that the ball is in the bedroom.”
+The answer by ChatGPT in this ToT-based run is the considered correct answer, specifically that the ball is in the bedroom.
+
+We also got quite a spirited exchange between the three experts or personas. One of the experts was able to seemingly nudge another one toward the assumption that the ball fell out of the cup. You can certainly grumble about other facets of the explicated narrative. All in all, we’ll give this a passing grade for getting the answer right and doing so with a semblance of the preferred underlying logic. I mention this last point because the answer could have been indeed stated as the bedroom, but the logic might have claimed that the ball teleported across space and time to end up in the bedroom. We would be dubious of the value provided by the ToT in that farfetched exposition.
+
+Another consideration to always keep in your presence of mind is that sometimes a generative AI app will devise a response that is aimed at appeasing you. I am not suggesting that this is due to any semblance of sentience. It is merely as a result of the data training on zillions of writing compositions from the Internet that the generative AI was data-trained on, see my detailed explanation at the link here.
+
+In this case, suppose that the prompt was interpreted by the generative AI as intending that a debate amongst experts was desired. Juicing the debate would involve having one expert seemingly correct another one. We do not know if the AI app simply concocted this contrivance for our satisfaction or whether it was truly a computational back-and-forth that took place (unlikely, but at least faintly possible).
+
+We Need To Look Further Into Tree Of Thoughts As A Prompt-Only Venue
+
+I wondered whether ChatGPT would give me the same answer if I also used the Tree of Thoughts prompting approach.
+
+It might.
+
+It might not.
+
+You need to keep in mind that generative AI works on a probabilistic basis, thus any answer will potentially be different from any other answer previously given by generative AI. Each time that you ask a question, a statistical pattern-matching mechanization takes place. Like a box of chocolates, you never know for sure what you are going to get. I repeatedly exhort during my workshops on prompt engineering that you have to clearly set aside the usual deterministic same-input begets same-output expectations that one has with nearly any ordinary conventional app.
+
+You can’t expect that with generative AI.
+
+Also, I’d like to emphasize that this experiment involves conventional generative AI and does not reflect what we might get with an AI app augmented with ToT capabilities. Recall my point made earlier that you cannot expect prompting alone to get you to the high heavens of the Tree of Thoughts. A more robust and full-on implementation encompassing a specialized ToT component is much more likely to get the deed done.
+
+Let’s see what I got via using the widely and widely popular generic generative AI app of ChatGPT too, and doing so solely via the use of prompts (no add-ons). Due to space limitations for the size of this column, I’ll try to keep things succinct and won’t chew up space by showing the full dialogue narratives that took place.
+
+First, I tried a Tree of Thoughts prompt akin to the template or example that I noted at the start of this discussion. I asked for a dialogue among several personas. The response showed them seemingly interacting, and then here’s what was the conclusion:
+
+Response by ChatGPT: “At this point, it's highly likely that the ball would have fallen out of the cup when Bob turned it upside down in the bedroom. Therefore, the ball is most likely in the bedroom where it fell out of the cup when Bob turned the cup upside down.”
+Bingo, you can see that strikingly the right answer was derived. The icing on the cake is that this time the explanation hit the nail on the head and stated that the ball most likely fell out of the cup. Gravity got into the equation; one might assert. A round of applause for ChatGPT is warranted.
+
+I did the same prompting in a series of trials with two personas, three personas, four personas, and then five personas. For each trial, I began with a new conversation to clear out any potential residual baggage or tip-offs. Sometimes I got a response similar to the one listed above.
+
+Sometimes I received an odd answer.
+
+Take a look at this oddball answer:
+
+Response by ChatGPT: “Considering the steps provided by the other experts, I concur with their assessment that the ball is indeed in the cup in the bedroom. So, all of the experts agree that the ball is in the cup in the bedroom based on the given sequence of actions.”
+The reason I am declaring this an odd answer is that the final answer seems to suggest that the ball never fell out of the cup and that it is still inside the cup and residing in the bedroom. If you had only asked where the ball is, the right answer would have been stated that the ball is in the bedroom. But the elaborated explanation shows that something has gone amiss. The cup is no longer in the bedroom. The ball is no longer in the cup.
+
+A disconcerting “right” answer that falters in the explanation.
+
+A subtle change in wording would have made things less disturbing. For example, if the response said that the ball “was” indeed in the cup in the bedroom, such a statement is correct. The problem though is that the answer says the ball “is indeed in the cup in the bedroom” and implies that the ball is still there and the cup is still there (ignoring or somehow confusing the aspect that the cup was moved elsewhere).
+
+I suppose that might appear to be nit-picking.
+
+Well, you’ll want to sit down for the next example of an odd-ish answer.
+
+Here is an entirely off-the-rails response:
+
+Response by ChatGPT: “The experts assumed that when Bob turned the cup upside down in the bedroom, the ball might have fallen out, and that's why they concluded the ball was in the garden where the cup was placed. However, if the ball was indeed in the cup when Bob turned it upside down in the bedroom, the ball would still be in the cup, and the cup itself would be in the bedroom. In this case, the ball would not have been left in the garden. So, the key misunderstanding was assuming that turning the cup upside down meant the ball was removed from it, when it wasn't explicitly stated in the scenario. The ball was left in the cup, which remained in the bedroom.”
+I challenge you to try and straighten out this head-turning response. It is altogether convoluted and messed up. Gibberish. You might either laugh at it or cry, depending upon whether you were hoping that the generative AI would have gotten things perfectly on target or ended up off by a country mile.
+
+Like I said, generative AI is like a box of chocolates. Sometimes you get oddball chocolates. You can also sometimes get pure rubbish.
+
+Be on alert.
+
+Stay on your toes.
+
+Conclusion
+
+I urge you to add Tree of Thoughts to your prompt engineering repertoire.
+
+To make sure you are familiar with this new prompting technique, go ahead and set aside time to play with it. Do your own experimentation. Whichever generative AI app that you are using might give you great results or might give you lousy results. Don’t expect consistency. Until the Tree of Thoughts is well-tested and included via either add-on or built-in, you are likely rolling the dice.
+
+My suggestion is that you should have the Tree of Thoughts prompting technique for conventional generative AI in your handy-dandy back pocket. Bring it out from time to time. You’ll almost certainly want to first tackle any question or problem with the classic Chain of Thought technique. If you believe the derived response is lacking, go ahead and up the ante by using the Tree of Thoughts.
+
+I implore you to double-check whatever response you get. Of course, that’s always my recommendation, regardless of what you are doing with generative AI. The zany responses can be obvious or they can be subtle and hard to detect. No matter what prompt you enter, you must be vigilant and double-check any generated response. Period, end of story.
+
+I shall conclude with a final thought about the Tree of Thoughts.
+
+There is a longstanding adage or proverb pertaining to trees that goes like this: “A seed hidden in the heart of an apple is an orchard invisible.”
+
+We have a Tree of Thoughts capacity hiding within generative AI. Conventional generative AI can be coaxed into a Tree of Thoughts effort. With the research and experimentation underway to augment or even build specialized ToT components, the planted seeds will ultimately become an orchard.
+
+You might want to find a shady tree someplace and mull over the Tree of Thoughts approach. Your time will be well spent. Plus, you might have an apple fall on your head and have one of those amazing and rarely encountered eureka moments. Good luck and stay safe."
+"Prompt Engineering New Chain-Of-Density Technique Prompts Generative AI Toward Smartly Jampacking Crucial Content","Lance Eliot","forbes.com","2023-09-20","https://www.forbes.com/sites/lanceeliot/2023/09/20/prompt-engineering-new-chain-of-density-technique-prompts-generative-ai-toward-smartly-jampacking-crucial-content/?sh=70fe04d5214e","Trying to put five pounds of rocks into a three-pound bag.
+
+That old adage about filling a bag or sack is indicative that sometimes you are faced with the difficult chore of seeking to squeeze down something larger into something smaller in size. Turns out that we do this all the time, particularly when attempting to summarize materials such as a lengthy article or a voluminous blog posting. You have to figure out how to convey the essence of the original content and yet do so with less available space when doing so.
+
+Welcome to the world of summarization and the at times agonizing tradeoffs in deriving sufficient and suitable summaries. It can be challenging and exasperating to devise a summary. You want to make sure that crucial bits and pieces make their way into the summary. At the same time, you don’t want the summary to become overly unwieldy and perhaps begin to approach the same size as the original content being summarized.
+
+I bring up this topic because a common use of generative AI consists of getting the AI app to produce a summary for you. You feed an article or some narrative into the generative AI and ask for a handy dandy summary. The AI app complies. But you have to ask yourself, is the summary any good? Does it do a proper job of summarizing? Has anything vital been left out? Could the summary be more tightly conceived? Etc.
+
+A new method of devising summaries involves a clever prompting strategy that aims to bolster generative AI toward attaining especially superb or at least better than usual kinds of summaries. The technique is known as Chain-of-Density (CoD). Anybody versed in prompt engineering ought to become familiar with this insightful technique. Consider Chain-of-Density as not only helpful for producing summaries but there are a lot of other benefits garnered by understanding how the technique works and the ways in which this can power up your overall prompting prowess all-told.
+
+In today’s column, I am continuing my ongoing special series that closely explores the newest advances in prompt engineering for generative AI and will carefully reveal to you the keystone ins and outs of the Chain-of-Density prompting technique. The underlying research that has developed the technique will be examined. Furthermore, I will highlight several examples of how to do so in a practical day-to-day means of leveraging the CoD capacities.
+
+I’m glad you asked.
+
+Allow me a moment to explain.
+
+When you are trying to craft a summary, you often might do so in a series of successive attempts. Your first shot might be to craft a summary that has only a few of the biggest points that need to be included. After considering the initial draft, the odds are that you might further refine the summary by adding more elements to it. This can go on and on. Depending on how thorough you are, you might do a handful or more of these refining iterations. Each iteration can be construed as a chain of iterative summaries, one leading to the next for a given instance of trying to write a summary.
+
+That’s the “chain” part of this process.
+
+Let’s add some further terminology to describe the summary-making effort.
+
+A summary typically starts as somewhat sparse when you first toss it together. There isn’t much of any substance in the summary. You are usually seeking to further pack substance into the summary and do so while fighting the length of the summary. The more substance that you can jam into the summary, the higher the density of the summary.
+
+We can give a name to the substance by saying that we are trying to identify important “entities” within the original content. Those entities might be facts or figures. The entities are said to be anything especially instrumental to the overall meaning of the original content. A hope is to carry over as many of the demonstrative entities as feasible into the summary.
+
+Your summary-making process then is to iteratively devise a summary by starting with a sparse version and then adding more and more entities or substances to increase the density until you reach some desired or suitable end-state. The series of iterations acts as a chain. Each is used to connect to the next. You usually will retain the entities from one version to the next version, and be decidedly adding more of the entities available in the original as you seek to jampack the summary accordingly.
+
+Reflect on the adage of putting five pounds of rocks into a three-pound bag.
+
+Maybe you put one pound of rocks into the three-pound bag at the initial attempt. The bag is considered sparsely populated. There is still room to spare. The density is low. You then put a second pound of rocks into the bag. The density is increasing. The sparseness is lessening. Finally, you put in a third-pound of rocks. You have hit the maximum density and the sparseness has presumably dropped to near zero.
+
+Suppose that the bag can be elongated.
+
+Wonderful, you exclaim, being overjoyed at having more available space. Imagine though that you are going to hand the bag over to someone else. The larger and heavier the bag, the less useful it becomes. The same applies to summaries.
+
+A rule of thumb is that you want to minimize the length or size of the summary, meanwhile maximizing the summarization content. The two factors are often in contention with each other. You are tempted to increase the length to get more substance included. The length being increased will potentially undercut that the summary is supposed to be a summary.
+
+A person might seemingly just go ahead and read the original content if the summary approaches the size of the original material being summarized. The summary isn’t especially a summary anymore at that juncture. Indeed, sometimes a summary turns out to be longer than the original content that is supposedly being summarized.
+
+How can this be, you might be thinking?
+
+The answer has to do with being extractive versus being abstractive.
+
+During the summarization process, you are looking at two possibilities of the content being carried over into the summary. First, you aim to be extractive, primarily extracting key aspects and shoveling those into the summary. Second, you might at times be abstractive, whereby you go beyond the words themselves of the original content and begin to reinterpret or perhaps elaborate beyond what the summary per se has to say.
+
+A purely extractive summary is more likely to be construed as a fair and balanced reflection of the original content. You are not changing things up. You are only carrying the essentials (entities) over into the summary. The problem with an abstractive summary is that you are potentially changing up things and will be biasing or in some manner altering the meaning found within the original content being summarized. The danger is that this kind of summary is no longer seen as fair and balanced, and instead is based on the perceptions and opinions of the summarizer.
+
+In a sense, if you want an unadorned straightforward summary, you are better off with an extractive summary. If you want an adorned or embellished summary, that goes beyond the words presented in the original source, you might seek an abstractive summary. The thing is, the abstractive summary might no longer be an apt reflection of the original source. That is also how the summary might become longer than the original since the embellishments can possibly increase the size of things and you could find yourself looking at a summary that is much longer than the source used for the summary.
+
+A quick lighthearted recap of the aforementioned characteristics of summaries might be useful here.
+
+Here it is. I am reminded of the somewhat funny anecdote about a student in school who is trying to write an essay that summarizes a topic such as the life and times of Abraham Lincoln. Envision that the student hasn’t read the article assigned about the history of Lincoln. The student is in a panic because they are supposed to write a summary based on the reading and they haven’t read the piece at all.
+
+What does the student do?
+
+They wing it.
+
+Their essay starts by saying that Abraham Lincoln was an important person in history. Lincoln did great things, the essay says. People looked up to Lincoln. The essay raves about Lincoln being a super-duper. The student looks at their essay so far and realizes that the teacher is bound to detect that something is amiss. The essay doesn’t have a whit of substance or entities that are particularly notable regarding Lincoln, such as currently lacking to mention Lincoln as being a U.S. president or anything about the Civil War, and so on.
+
+The student will get nailed on the sparseness of the essay. It is abundantly sparse. They had better increase the density or they risk getting an F grade on the essay. So, the student adds the date of birth of Lincoln, the date of Lincoln’s assassination, and a few other facts and figures that are readily found in the original assigned article. The student is refining the summary. The first version is being chained across to a more elaborated version. The essay is increasing in density.
+
+I suppose we might grumble that the student is doing this in the worst of ways. The presumed purpose was for the student to study the article and learn something about Lincoln. After doing so, the essay or summary was only a means of showcasing what the student learned. Instead, the student is doing a somewhat rote method of merely aiming to produce an essay to get the assignment done.
+
+Well, I won’t delve any further into the plight of this stressed-out student and whether they were right or wrong in their endeavors. Some might be sympathetic to the plight of the student, perhaps having been in similar late-night homework-neglected (overworked?) dire circumstances when in school. Others might be upset that the student presumably is either lazy or not taking seriously the valued nature of the assignment.
+
+We shall move on.
+
+A summary of the key ideas introduced by my elaboration about summary-making is this:
+
+Extractive summary: A type of summary that tends to focus on extracting content from a source rather than embellishing the content (just the facts and nothing but the facts, as it were).
+Abstractive summary: A type of summary that tends to embellish content from the source and might intentionally or inadvertently veer by introducing additional meaning or interpretation into the budding summary.
+Entity: A substantive element such as facts or figures that exist in a source and that might be warranted for carryover into a summary.
+Sparse: A summary that lacks entities as per a relative ratio of the size of the summary versus the number of entities included.
+Density: An indication or ratio of the number of entities per the size of the summary and we usually aim to have a high density for a seemingly well-done summary.
+Chain: A series of iterative attempts at deriving a summary for which the entities are usually carried over from iteration to iteration.
+Here’s what we’ll cover next.
+
+I’ve ably prepared you for being able to leverage these summary-making precepts when using generative AI, especially by invoking a Chain-of-Density prompt engineering approach. I will explain what Chain-of-Density consists of. Examples will be shown.
+
+Before I dive into my in-depth exploration of this vital topic, let’s make sure we are all on the same page when it comes to the foundations of prompt engineering and generative AI. Doing so will put us all on an even keel.
+
+Prompt Engineering Is A Cornerstone For Generative AI
+
+As a quick backgrounder, prompt engineering or also referred to as prompt design is a rapidly evolving realm and is vital to effectively and efficiently using generative AI or the use of large language models (LLMs). Anyone using generative AI such as the widely and wildly popular ChatGPT by AI maker OpenAI, or akin AI such as GPT-4 (OpenAI), Bard (Google), Claude 2 (Anthropic), etc. ought to be paying close attention to the latest innovations for crafting viable and pragmatic prompts.
+
+Moving on, here’s a bold statement that pretty much has become a veritable golden rule these days:
+
+The use of generative AI can altogether succeed or fail based on the prompt that you enter.
+If you provide a prompt that is poorly composed, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being demonstrably specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+AI Ethics and AI Law also stridently enter into the prompt engineering domain. For example, whatever prompt you opt to compose can directly or inadvertently elicit or foster the potential of generative AI to produce essays and interactions that imbue untoward biases, errors, falsehoods, glitches, and even so-called AI hallucinations (I do not favor the catchphrase of AI hallucinations, though it has admittedly tremendous stickiness in the media; here’s my take on AI hallucinations at the link here).
+
+There is also a marked chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of generative AI. Regarding prompt engineering, there are likely going to be heated debates over putting boundaries around the kinds of prompts you can use. This might include requiring AI makers to filter and prevent certain presumed inappropriate or unsuitable prompts, a cringe-worthy issue for some that borders on free speech considerations. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+With the above as an overarching perspective, we are ready to jump into today’s discussion.
+
+Using Generative AI Prompting To Get Summaries Generated
+
+Making summaries in generative AI is easy-peasy.
+
+You can use a prompt as simple as this to do so:
+
+“Summarize the article that follows.”
+At that juncture, you would either directly include the article in the same prompt, or you could hit a return and the generative AI would likely say something like it is ready to summarize the article and please go ahead and provide the article in your next prompt.
+
+Voila, shortly thereafter you will have a nice new gleaning summary that has been generated by the AI app.
+
+I must caution you though that as I have repeatedly noted in my training classes about generative AI and prompt engineering, the results coming out of generative AI are like a box of chocolates. You never know what you might get.
+
+A summary generated by the AI could be amazing and spot-on. That is the happy face scenario. The summary might be atrocious and barely a summary of any value. That is the sad face scenario. The good news is that most of the time the odds are that the summary will be relatively well done. Summarizing is an intrinsic capability of most generative AI apps and exploits the impressive pattern-matching computational facilities therein.
+
+If you don’t like the summary or believe it could use some additional punching up, you can merely say so in your subsequent prompts. You tell the AI that perhaps the summary is not long enough. Or maybe the summary is overly long. The summary might be bereft of substance from the source of the summary. And so on.
+
+The AI app won’t complain. No whining will usually occur. The generative AI will comply and redo the summary. This can occur as much as you like. Unlike when dealing with a human who might have written a summary, you can endlessly prod and poke about revising the summary when using generative AI.
+
+How can you judge a summary?
+
+A common and obvious approach is to read the source material and compare it to the summary. You would want to see that whatever you consider to be significant was carried over into the summary. Another encompassed facet would be whether the carryover was faithful or opted to embellish or change up the meaning of the source.
+
+One confusion that sometimes gets in the way of assessing a summary is the matter of summarization versus simplification. Do not unduly equate those two. A summary doesn’t necessarily have to be a simplification. It could be that whatever complexity existed in the source is going to also come across in the summary. Simplification is a type of transformation involving simplifying one thing to be more readily accessible or understandable. A summary doesn’t have to be a simplification.
+
+If you want the summary to be simplified, you will usually need to ask for that to be undertaken. Remember though that I said that the generative AI is like a box of chocolates, such that the AI might do a simplification as part of the summarization. You might not have asked for a simplification outright. Nonetheless, the AI opted to go that path.
+
+All right, you probably already realized that generative AI by default has the capability to generate summaries and usually does a reasonably sound job in doing so. There is a chance that you might need to finesse things and do a series of prompts to guide the AI toward a summary that meets your needs.
+
+Seems like that is the end of the story.
+
+But you would be mistaken in believing so.
+
+We can try to ramp up the summary capabilities of generative AI. Let’s take the usual ad hoc means of doing so and turn it into something systematic and reusable. A devoted technique would be greatly advantageous for your prompt engineering skillset and can improve the odds of getting consistently buffo summaries.
+
+In a recent research paper entitled “From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting” by Griffin Adams, Alexander R. Fabbri, Faisal Ladhak, Eric Lehman, and Noémie Elhadad, posted online on September 8, 2023, the researchers present a new technique they have coined as Chain-of-Density (CoD).
+
+Here are some salient excerpts from the research paper:
+
+“Selecting the ‘right’ amount of information to include in a summary is a difficult task. A good summary should be detailed and entity-centric without being overly dense and hard to follow. To better understand this tradeoff, we solicit increasingly dense GPT-4 summaries with what we refer to as a “Chain of Density” (CoD) prompt.”
+“Specifically, GPT-4 generates an initial entity sparse summary before iteratively incorporating missing salient entities without increasing the length. Summaries generated by CoD are more abstractive, exhibit more fusion, and have less of a lead bias than GPT-4 summaries generated by a vanilla prompt.”
+The researchers opted to use GPT-4. That being said, just about any generative AI app can similarly be used. In a moment, I will be showing you examples based on using ChatGPT. The fundamentals of the technique remain about the same.
+
+In the research paper, the research structure consisted of summarizing articles of a general nature that were culled from a news database:
+
+“We conduct a human preference study on 100 CNN DailyMail articles and find that that humans prefer GPT-4 summaries that are more dense than those generated by a vanilla prompt and almost as dense as human written summaries. Qualitative analysis supports the notion that there exists a tradeoff between informativeness and readability. 500 annotated CoD summaries, as well as an extra 5,000 unannotated summaries, are freely available on HuggingFace.”
+A few points are worth noting about the above.
+
+First, they reviewed the generated summaries to try and assess whether the technique derived better summaries than a conventional vanilla prompt (similar to the prompt I showed you in the prior subsection herein), and whether they were as good as human-derived summaries. They conclude that indeed the CoD technique performed well.
+
+As an aside, make sure to read the details of the study if you want to see how they did those reviews. Any experimental setting can impact how outcomes arise and if you are thinking of doing akin experiments you might find it useful to explore what approach this research opted to undertake.
+
+Second, they ran into the usual conundrum about summarization whereby there are tradeoffs between informational compactness and readability. In short, you might get yourself a wicked summary but it is so jampacked that humans reading the summary are left with a foul taste in their mouths. A summary can lose steam if it is at the extremes of density.
+
+Third, for those of you who want to do similar research, the researchers kindly have put together a set of annotated CoD summaries and unannotated summaries for you to freely make use of. One of the biggest hurdles for doing generative AI research involves collecting data for your experimentation. Having a ready-made dataset can speed up the research effort, reduce costs, and allow for replicated studies.
+
+How does the Chain-of-Density technique work?
+
+They used a chain or series of iterative summaries that are launched by a prompt and the generative AI is told to incrementally or iteratively improve or make denser each summary based on stipulations given by the prompt. I trust that sounds familiar as per my earlier discussion on such matters.
+
+I will show the prompt in a second.
+
+I know you are eager to see it.
+
+Just first a quick overview by the researchers in their paper about the density aspects:
+
+“Yet, how dense is an open question. A summary is uninformative if it contains insufficient detail. If it contains too much information, however, it can become difficult to follow without having to increase the overall length. Conveying more information subject to a fixed token budget requires a combination of abstraction, compression, and fusion. There is a limit to how much space can be made for additional information before becoming illegible or even factually incorrect.”
+And, as stated in the paper, they went the route of starting with a sparse summary and having it iteratively infused with more and more entities:
+
+“In this paper, we seek to identify this limit by soliciting human preferences on a set of increasingly dense summaries produced by GPT-4. Treating entities, and, in particular, the average number of entities per token, as a proxy for density, we generate an initial, entity-sparse summary. Then, we iteratively identify and fuse 1-3 missing entities from the previous summary without increasing the overall length (5x overall). Each summary has a higher ratio of entities to tokens than the previous one.”
+Note that they opted to keep the length of the summary as a static size. This in a sense forces the AI app to stay within those stipulated bounds. If you want to use a three-pound bag, you make it so, and the AI app is not to try and be tricky by sneakily increasing the size. I will revisit this assumption later on.
+
+We shall now take a look at the prompt they used.
+
+I applaud researchers who show their prompts. If a study doesn’t reveal the prompts used, we are left in the dark. We have no means to judiciously weigh the results that the experimenters produced. Furthermore, the lack of showing prompts leaves practitioners in the lurch since they have nothing tangible to try and incorporate into their prompt engineering repertoire.
+
+Their utterly generic prompt that was used as a basis for comparison with this:
+
+“Article: {{ ARTICLE}}”
+“Write a VERY short summary of the Article. Do not exceed 70 words.”
+As is typical, the prompt asks that a summary be produced, emphasizing that it should be very short. Be forewarned that saying something vague such as being a very short summary is going to get you all kinds of wild variations in size. In this case, they immediately stated that the size of the summary should not exceed 70 words. That’s what they wanted in this particular setting.
+
+Next, their Chain-of-Density prompt consisted of two major parts. One part describes the iterative chaining process. The second part describes the guidelines that they want the generative AI to abide by.
+
+Here is the first part of their CoD prompt:
+
+“Article: {{ ARTICLE}}”
+“You will generate increasingly concise, entity-dense summaries of the Article that I will next provide to you.”
+“Repeat the following 2 steps 5 times.”
+“Step 1. Identify 1-3 informative Entities (‘; ‘ delimited) from the Article which are missing from the previously generated summary.”
+“Step 2. Write a new, denser summary of identical length which covers every entity and detail from the previous summary plus the Missing Entities.”
+“A Missing Entity is:”
+“- Relevant: to the main story.”
+“- Specific: descriptive yet concise (5 words or fewer).”
+“- Novel: not in the previous summary.”
+“- Faithful: present in the Article.”
+“- Anywhere: located anywhere in the Article.”
+I hope you can discern how this prompt tells the AI app to do a series of iterations when producing a summary. In this instance, they have said that they want two steps to be undertaken, doing so each time for a total of five iterations. The two steps consist of identifying some entities within the article that are not yet in the summary. They asked to find one to three such entities each time. The second step involves putting those “missing entities” into the summary.
+
+To clarify what kinds of entities they want the AI to find, they refer to the entities as missing entities meaning that they are currently entities missing from the iteratively produced summary. Those would be entities that are missing so far and that must meet the requirements of being relevant, specific, novel, faithful, and can be anywhere in the source being summarized.
+
+They also provide these guidelines as part of the prompt given to the AI app:
+
+“Guidelines:”
+“The first summary should be long (4-5 sentences, approximately 80 words) yet highly non-specific, containing little information beyond the entities marked as missing. Use overly verbose language and fillers (e.g., ‘this article discusses’) to reach approximately 80 words.”
+“Make every word count: re-write the previous summary to improve flow and make space for additional entities.”
+“Make space with fusion, compression, and removal of uninformative phrases like ‘this article discusses’.”
+“The summaries should become highly dense and concise yet self-contained, e.g., easily understood without the Article.”
+“Missing entities can appear anywhere in the new summary.”
+“Never drop entities from the previous summary. If space cannot be made, add fewer new entities.”
+“Remember, use the exact same number of words for each summary.”
+“Answer in JSON. The JSON should be a list (length 5) of dictionaries whose keys are ‘Missing_Entities’ and ‘Denser_Summary’.”
+Note that the guidelines stipulate that the initial summary should be about 80 words in size and consist of four to five sentences. This is how they did their experiment. You can of course make use of other parameters as suitable for a given summary situation at hand.
+
+The guidelines also direct the AI app to be careful and make every word count. The AI is told to aim for a high density. This is a prudent indication.
+
+An especially restrictive guideline is that entities cannot be dropped out of subsequent summaries during the iterative process. You can say that this is good because it makes sure that things don’t disappear throughout the iterations. You can also say that this might be a bit undermining if there is a chance that better entities could be fit into the summary that might now have less preferable entities as a carryover from a prior iteration (you might be willing to drop out lesser entities for greater entities, rather than being forced into a legacy carryover based on earlier guesses).
+
+This is a key tradeoff of how to conduct summarization.
+
+Devising Your Prompting Template For Summarization
+
+I made use of the CoD style prompt via a series of ad hoc experiments using ChatGPT for doing akin summarizations. They worked out pretty well. I’ll show you some in the next section.
+
+By the way, I didn’t use precisely the same wording and decided to play with things to see what impact different wording might have. There is a lot of flexibility in how you might word such instructions. Also, keep in mind that every generative AI app might react differently to a given prompt. Even the same generative AI app can react differently since there is a probabilistic and statistical variation embedded into the computational pattern-matching mechanisms.
+
+Here are ten crucial parameters that I came up with and can be chosen by you as desired when undertaking this style of prompting strategy:
+
+(1) Iterations. You specify the number of iterations to generate until a final summary is attained (the example stipulates 5 iterations currently; I tried less and tried more).
+(2) Words size. You specify the size of the desired summary in words (the example stipulates 80 words currently; I tried less and tried more).
+(3) Number of Sentences. You specify the size of the initial iterated summary size in terms of the number of sentences (the example stipulates 4-5 sentences currently; I tried less and tried more).
+(4) Persistence of Entities. Stipulates to keep entities persistent and carried over into each subsequent iteration (versus allowing for prioritizing or cherry-picking during generation).
+(5) Variability. All iterated summaries are capped at the same size in the number of words (versus allowing for expansion if suitable).
+(6) Number of Missing. The number of missing entities to be found during each iteration (stipulates 1 to 3 currently; I tried less and tried more).
+(7) Definitional Settings. Defines missing entities via a set of short definitions (stipulates these five of Relevant, Specific, Novel, Faithful, Anywhere; could redefine, could add more, could remove some; I removed some and added some).
+(8) Showcasing. Doesn’t explicitly ask to display each of the iterated summaries (ambiguous as to showcasing; versus explicitly asking to see each iteration).
+(9) Explaining. Doesn’t ask for an explanation of how summaries were derived (versus requiring an explanation of how each summary was derived and the differences between them).
+(10) Self-Rating. Doesn’t ask for a rating of the summaries or final summary (versus requiring that a self-rating be ascertained and displayed).
+Those last three of my above-listed parameters have to do with telling the generative AI to showcase each iterated summary, explain the basis, and do a self-rating of each iterated summary.
+
+I explicitly asked for those details so that I could gauge the impact of playing with the various other parameters. On a daily basis, I doubt you would want all of that added verbiage. It would be seemingly overly verbose. I did find the added indications quite telling and valuable when first determining how to best use this approach.
+
+You might want to try the same.
+
+Setting The Stage For A Close Look At Chain-of-Density
+
+I thought you might like to see some examples associated with using the Chain-of-Density approach.
+
+Am I right?
+
+I hope so.
+
+Furthermore, I decided that some plainly simple legal-domain examples might be interesting, informative, and viable to use when exploring the Chain-of-Density prompting technique.
+
+Before we get into the weeds, please realize that the research study that I’ve been discussing involved the summarization of general news articles. That is a suitable selection since generative AI is principally data-trained across the board and not especially honed to a specific domain. You would be safest to stick with general topics and not try to use conventional generative AI for domain-specific topics unless you’ve done something of a customized nature to try and get the AI up-to-speed in that desired domain.
+
+I have previously shown my honing of generative AI to the legal domain, see the link here and the link here, just to name a few such analyses regarding AI applied to the legal realm. Let me say this in the loudest and clearest of terms — you should be extremely cautious when trying to apply generative AI to specific domains for which the generative AI has not had additional dedicated data training accordingly. Two lawyers found out about this the hard way when using conventional ChatGPT for legal tasks and they got into quite hot water for doing so (see my analysis at the link here).
+
+Anyway, here’s what I did for this CoD exploration.
+
+I wanted to find some data that was already readily available and that had a legalese element to it. Right away, I thought of the now classic paper from long ago (the year 2019, which in AI years is a near lifetime!), entitled “Plain English Summarization of Contracts” by Laura Manor and Junyi Jessy Li, Proceedings of the Natural Legal Language Processing Workshop 2019, Association for Computational Linguistics.
+
+They examined licensing agreements that you sign up for or that you automatically accept whenever you visit various websites or play online games. I would venture that almost no one actually reads those licensing agreements. You ought to. The problem is that you are agreeing to things that you don’t even know what you’ve agreed to do, or not do. You are spinning the roulette wheel that there isn’t something in the licensing that is going to get you into trouble. Sheepishly, shamefully, we all do it. We are all at risk.
+
+Maybe there is a light at the end of that tunnel.
+
+Suppose that the legalese could be summarized in a manner that would be easier for you to comprehend. The idea is that people might pay attention to licensing agreements and be more circumspect if the often voluminous and legally imposing narratives were summarized and perhaps translated into plain language.
+
+The study by these authors sought to craft a dataset of licensing agreements along with human-derived summaries. Researchers who wanted to subsequently test out generative AI or any kind of AI that might do summaries could readily make use of the dataset.
+
+That’s me!
+
+Here is what the authors indicated they did (my selected excerpts):
+
+“Unilateral legal contracts, such as terms of service, play a substantial role in modern digital life. However, few read these documents before accepting the terms within, as they are too long and the language too complicated.”
+“We propose the task of summarizing such legal documents in plain English, which would enable users to have a better understanding of the terms they are accepting. We propose an initial dataset of legal text snippets paired with summaries written in plain English.”
+“We verify the quality of these summaries manually, and show that they involve heavy abstraction, compression, and simplification. Initial experiments show that unsupervised extractive summarization methods do not perform well on this task due to the level of abstraction and style differences.”
+I tried out several snippets of licensing agreements or terms of service, along with the human-derived best summary included. I aimed to use ChatGPT to do a Chain-of-Density summarization, playing with variants of the prompting technique, and do so by summarizing the licensing agreement snippets.
+
+A basis for comparison to what ChatGPT had to say could be made to the human-derived best summary in the dataset. Plus, I used my own noggin to do the comparisons too.
+
+I only have space here in today’s column to cover one such example. I am working on a potential follow-up encompassing a more detailed exposition, so keep your eyes out for that later coverage. Let’s focus here on one notably intriguing and useful example.
+
+This is an original snippet of a licensing agreement as available by the authors:
+
+Licensing snippet: “By using our Services, you are agreeing to these Terms, our Trainer Guidelines, and our Privacy Policy. If you are the parent or legal guardian of a child under the age of 13 (the “Parent”), you are agreeing to these Terms on behalf of yourself and your child(ren) who are authorized to use the Services pursuant to these Terms and in our Privacy Policy. If you don’t agree to these Terms, our Trainer Guidelines, and our Privacy Policy, do not use the Services.”
+Mull that over.
+
+Here is the human-derived summary that was obtained:
+
+Human-derived summary: “By playing this game, you agree to these terms. If you're under 13 and playing, your parent/guardian agrees on your behalf.”
+The human-derived summary is certainly short and seemingly in plain language. But, it is also rather wanting, if you give it a close look.
+
+I’ll explain some key problems with it.
+
+You might be tempted to proclaim that the summary is admirably short, coming in at around 20 words in size versus the 4x larger sized 80+ words of the source, and thus there is only so much room to squeeze in things if you want to be succinct. However, a summary is going to be problematic if it omits crucial elements (entities) or potentially misstates or misinterprets what is indicated in the original (extractive versus abstractive). This is especially so if we could get those points included or straightened out, and if doing so could still be done rather succinctly (either in the same 20 words or nearly in that same range).
+
+Here are some of the particularly worrying concerns about this particular human-derived summary:
+
+Major omission: The human-derived summary completely omits mentioning an important keystone, namely that the source essentially warns or urges you to not proceed ahead if you do not agree with the stated provisions (per the last sentence of the source content shown). A smarmy view would be that such a realization is obvious and ergo doesn’t need to be in the derived summary, but that is arguably imprudent to omit such a vital proviso. Undoubtedly, some or many would most certainly be caught unawares by not seeing this provision explicitly mentioned in the summary.
+Possible major misinterpretation: Says “Terms” in the source, meanwhile ambiguously states “terms” in lower case during the summary (are they the same?), plus this phrasing overlooks indicating that the original content also mentioned separately and distinctly both the Trainer Guidelines and Privacy Policy (unless you try to argue that they are all blended into “terms” though this is highly debatable and confounding).
+Possible misdirection: Says in the summary “by playing this game” which could potentially be notably different from the original stipulating “using our Services” (wherein the Services could encompass more than just the particular game being used at the time).
+Possible miscommunication: Says in the summary “your parent/guardian agrees on your behalf” but this is somewhat misleading in the sense that the parent/guardian would have to choose to agree and would also be binding to themselves and the child.
+I picked this example because it has some prominent lessons to be learned.
+
+First, just because a human does a summary doesn’t mean that the summary will be any good or perhaps not the best that the summary could potentially be. I mention this due to the likely retort by some that you should always use a human to devise a summary rather than AI, believing that the human will always do a better job. That is not necessarily the case.
+
+Second, it might be prudent to consider using generative AI to do a summary and then have a human refine the summary. The advantage is that the human is potentially going to expend much less effort than having to do a summary from scratch. That won’t always be the case because it could be that the AI-devised summary is totally off-base and the human will be doing more work than if they had started with a blank slate. I would dare say that a reasonably good generative AI is likely to produce a reasonably good summary and thus not require a human refiner to overwork the result.
+
+Third, in a domain such as the law, trying to summarize legalese is fraught with dangers. You can readily omit something of a legally important effect. You can misstate something. The person relying on the summary is taking a leap of faith that the summary is complete and correct. The famous line about consulting with an attorney is indeed the sensible thing to do whenever a layperson is trying to figure out a legal matter, even in the case of licensing agreements.
+
+You might find of interest that OpenAI squarely warns you to not use ChatGPT or GPT-4 for seeking legal advice and that you should consult with a human attorney, see my coverage on this aspect at the link here. A rather zany fad that has somewhat appeared regarding ChatGPT and other AI apps consists of people who use generative AI to produce legal-looking documents to try and intimidate others into thinking that an attorney has been consulted, see my discussion at the link here. Ugh.
+
+Returning to the CoD prompt technique, I used the above licensing passage as a means of data exploring the Chain-of-Density prompting approach. Let’s see what we can get generative AI to do on this. Can we get the AI to do a better job? Or, will the AI fall down on this summarization task and do worse than the human-derived summary?
+
+Place your bets and get yourself ready for a fun time at the roulette table.
+
+First, I asked ChatGPT to summarize the licensing passage. Keep in mind that I did so with a purely vanilla prompt that had no specific instructions or guidelines, and here’s what I got:
+
+“This passage outlines the terms of service for using a particular set of services. It requires users to agree to these terms, as well as abide by trainer guidelines and a privacy policy. If a user is a parent or legal guardian of a child under the age of 13, they are also bound by these terms on behalf of both themselves and their authorized children. Users who do not agree to these terms, trainer guidelines, and the privacy policy are advised not to use the services.”
+I’d say this was a dud or at least a letdown of a summary.
+
+The size in words is nearly the same as the source material. To some degree, you could also argue that the summary proffers a somewhat simplification of the source, though I did not explicitly ask for a simplification. All in all, we can applaud the AI app for having complied with the request, though the summary is not especially fruitful.
+
+I should bring up an allied factor. In this case, the source passage is only about 80 words in size. When using much larger narratives, the summary of a straight-ahead nature might be more useful. For example, I tried a different licensing snippet of about 500 words and got a summary of about 100 words. I found that summary useful since it covered the material in one-fifth less space.
+
+The size of the source matters heavily when considering summarizations. I will also add that you might not be able to summarize rather lengthy source material. Most of the generative AI apps have size limitations known as context length constraints. You cannot just feed an entire encyclopedia into generative AI and ask for a summary. The length goes over what is currently permitted. There are tricks to cope with this, and you can expect that ongoing advancements to generative AI will increase the size limits, see my coverage at the link here.
+
+Getting back to the matter at hand, I told ChatGPT to do a tighter job on the summary of the licensing agreement passage. I didn’t crow about the length. I merely asked to have the summary made tighter in a shorter length (no specification of the size that I wanted).
+
+Here’s what I got:
+
+“This passage states that by using the services, users agree to its terms, trainer guidelines, and privacy policy. Parents or legal guardians are also bound by these terms for themselves and their children under 13. Non-agreement means users should not use the services.”
+I kind of liked this summary that ChatGPT derived. The length is about 40 words, so roughly half the size of the source. The summary includes the things that I mentioned earlier that were missing in the human-derived summary. I would rate this summary better than the human-derived one.
+
+Can we do better?
+
+Let’s try the Chain-of-Density technique.
+
+I decided to make things “fair” by putting the size limit of the summaries at 40 words, ergo matching the above version that was derived by ChatGPT without any indication by me regarding the size. This will allow an apples-to-apples comparison. I also started a new conversation so that the prior effort to do the summary of the passage would not get mingled into the CoD directives.
+
+My prompt asked too that ChatGPT should show each of the iterated summaries. Here then are the five iterated summaries:
+
+“Summary 1: This article discusses terms and policies for using our services. Parents are responsible for agreeing on behalf of their children under 13. If you disagree, avoid using our services.”
+“Summary 2: Agree to our terms, Trainer Guidelines, and Privacy Policy when using our services. Parents represent themselves and their under-13 children. Avoid our services if you disagree.”
+“Summary 3: Use our services? You agree to our Terms, Trainer Guidelines, and Privacy Policy. Parents accept for themselves and their under-13 children. Disagreement means avoiding our services.”
+“Summary 4: Agree to Terms, Trainer Guidelines, Privacy Policy using our services. Parents represent selves and under-13 children. Avoid services if you disagree.”
+“Summary 5: Agree to Terms, Trainer Guidelines, Privacy Policy to use our services. Parents represent themselves and under-13 children. Disagree? Avoid our services.”
+The first summary is labeled as Summary 1 and would be the summary that is the first shot at doing a CoD series of summaries. You’ll notice that this initial summary contains the lingo of “this article discusses” which was part of the templated instructions for the CoD prompt.
+
+Further, note that the first summary has omitted the aspects about the Trainer Guidelines and the Privacy Policy. This is what the human-derived summary did too. In the case of the generative AI, it was essentially following orders and had been limited to just one to three entities for the first round.
+
+The second summary, labeled as Summary 2, does include those entities. All in all, this second summary seems pretty good.
+
+The third summary almost seemed to reach for a bit of tomfoolery. The flavorful question about using the services was not part of the source and seems to be an attempt to craft a more engaging summary. The fourth summary goes back to the roots and seems akin to the second summary, though the wording doesn’t flow as readily. Finally, the fifth summary is okay, but I still personally prefer the second summary.
+
+You might find of interest that I had ChatGPT do a self-rating of the summaries that the AI app produced, and here’s what the response was:
+
+“Self-Rating:”
+“Summary 1: 7/10”
+“Summary 2: 8/10”
+“Summary 3: 9/10”
+“Summary 4: 9/10”
+“Summary 5: 9/10”
+I agree that the first summary deserved a 7 out of 10 (this was a rating scale concocted by ChatGPT, which I had left open-ended for ChatGPT to ascertain). The second summary got an 8, though I would suggest it is a 9 if the others that follow are also 9s. Maybe we can agree to disagree on this, me and ChatGPT.
+
+I do give ChatGPT credit for not declaring that the final summary was a 10. This could happen in the sense that just as humans might overinflate their work, we can expect that ChatGPT might do the same. This is not due to sentience. It is due to pattern-matching on vast amounts of online text for which humans do that kind of puffery all the time.
+
+A few quick lessons from this are that sometimes a summary can be in the eye of the beholder. There is a point at which a summary rearranges items but does not particularly enhance the summary itself. I believe this might have occurred with my request in this case.
+
+Another lesson is that since the source had so few entities to play with, there is only so much that can be done to derive a summary. In my longer experiments that consisted of hundreds and thousands of words, there is much more to be dealt with. This, in turn, radically impacts the nature and quality of the summary produced.
+
+My example with the brief licensing agreement passage is quite short in size and sparse in the number of entities contained within. I would like to show you much longer examples, but the size limitation for today’s column is already at the allowed range. As mentioned earlier, if readers express interest, I can do a follow-up showcasing larger examples that are more robust.
+
+I am particularly pursuing the CoD as an instrumental approach in the legal domain. This appears to have especially worthwhile benefits for legal professionals. Others have noticed this too.
+
+Esteemed industry and scholarly colleague, Dazza Greenwood, founder of law.MIT.edu (research) and CIVICS.com (consultancy), recently posted online this notable insight:
+
+“I think this approach holds promise for further optimizing the summarization of large, complex legal documents and other legal materials where density is challenging. CoD's controlled iterative process could help legal professionals optimize the signal-to-noise ratio in summaries of contracts, case filings, discovery materials, and more. By starting sparse and incrementally adding high-value named entities, dates, locations, and other terms of art, CoD prompts may generate summaries that accurately capture the legal essence while maintaining clarity.”
+I wholeheartedly concur.
+
+Conclusion
+
+Time now to do a recap and provide final comments. I assuredly recommend that you include Chain-of-Density in your prompt engineering skillset. That’s the bottom line of the veracity of the technique.
+
+I give it two thumbs up.
+
+Play around with the capability. Be ready to use it when the situation seems suitable to do so. Don’t wait until the last minute and struggle with this latest prompting technique at the time of need. Do your homework beforehand (no last-minute essay summaries about Abraham Lincoln).
+
+In one sense, the CoD is an elephant gun. You should use this technique on larger-sized source materials and when the volume of entities is relatively high. For smaller-sized source materials, you can just use the plain vanilla summary, followed by a few additional clarification or refinement prompts. No need to shoot an ant with an elephant gun. The same goes for a larger source that has very few entities.
+
+A clever way to use Chain-of-Density would be to improve a prior summary that someone handed to you. There is a chance that the iterative process will make the summary tighter and better. A downside will be that if you don’t have the source that was used for that summary, you are gradually reaching a point of diminishing returns. Also, and perhaps obviously, if you do have the source, you probably don’t need to use the other summary anyway, unless you want to do a comparison and possibly have that aid the summarization process.
+
+One notable concern that you should always have at the top of your mind entails whether the generative AI might encounter an AI hallucination, error, falsehood, bias, glitch, or other malady when trying to generate a summary. The chances of this multi-step process possibly treading into an AI landmine are heightened due to the length of the process, though this is tempered by the seeming fact that when you get generative AI to do chains, such as Chain-of-Thought (see my analysis of the link here), this often seems to keep away the ghosts and goblins. A tradeoff might be occurring internally as the pattern-matching in a mathematical manner becomes more methodical yet also is undertaking more steps than usual.
+
+A final remark for now will give you some reasoned reflective thought.
+
+Here’s the deal. I have started using a similar directed iterative approach in other situations of prompting settings. My claim is that you can use the overarching conception of doing self-improvement iterations in circumstances beyond those of a summarization task. We already know that Chain-of-Thought is handy, along with Skeleton-of-Thought, and other stepwise directives. The Chain-of-Density is similar, though adds some niceties about how to incrementally make improvements.
+
+I’m a mixer and matcher when it comes to prompt engineering.
+
+Be on the lookout for an upcoming column that brings together a slew of other well-known prompting strategies. You either will admire their synergy and beauty in unison, or some might recoil at the Frankenstein appearance (well, don’t let the looks fool you, there are a lot of combinatorial benefits to be had).
+
+That’s about the end of today’s story.
+
+So, in a summary of a size of about 25 words in length, the gist is that Chain-of-Density is great for getting generative AI to do impressive summarization, possibly applicable in other settings too, so use the technique wisely and with aplomb.
+
+Enough said."
