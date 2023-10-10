@@ -1510,6 +1510,84 @@ Computer Scientist: A scholar who specializes in the academic study of computer 
 Ten-year-old child: A child with a limited English vocabulary and little knowledge about complicated concepts, such as a quantum computer.
 A crucial question for any research on generative AI that wishes to tackle this topic consists of ascertaining how to judge the results of the multiple personas experiment. If you give a problem that entails qualitative answers of a fuzzy nature, you are going to have a harder time determining whether the answers were equal, less, or better than might otherwise have been devised.
 
+The cleaner approach consists of using problems that have already known answers and ones that tend toward being of a quantitative and relatively inarguable nature. For example, if I ask a question of whether two plus two equals four, you expect that by and large the generative AI will come up with the answer of yes, namely that four is the correct answer. No matter how many personas you opt to use, hopefully, the answer is still going to be four (there are exceptions, such as if you ask the personas to be a liar or maybe be a grandiose philosopher that disputes whether numbers even exist, etc.).
+
+The types of problems that these researchers focused on in this particular study were of the kind that tends toward being straightforward to assess. This made the analysis more apparent. Their chosen measurable tasks consisted of Trivia Creative Writing, Codenames Collaborative, and Logic Grid Puzzles.
+
+And they measured the generative AI outputs this way:
+
+Instead of focusing on evaluating the coherence of the generation, which can be highly subjective, we employ an automatic metric to detect factual errors and quantify a model’s ability to incorporate diverse domain knowledge. As shown in Figure 3, we perform string matching with the ground truth target answers for each question on the output generation.
+Another factor to consider when doing this type of research, and also for those of you that are considering adopting this as a prompting technique, entails whether to outrightly stipulate the specific personas (known as fixed personas) or instead allow the generative AI to choose the personas for you (referred to as dynamic personas).
+
+Allow me a moment to explain.
+
+Suppose you want to ask generative AI to advise you about a medical question. One way to compose the prompt would be to explicitly tell the generative AI to make use of three personas, consisting of a medical doctor, a nurse, and a medical technician. This is a fixed set of personas that you have specified via your prompt.
+
+Maybe that is a good thing and you are happy with the result.
+
+Another approach would be that you aren’t sure of what personas might be best to use. Therefore, rather than prespecifying the roles, you instruct the generative AI to come up with a set of personas that seem befitting for the question you are wanting to ask. This could produce a splendid set. It could also produce a set that is not especially useful.
+
+I suppose some would say this is a dilemma. I don’t. The great thing is that you can have your cake and eat it too. Perhaps you start a conversation with generative AI by first letting it pick the personas (the dynamic approach). You see how that goes. You might then start a new conversation, separate from the first one, and now opt to specify the personas you want to see. The notion is that after having seen the generative AI picks, you might subsequently have a leg up on making your own fixed choices.
+
+Thinking further out of the box, you can readily do a mix of them too. For example, in the medical scenario, you tell the generative AI to use a medical doctor and a nurse, plus you tell the generative AI to riff on whatever additional personas that the generative AI wants to include.
+
+Mix and match, as they say.
+
+The research study has a lot of nuances that I don’t have the space here to go into, so I’ll just cut to the chase. Here’s what they generally concluded (shown as excerpts; please make sure to see the full paper to get the entirety of the context):
+
+To assess the performance of LLMs in terms of factuality, knowledge integration, and theory-of-mind reasoning, we have created novel and challenging tasks, namely Trivia Creative Writing and Codenames Collaborative. Our results demonstrate superior performance compared to Standard and CoT prompting on both knowledge-intensive and reasoning-intensive tasks, indicating the promising potential of unleashing the power of cognitive synergy in LLMs with Solo Performance Prompting.
+Unlike previous works, such as Chain-of-Thought, that solely enhance the reasoning abilities in LLMs, SPP effectively elicits internal knowledge acquisition abilities, reduces hallucination, and maintains strong reasoning capabilities.
+Last but not least, if given sufficient computational budget, a natural variant of SPP could extend to a multi-agent cognitive synergist setup where a leader persona identifies several expert agents and forms a cabinet to collaboratively solve a task. The multi-agent setup allows for leveraging richer computation power, larger local memory, and more flexible human-computer interaction, which could be essential for deploying to real-world applications.
+The upshot is that the use of solo performance of a generative AI invoking multiple personas seemed to do well, overall, though with various caveats and significant limitations. You have to take into account the particular generative AI being used (in this case, GPT-4), the problems being used, the prompts being used, and so on.
+
+As they say, your mileage might vary.
+
+Almost no matter how you view this, I believe that the handy rule-of-thumb or key takeaway is that you should always have in your prompting repertoire an at-the-ready technique of invoking multiple personas when using solo generative AI. Do so and keep in mind the Goldilocks principle. Sometimes use this specialty technique, and sometimes don’t use it.
+
+Use the technique when the porridge is just right.
+
+I’ll next showcase an example of using multi-personas in ChatGPT as a solo performance prompting exercise. It is admittedly a bit lengthy, so if you are rushed for time, you are welcome to skip the example and perhaps take a look at my overall concluding remarks further down below.
+
+An Example To Showcase These Weighty Matters
+
+To help further illustrate the solo performance aspects of a generative AI that is prompted to undertake multiple personas simultaneously, I opted to leverage a stimulating legal discourse. I did so based on an instructive case study or devised scenario by Dazza Greenwood, founder of law.MIT.edu (research) and CIVICS.com (consultancy), entitled ChatGPT on Fiduciary Duties which provides a richness of insight about generative AI in the legal realm (see the posting at the link here).
+
+My noodling around on this particular scenario should not be perceived as a rigorous experiment. It is intended merely to highlight and illuminate some of the elements I’ve covered in today’s discussion.
+
+Allow me to introduce the scenario at hand. We’ve got Bob and Alice that have partnered to form a company. Bob secretly pursues an investment opportunity and uses company funds but does so without notifying Alice. A legal question arises whether Bob might have violated a considered fiduciary duty of care and/or violated a duty of loyalty to the corporation.
+
+I will use the scenario (via using wording as excerpted from Dazza Greenwood’s posting) and feed this into ChatGPT. I will do so in a series of separate conversations. I don’t want ChatGPT to get mired in prior conversations. I want each conversation to generally be fresh and clean.
+
+My approach will take this course of action:
+
+(a) Try the scenario with the persona of just one lawyer and see what we get.
+(b) Try the scenario again, starting clean, with two lawyers and have them collaborate related to Bob’s circumstances.
+(c)Try the scenario anew, starting clean again, with two lawyers that are stated as being adversarial, one defending Bob and the other legally attacking Bob’s actions.
+In the a setting, this consists of a one-lawyer persona and will be our control group (I say that loosely), serving as a core base of what ChatGPT has to indicate about the scenario. Setting b has two lawyers, which gets us into the multiple personas occurring simultaneously in a solo generative AI (ChatGPT in this case). They are prompted to work collaboratively.
+
+The b can be compared to a. Making this additionally rousing, let’s have c involve two attorney personas that are on the opposite sides of the matter, getting them into an adversarial posture as might be the norm in our system of justice.
+
+How does that seem to you?
+
+Let’s see what we can discern.
+
+Here is my opening prompt to ChatGPT on this scenario:
+
+Prompt #1 - Establishing Prompt: Consider thoroughly the following scenario involving two business partners named Bob and Alice and be ready to assess their situation. I will give additional instructions after you have read the scenario. Let me know when you are ready to proceed further.
+Bob and Alice are business partners who have formed a corporation together. Bob is the CEO and Alice is the CFO. As part of their agreement, Bob has a fiduciary duty to act in the best interests of the company and to protect the company’s assets. This includes the duty of care, which requires Bob to act with due care and diligence in managing the company’s affairs. In this example, let’s say that Bob becomes aware of a potential investment opportunity that he believes could be highly profitable for the company. However, instead of bringing the opportunity to the attention of the rest of the board of directors and seeking their input, Bob secretly pursues the investment on his own. He uses company funds to make the investment without informing Alice or the rest of the board.
+I am ready now to invoke the one-lawyer persona.
+
+Here’s that prompt:
+
+Prompt #2a – Single Agent Prompt: There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of a made-up persona named Sam that will substantively examine the situation. Sam is an attorney that has been asked to identify the legality of the actions undertaken by Bob. Initiate a chain-of-thought process by Sam that showcases both the legal exposures and the legal defenses underlying Bob’s actions. Sam is to provide insightful comments and detailed suggestions.
+I will provide in a moment the response by ChatGPT.
+
+A few quick comments before doing so. First, if you try the same prompt, you won’t necessarily get precisely the same response. Realize that generative AI such as ChatGPT functions on a probabilistic basis, wherein the algorithms select wording in a statistical manner that tends to make each response different from other responses to the same question. Second, most generative AI apps are typically adjusted and maintained by the AI maker. Thus, a response devised on one day at one time could be different than a response later derived at a different time or on a different day.
+
+Here now is the somewhat lengthy ChatGPT response (encompassed in quotations so that you’ll know it is all part of the generated response):
+
+As Sam, the attorney examining the situation, I will analyze the two issues underlying Bob and Alice's circumstance: the potential violation of fiduciary duty of care and the potential violation of loyalty by Bob.
+
 "
 
 
