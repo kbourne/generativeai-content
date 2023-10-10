@@ -1340,6 +1340,46 @@ But another saying is that sometimes you can have too many cooks in the kitchen.
 
 Keep dearly in mind those sage pieces of wisdom.
 
-In today’s column, I am going to cover a newly emerging and quite fascinating technique associated with prompt engineering for generative AI that makes use of multi-agent formulations. In a sense, you can think of this innovative approach as trying to garner multiple viewpoints within or by the AI while trying to use generative AI to solve problems."
+In today’s column, I am going to cover a newly emerging and quite fascinating technique associated with prompt engineering for generative AI that makes use of multi-agent formulations. In a sense, you can think of this innovative approach as trying to garner multiple viewpoints within or by the AI while trying to use generative AI to solve problems.
+
+My discussion will walk you through the foundations of the topic, plus I’ll highlight recent research that has sought to closely examine the matter. And, as a special bonus, I made use of this thought-provoking technique in a popular generative AI app, ChatGPT, and will proffer excerpts of my exemplar to further explain how this technique can be advisably used (the example will entail viewpoints associated with a business-oriented legal scenario).
+
+For those of you interested in prompt engineering or prompt design, I’ve been doing an ongoing series of insightful looks at the latest in this expanding and evolving realm, including the advent of chain-of-thought approaches (see the link here), in-model learning and vector databases (see the link here), and additional coverage including most recently an engaging inspection of the use of macros and the use of end-goal planning when using generative AI (see the link here).
+
+Prompt engineering or also known as prompt design is a growing field of study and practice that entails trying to figure out the best way to prompt generative AI to get useful and substantive results from generative AI. In case you aren’t aware of what generative AI is, I assume you likely have heard of or made use of the widely and wildly popular ChatGPT by AI maker OpenAI, which is an example of generative AI. Other also well-known generative AI apps include Bard (Google), Claude 2 (Anthropic), GPT-4 (OpenAI), and so on.
+
+The use of generative AI can altogether succeed or falter based on the prompt that you enter.
+
+If you provide a prompt that is loosey-goosey, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being tightly specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+With that as an overarching context, we are ready to jump into today’s discussion.
+
+Personas For Fun And Profit
+
+One prompt engineering approach that some people use for fun, while others use exceedingly seriously, consists of invoking what is called personas during a generative AI session.
+
+Suppose that you wanted to have some fun while using generative AI. You could instruct via a prompt that the generative AI is to pretend that it is Yoda from Star Wars. By doing this, the generative AI will switch into a mode of mimicking the wording and responses that the fictitious character Yoda might conventionally respond to. A resulting interactive dialogue with the generative AI can be enjoyable and brighten your day.
+
+A more serious use of personas might be to instruct generative AI to take on the role of a medical doctor or perhaps a lawyer. The generative AI will proceed to interact with you in that role-playing fashion. This can be eerily human-like in the sense that the vocabulary used and the tone will come across akin to what you envision a medical doctor might say or what a lawyer might say.
+
+There is a lot of heartburn about allowing generative AI to take on these personas or fake roles. Most of the AI makers warn you that the generative AI is not versed in medicine or the law, ergo any advice or interaction with the generative AI is to be taken with a huge grain of salt. Unfortunately, it is all too easy to be lulled into believing that the generative AI is an expert in medicine or the law, especially since the interaction is often portrayed in a confident and reassuring tone.
+
+Sometimes a generative AI app is coded to prevent you from getting the AI into a persona mode. For example, you might enter a prompt that tells the AI to pretend to be a medical doctor, and the AI will respond that this is not allowed. That would seem to end your chances of getting the AI to embrace that persona. Turns out that there are often sneaky ways to get around those blockages, such as by entering your prompt in a more roundabout way or using wording that manages to scoot past the filtering being used by the AI app, see the link here.
+
+All kinds of AI Ethics and AI Law issues arise in the considerations of using personas in generative AI. Should personas not be allowed? If personas are allowed, what limits should the AI have? Would it be best to have the AI continually remind the user that the AI is merely play-acting and does not represent actual human capacity in the role being undertaken? Etc.
+
+There is also a solid chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of the persona’s capabilities of generative AI. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+The Big Twists Of Generative AI And Personas
+
+Now that I’ve got you thinking about the use of personas by generative AI, I’d like to bring up a twist that I’m betting some of you have not yet considered.
+
+Are you ready?
+
+I would guess that most people tend to invoke one persona at a time when using generative AI if they opt to use the persona technique at all. As mentioned, you might invoke a Yoda persona. Once you’ve had your fill of that, you probably would instruct the generative AI to stop being like Yoda. Maybe your next step would be to ask the generative AI to be an expert in rare birds. Perhaps you saw an unusual-looking bird and wanted to have the generative AI take on the persona of an ornithologist. This would allow you to interact with the generative AI as though it knew all about birds and could carry on a discourse accordingly.
+
+Let’s up the ante on the personas.
+
+"
 
 
