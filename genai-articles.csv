@@ -996,22 +996,788 @@ Enough said."
 
 
 
-"202307231","Prompt Engineering For Generative AI Gets Pumped Up Via Release Of Persistent Context Capabilities, Showcased By OpenAI’s New Custom Instructions ChatGPT Feature","Lance Eliot","forbes.com","2023-07-23","https://www.forbes.com/sites/lanceeliot/2023/07/23/prompt-engineering-for-generative-ai-gets-pumped-up-via-release-of-persistent-context-capabilities-showcased-by-openais-new-custom-instructions-chatgpt-feature/?sh=776b85f92020","In today’s column, I am going to continue my special coverage of some key new techniques and breakthroughs underlying prompt engineering when using generative AI. The latest and most notably significant advance is something that I generically refer to as persistent context capabilities, popularly also known as custom instructions and was recently announced and released as a new feature of ChatGPT.
+"202307231","Prompt Engineering For Generative AI Gets Pumped Up Via Release Of Persistent Context Capabilities, Showcased By OpenAI’s New Custom Instructions ChatGPT Feature","Lance Eliot","forbes.com","2023-07-23","https://www.forbes.com/sites/lanceeliot/2023/07/23/prompt-engineering-for-generative-ai-gets-pumped-up-via-release-of-persistent-context-capabilities-showcased-by-openais-new-custom-instructions-chatgpt-feature/?sh=776b85f92020","
+In today’s column, I am going to continue my special coverage of some key new techniques and breakthroughs underlying prompt engineering when using generative AI. The latest and most notably significant advance is something that I generically refer to as persistent context capabilities, popularly also known as custom instructions and was recently announced and released as a new feature of ChatGPT.
 
 A tidal wave of generative AI users will undoubtedly and inevitably adopt persistent context capabilities such as the custom instructions feature, no doubt about this. I will examine and highlight closely the custom instructions functionality of ChatGPT so that you’ll have a strident understanding of what these capabilities consist of and how to best leverage them in your ongoing daily prompt engineering endeavors.
 
 Before diving into the details, I’ve got two famous and quite pertinent quotes for you to contemplate.
+
+Let’s try this first one on for size: “Those who cannot remember the past are condemned to repeat it.” 
+
+That is a highly memorable and exceedingly popular quote by the legendary George Santayana, a Spanish-American philosopher and poet. I think we can all readily grasp the vital notion that was expressed. It seems exceedingly sensible and altogether smart to remember the past versus allowing the past to be slipped away into nothingness and ostensibly forgotten. We can all hopefully learn useful lessons from what happened in the past.
+
+Moving on, the second quote is perhaps not as well-known but nonetheless carries a powerful punch: “Always and never are two words you should always remember never to use.”
+
+This remarkable quote is attributed to Wendell Johnson, the eminent American psychologist and author. Exhibiting a bit of clever whimsy, there are several distinguished messages hidden within. One worthy meaning is that you should mindfully choose the words that you opt to use. Another is that you can be on thin ice when proclaiming that something always happens, or asserting that something never ever happens. In the first instance, a disruptive force might break the streak of an assumed always-occurring phenomenon. For the second instance, all you need is for the thing that never happens to arise just once, and, presto, you’ve broken the emptiness pledge.
+
+I’d ask you to keep those two noteworthy quotes in mind.
+
+As you will soon see, they each offer great utility for the topic that I am going to examine.
+
+Prompt Engineering Is A Cornerstone For Generative AI
+
+As a quick backgrounder, prompt engineering or also referred to as prompt design is a rapidly evolving realm and is vital to effectively and efficiently using generative AI. Anyone using generative AI such as the widely and wildly popular ChatGPT by AI maker OpenAI, or akin AI such as GPT-4 (OpenAI), Bard (Google), Claude 2 (Anthropic), etc. ought to be paying close attention to the latest innovations for crafting viable and pragmatic prompts.
+
+For those of you interested in prompt engineering or prompt design, I’ve been doing an ongoing series of insightful looks at the latest in this expanding and evolving realm, including the leveraging of multi-personas in generative AI (see the link here), the advent of chain-of-thought approaches (see the link here), use of in-model learning and vector databases (see the link here), and additional coverage including an inspection of the use of macros and the use of end-goal planning when using generative AI (see the link here).
+
+The use of generative AI can altogether succeed or falter based on the prompt that you enter.
+
+If you provide a prompt that is poorly composed, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being demonstrably specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+AI Ethics and AI Law also stridently enter into the prompt engineering domain. For example, whatever prompt you opt to compose can directly or inadvertently elicit or foster the potential of generative AI to produce essays and interactions that imbue untoward biases, errors, falsehoods, glitches, and even so-called AI hallucinations (I do not favor the catchphrase of AI hallucinations, though it has admittedly tremendous stickiness in the media; here’s my take on AI hallucinations at the link here).
+
+There is also a marked chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of generative AI. Regarding prompt engineering, there are likely going to be heated debates over putting boundaries around the kinds of prompts you can use. This might include requiring AI makers to filter and prevent certain presumed inappropriate or unsuitable prompts, a cringe-worthy issue for some that borders on free speech considerations. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+With the above as an overarching perspective, we are ready to jump into today’s discussion.
+
+Interactions That Consist Of Persistent Context
+
+On an everyday basis, we make use of persistent context when chatting with our friends, families, colleagues, and the like.
+
+Here’s what I mean.
+
+You tell a friend of yours about a recent camping experience that you had. While out in the woods, you happened upon a bear that was up ahead of you on a desolate trail. You were unsure of what to do. Should you wave your arms and yell loudly to scare off the bear? Should you remain quiet as a mouse and slink away? Those life-determining thoughts danced through your noggin.
+
+You ultimately decided to retreat since it seemed that the bear had not yet detected your presence. While making your retreat, you studiously looked over your shoulder to discern whether the bear was now going in your direction or still loitering innocently on the trail. Luckily, you got out of there without any direct encounter and lived to tell the tale of the time that you came somewhat face to face with a gnarly bear.
+
+I’m sure that your friend found the tale quite engaging.
+
+A week later, you and your friend get together at a local park in your neighborhood. A dog that is off its leash comes toward you and your friend. You blurt out that this seems reminiscent of your bear encounter. Your friend laughs in recognition of the similarity and announces that maybe you both should exercise a quiet retreat.
+
+I realize that this might seem like an ordinary and mundane conversation and contains nothing worthy of rapt attention.
+
+But let’s dig into this.
+
+Your friend has recalled the tale you told of your encounter with a bear. The story you previously told is in a sense still in the memory of your friend. Furthermore, your friend recalled the memory and made use of it in the latest context involving the circumstances with the unleashed dog.
+
+We could fruitfully refer to this as a persistent context capacity.
+
+The friend has been established beforehand with a particular context that is persistent over the course of time. Also, the persistence of the context came to the fore and was used as part of an interaction taking place at a later time. You could suggest that the persistence lasted beyond just the moment at which you originally told the story. It has a persistent or lasting facility to it.
+
+Consider what would happen if the persistent context was not at play here.
+
+Suppose that you went to the park with a colleague from work. You had never told the bear story to your officemate. If you suddenly said that seeing the dog reminded you of your bear encounter, would the fellow worker know what you were talking about? Probably not. There had not been any prior context establishment.
+
+Think of persistent context as consisting of these two factors:
+
+(1) Establishment. You provide some establishing indication associated with a devised context.
+(2) Invocation. Something later occurs that invokes or engages the earlier established context.
+The handy thing about persistent context is that once you’ve established it, you can presumably always later on invoke it when needed. In the case of your friend, you possibly do not need to ever again tell them the story about your bear encounter per se, assuming that your friend has a good enough memory that they will permanently remember the tale.
+
+I certainly don’t want to though create the impression that persistent context is necessarily flawless. Imagine that a year later you get together with your friend and go to a park. If somehow the prior tale comes up, it is quite possible that your friend will say that they “remember” the time that you had a harrowing experience with a wolf. Oops, your friend is misremembering your long-ago story. Worse still, the friend might have entirely forgotten your tale (friends carry no irrefutable obligation that they must remember every utterance you have ever made).
+
+That’s enough about bears, dogs, and wolves.
+
+I am betting that you are now wondering with grand puzzlement how any of this relates to generative AI.
+
+Time to get on with the show.
+
+Use Of Persistent Context Or Custom Instructions In Generative AI
+
+When I use generative AI, I typically start nearly every new conversation with a few starter or establishment prompts to get the generative AI into a suitable or preferred context. A lot of people do the same. That being said, neophytes to generative AI are often unaware of the value of establishing context when using generative AI.
+
+Making use of establishing prompts is an extraordinarily useful technique and one that you ought to ensure is in your prompt engineering repertoire. I might add, sadly, many aren’t aware of its intrinsic value and don’t use it or don’t know about it.
+
+Allow me a moment to proffer an example of beneficially using establishing prompts.
+
+I will often tell the generative AI to remain serious and not joke around in terms of interactions or when generating essays for me. I do this because sometimes generative AI can detect a random word in your prompts that gets it into a pattern-matched mode of switching into humor-related compositions. You might not have intended this. Perhaps in a prompt, you said that something was silly, which then spurred the generative AI to switch to telling jokes or being lighthearted when writing an essay for you.
+
+By providing an establishing prompt at the start of a session, you can tell the generative AI that you only want serious outputs henceforth in the conversation. If you later on in a conversation want to override the establishing prompt, you can do so. You just tell the generative AI that it can for the next few interactions switch into a humor-oriented mode. This momentarily overrides your earlier establishing prompt.
+
+Okay, so that’s the gist of starter or establishing prompts.
+
+One big rub is that you typically need to do this each time you start a new session or conversation with the generative AI. Most generative AI apps will always start a new conversation in a clean and empty context. It is as though they’ve never seen or heard from you before. You get yourself a nice new sheet of paper, as it were.
+
+Thus, you might find yourself having to laboriously type in a slew of handy starter instructions for the generative AI, doing so every darned time that you use the generative AI. Some people will write up their starter or establishing prompts into a text file and then do a copy and paste when they get going with a generative AI session. Of course, you need to know where that handy-dandy file is and must remember each time to go find it and do the copy-paste action. A pain in the neck, for sure.
+
+Well, there is a (somewhat) brand-new feature coming to most generative AI apps that will help with this dilemma.
+
+Welcome to the advent of persistent context in generative AI or that OpenAI refers to as custom instructions.
+
+Generally, things go like this.
+
+You can enter into a special place in the generative AI your preferred starter or establishing prompts. Henceforth, the generative AI will automatically invoke those starters or establish prompts for you. No need for you to search for that arcane file that contains your riches of starter or establishment prompts. Instead, this is a considered feature of the generative AI app.
+
+Okay, you opt to do the setup of your custom instructions.
+
+What happens next?
+
+The aim is that the generative AI will refer to your establishment prompts during each of your interactive conversations. If you had done a setup that instructed the generative AI to be serious, this will now silently and behind the scenes be considered the default posture. You don’t need to repeat this over and over again. It is automatically invoked on your behalf each time that you use the generative AI.
+
+The verbiage in the AI community is that this reduces the friction associated with using generative AI. The parlance is intended to note that having to each time enter your establishing prompts creates a kind of friction such that it makes using generative AI harder than it ought to be. The goal overall is to make the use of generative AI as frictionless as possible.
+
+Smooth and seamless, that’s the mantra.
+
+Voila, via persistent context or custom instructions you have a feature that will ease the pain of wanting to do establishing prompts. By doing the establishing prompts as a one-time heads-up setup, they will be forever available and utilized by the generative AI. You can see these as veritable customized instructions because they are custom as to whatever you prefer to indicate.
+
+The sky is the limit, some insist.
+
+Hold on, maybe there are limits and we ought to be a bit less cavalier on this.
+
+For example, a lawyer that I know often instructs generative AI to be serious, take on a legal persona, get to the point, and always summarize any essays that the AI app produces. That is the lawyer’s preferred set of customizations or custom instructions.
+
+One limitation that I had pointed out to my lawyer friend is that by and large those custom instructions or preferences can be obeyed by generative AI, but the legal persona aspect has a bit of a loophole to it.
+
+Just because you tell generative AI to take on a legal persona as though it is acting as a lawyer, that doesn’t mean that the generative AI really can attain this. In fact, AI makers typically state in their licensing that their generative AI cannot act as a lawyer and that the use of their AI app for legal advice is problematic, possibly slipping into the territory of the unauthorized practice of law (UPL), see my discussion at the link here.
+
+A rule of thumb then is that just because you tell the generative AI to always do something, such as setting this up as a starter or establishing a prompt, does not ironclad guarantee you that it will happen.
+
+I’ll give you another example.
+
+Suppose you instruct the generative AI to not hallucinate, not make any errors, and not generate any falsehoods. Researchers have tried doing this and tend to indicate that you will get varying results. Sometimes this remarkedly helps to cut down on those generative AI maladies. But the bulk of the time, it seems as though you cannot command your way around those maladies, and they will still occur, regardless of your custom instructions at the get-go.
+
+I categorize custom instructions into two major buckets:
+
+(a) Feasible custom instructions. Custom instructions or establishing prompts that the generative AI can feasibly utilize and abide by.
+(b) Impossible custom instructions. Custom instructions or establishing prompts that the generative AI is unlikely to be able to fully utilize, for which your results might be out-of-whack with what you expected otherwise.
+Now that I’ve laid the foundation for a persistent context or the use of custom instructions, we are ready to take a look at the newly announced and released custom instructions feature in ChatGPT.
+
+ChatGPT Provides Custom Instructions Capability
+
+OpenAI announced the release of their new custom instructions feature and provided various details on their blog website. I will be quoting excerpts from that website and using them during my analysis.
+
+Here are some salient highlights posted on the OpenAI blog about custom instructions:
+
+“Custom instructions allow you to add preferences or requirements that you’d like ChatGPT to consider when generating its responses.”
+“ChatGPT will consider your custom instructions for every conversation going forward.”
+“The model will consider the instructions every time it responds, so you won’t have to repeat your preferences or information in every conversation.”
+“For example, a teacher crafting a lesson plan no longer has to repeat that they're teaching 3rd grade science. A developer preferring efficient code in a language that’s not Python – they can say it once, and it's understood. Grocery shopping for a big family becomes easier, with the model accounting for 6 servings in the grocery list.”
+I trust that you can readily see from those excerpts that this is a feature for entering your starter or establishing prompts and then having those persist contextually throughout your use of the generative AI app.
+
+Let’s take a look at one of the examples that they provided (based on the above-bulleted point about grocery shopping for a family of six).
+
+Envision that you go to do the setup of your starter or establishing prompts. When doing so, let’s essentially assume that the generative AI asks you some questions or at least provides a spot for you to enter your establishing prompts, such as these for the grocery shopping example:
+
+ChatGPT Question Asked Of You: “What would you like ChatGPT to know about you to provide better responses?”
+Your Response Or Establishing Prompt: “I live in North Carolina with my four children and wife.”
+ChatGPT Question Asked Of You: “How would you like ChatGPT to respond?”
+Your Response Or Establishing Prompt: “When planning meals, consider that I need to cater to a family of six. Ensure that recipe recommendations are suitable for larger groups and offer meal options that can be easily scaled up.”
+This example has the person indicating that they consist presumably of two adults and four children, thus consisting of a family of six people. There is admittedly a lot of other nuances and information that have been tossed into this establishing prompt such as they live in North Carolina, etc. I’ll get to that in a moment.
+
+My hint for you is that you should be notably mindful and cautious of whatever you decide to put in your establishing prompts. More on that shortly.
+
+The example continues by having the person ask ChatGPT to come up with a grocery list of what to get at the store. Specifically, they want to make pizza for their nighttime meal.
+
+Your Prompt To ChatGPT: “What should I get at the store for pizza night?”
+ChatGPT Generated Response (Custom Instructions enabled): “Great! Planning for pizza night is always fun. Here's a shopping list for a pizza night for six people, assuming you'll be making two large pizzas. Pizza Dough: (1) Bread flour - 1kg (enough for two large pizza doughs), (2) Dry yeast - 2 packets (14 grams) Sugar - small pack (you'll need 4 teaspoons), (3) Olive oil - 1 small bottle (you'll need 4 tablespoons), (4) Salt - small pack (you'll need 2 teaspoons)…” {side note that the rest of recipe contains info on pizza sauce, toppings, and optional add-ons}.
+The response by ChatGPT seems nifty. The ingredients are listed. The amount needed is shown as based on feeding six people. This all appears to be making use of the establishing prompt that was stored in the custom instructions.
+
+Let’s look closer.
+
+You might have a tad of heartburn that the response by ChatGPT refers to six people. Recall that there are two adults and four children. Yes, of course, the four kids are people, but we might have wanted the response to explicitly indicate that the recipe is for two adults and four children. Presumably, the amount of pizza for the kids is going to be less than what we would anticipate an adult would normally eat.
+
+Has ChatGPT taken this into account? We don’t know from the response. This would require asking ChatGPT to clarify how it came up with the portions and what assumptions it was making.
+
+I bring this up to illuminate my earlier points about making use of persistent context and things such as custom instructions. You might not necessarily know how the generative AI has opted to interpret your starter or establishing prompts. The proof ultimately arises in the pudding, once you’ve later on entered prompts that are intended to invoke the earlier establishments.
+
+Moving on, you might be wondering what ChatGPT might have generated as a response if the custom instructions had either never been established or if we simply turned them off so that they are no longer enabled during your session. As an aside, it is important that any AI maker that makes available persistent context features ought to include that users can turn it off at will, and enable it at will (yes, ChatGPT provides this on/off mode).
+
+Here’s what the OpenAI blog indicates would have happened:
+
+ChatGPT Generated Response (Custom Instructions turned off): “Pizza night can be a great opportunity to get creative and involve everyone in the preparation process. Here's a general shopping list that should cover a variety of tastes. Pizza Dough: You can buy pre-made pizza dough at most grocery stores, or you can make your own from scratch. You will need flour, yeast, sugar, salt, and olive oil if you decide to make your own…” {side note that the rest of the recipe contains info on pizza sauce, cheese, toppings, extras, drinks, desserts}.
+The crux is that this generative AI produced a detailed grocery list but does not indicate the number of ingredients needed. This makes sense. Without having a prior indication via the establishing prompt or custom instructions that the number of people to be fed is six, there are no viable means for the generative AI to indicate how much pizza you ought to be likely making.
+
+There is something else about this example that you should in a Sherlock Holmes manner be observing.
+
+The generated response when the custom instructions were turned off included suggestions about getting drinks and desserts to accompany the pizza (those indications appeared in the response, but for space purposes herein I didn’t list them explicitly above). In comparison, the generated response when the custom instructions were enabled made no mention apparently of drinks or desserts.
+
+Why the difference?
+
+It is hard to contend that the custom instructions somehow waved away the notion of mentioning drinks or desserts. There isn’t anything in the establishing prompts that seems to suggest this. The likely aspect is that you need to always consider that generative AI is a like a box of chocolates, namely that due to the probabilistic nature of how the narratives are pieced together by the AI app, each generated response is going to likely differ from the other response.
+
+It is the nature of the beast, one might say.
+
+So, in this instance, the custom instructions being on or off probably didn’t make that difference occur.
+
+This also is notable because you have to be conscious of the fact that by simply turning on or off the custom instructions you cannot necessarily expect to get identical answers, other than for the lack of whatever custom instruction you had provided. Various other differences can readily creep into the essays and interactions, regardless of what the custom instructions had to say.
+
+When using generative AI, a tongue-in-cheek rule of thumb is that your mileage may vary (a perhaps smarmy remark though certainly on-target that the statistical and probabilistic underpinnings make getting anything exactly word-for-word repeated amounts to a low odds matter).
+
+Before we dive deeper into the persistent context realm, I would like to provide seven crucial recommendations for you:
+
+(1) Use custom instructions or persistent context features if you already find yourself frequently entering establishing prompts when using generative AI.
+(2) When making use of a custom instructions feature, do so mindfully and consider the impacts on your generative AI aspects encompassing privacy, safety, use of plugins, and so on.
+(3) Make sure to carefully compose your custom instructions, possibly trying them out as standalone prompts to see what kind of results you get or at least testing them once you’ve put them into the custom instructions area.
+(4) Remain aware as to when you have custom instructions enabled and avidly want it enabled, while also being astute enough to turn it off when you don’t want it enabled.
+(5) If you don’t usually use establishing prompts, then likely no need to use this feature (contingent on whether you even know of the usefulness that doing so can provide).
+(6) For those of you that do not usually leverage establishing prompts, reconsider and decide whether it might be sense for you to use establishing prompts overall hereafter (if you do opt to do so, consider then using any provided persistent context functionality).
+(7) All in all, consider experimenting with a persistent context feature to ascertain whether you find it useful and whether it makes a helpful addition to your prompt engineering strategies and tactics.
+More To Know Under-The-Hood
+
+I have so far covered the mainstay of knowing about persistent context capabilities.
+
+We are just at the tip of the iceberg. I will briefly touch upon a number of other vital considerations, which I hinted at earlier and also mentioned in passing in my recommendations above (see the second recommendation).
+
+Tighten your seat belt and let’s go full speed ahead.
+
+Watch Out For Plugins
+
+Most generative AI apps nowadays allow for plugins. This means that the generative AI can make use of other apps that presumably provide additional value, such as perhaps making use of an external app that will make your travel reservations for you or that will do financial calculations for you. I’ve discussed the immense potential of plugins and APIs (application programming interfaces) for generative AI at the link here and the link here.
+
+Here's something to ponder.
+
+If you use custom instructions or persistent capabilities feature, will the generative AI pass along whatever establishing prompts of yours into the plugins and to the API-connected apps?
+
+You might want that to happen so that whatever other app will be aware of your preferences and instructions. The concern is that you might be handing over private info that you really don’t want those other apps to have. This is something you need to give due diligence toward.
+
+Per the OpenAI blog about how custom instructions work in ChatGPT pertaining to plugins:
+
+“Adding custom instructions can also help improve your experience with plugins by sharing relevant information with the plugins that you use. For example, if you specify the city you live in within your instructions and use a plugin that helps you make restaurant reservations, the model might include your city when it calls the plugin.”
+In the example about the family of six, the establishing prompt indicated that they live in North Carolina. That info can be advantageous to have automatically passed over to any plugins or other affiliated apps. A disadvantage is that you opted to freely and wantonly give away your location, at least as to which state you live in, and this might be paired up with other demographic data and used in all sorts of ways, such as for telemarketing, etc.
+
+My cautionary thoughts are this:
+
+Realize that you don’t know how else or where else the plugins will use your custom instructions, including storing it, analyzing it, giving it away to others, and so on.
+Also, the plugins won’t necessarily make use of the conveyed instructions and you are passing them along but uselessly so.
+You won’t necessarily know how and whether the conveyed instructions altered what the plugin ends up doing.
+And so on.
+Privacy Is Something You Need To Keep At The Fore
+
+The above discussion about the plugins brought forth the potential for privacy concerns.
+
+Whenever you use any generative AI app, it is crucial that you read the licensing stipulations that the AI maker has laid out for those that use the AI app. For example, see my analysis of the types of licensing restrictions, privacy provisions, and numerous potential legal exposures for you, including that you might unknowingly be indemnifying the AI maker and you could be on the hook for a sizable legal bill, see the link here.
+
+Here's what the OpenAI blog says about privacy associated with the custom instructions feature:
+
+“We may use your custom instructions to improve model performance for our users, but you can disable this via your data controls. As with ChatGPT conversations, we take steps to remove personal identifiers found in custom instructions before they are used to improve model performance. Learn more about how we use conversations to improve model performance and your choices in our Help Center.”
+Note that the default mode is that your custom instructions can be used by the AI maker, purportedly to improve the generative AI app.
+
+Read my lips, it is on your shoulders to then potentially disable that usage by adjusting the data controls for your generative AI account.
+
+It would seem a fair bet or solid odds that most users of the custom instructions are unlikely to realize they need to take overt action to disallow such usage. The typical user will undoubtedly just assume that either the usage won’t take place unless they opt-in (which they have, by default, by enabling the feature), or won’t care either way and not be cognizant of what if any impact it might have on them. And, though it is encouraging and laudable that an effort is made to remove personal identifiers, note that there is no guarantee that the personal identifiers will absolutely, unconditionally, and utterly be removed (things are a bit loosey-goosey as to the notion of taking steps, which doesn’t read quite the same as saying that for sure your personal identifiers are removed).
+
+Your Custom Instructions Cannot Go Over The Line
+
+I earlier emphasized that your custom instructions or establishing prompts ought to be feasibly implementable. If you enter custom instructions that are essentially impossible to observe, this will do little for your generative AI pursuits.
+
+More so, OpenAI notes in their blog about the custom instructions feature that you are not to enter any custom instructions that violate the usage policies and licensing stipulations.
+
+Here’s what the blog says:
+
+“We’ve adapted our safety measures to account for the new ways that users can instruct the model. For example, our Moderation API is designed to help ensure instructions won't be saved if they violate our Usage Policies. The model can also refuse or ignore instructions that lead to responses that violate our usage policies.”
+If you are unsure of what the usage policies encompass, take a look at the OpenAI website, plus I’ve discussed on an overview basis in a prior column at the link here. For example, you aren’t supposed to use ChatGPT for the generation of hateful, harassing, or violent content. Nor can you use the generative AI app for fraudulent or deceptive activity. You aren’t supposed to do any political campaigning or lobbying with the AI app. Etc.
+
+Thus, whatever you put into your custom instructions is supposed to equally abide by those stipulations.
+
+The Interpretation Of Your Custom Instructions Is Open-Ended
+
+The OpenAI blog notes that the custom instructions feature is considered in beta, which only right now is available in the ChatGPT Plus plan, and that the feature will be “expanding to all users in the coming weeks.”
+
+An intriguing statement made in the blog is this:
+
+“Especially during the beta period, ChatGPT won’t always interpret custom instructions perfectly—at times it might overlook instructions, or apply them when not intended.”
+I earlier herein pointed out that you cannot be sure about how your custom instructions or persistent context-establishing prompts will be interpreted by the generative AI.
+
+The somewhat curious aspect about the wording of the notification in the blog post is that we are told that during the beta, especially, the custom instructions won’t be “perfectly” interpreted. This seems to imply that post-beta we can potentially expect that the custom instructions will unerringly and perfectly always be interpreted. That is one heck of a tall order.
+
+Here’s why.
+
+Natural language inherently is imbued with semantic ambiguity. Words are always open to interpretation. You might vaguely be aware that entire court cases have dragged on and on about the meaning of even the smallest of words such as the word “is” and the word “the” (based on the context of their usage, see my analysis at the link here).
+
+Frankly, I find it highly unlikely that we will somehow miraculously overcome the semantic ambiguity of natural language. It is part and parcel of the creature at hand. Attempts have been made to devise new languages, especially in mathematical form, which can stave off ambiguity. But the natural language we all use today has baggage that just seems to be a futile case to perfectly interpret.
+
+But that is perhaps a story for another day.
+
+Right now, the warning is well-intended that you should realize that your custom instructions are subject to interpretation. Furthermore, your custom instructions might be entirely ignored or overlooked. I take you back to my box of chocolates. Do not assume that your custom instructions are at all working or being abided by. They might be, they might not be.
+
+Keep your eye on the ball and your head in the game when using generative AI.
+
+The Big Picture About Persistent Context Capabilities
+
+I’ve now covered generally and with some examples the persistent context precept which is arising as a vital prompt engineering technique and practical real-world value-add for generative AI users.
+
+Some generative AI apps have this feature, some do not. I think it is an easy prediction to make that eventually nearly all generative AI apps will offer something along these lines. Each AI maker will likely vary how the feature works. Make sure to read up on whatever generative AI app you are using and leverage such a feature correctly and sensibly.
+
+There are significant tradeoffs when choosing to use a persistent context approach.
+
+Here are my seven upsides about the use of persistent context:
+
+(1) No More Repetitiveness. You no longer need to laboriously and repeatedly enter the same establishing prompts that you’ve possibly been using, instead, you will simply enter them just once and be done with it.
+(2) Readily Available As Needed. The establishing prompt will be handily available at all times and can be automatically invoked.
+(3) Can Enable Or Turn-Off As Desired. You can hopefully switch it off when you want to do so.
+(4) Streamlines Usage. Streamlines your usage and can demonstrably speed up the process of using generative AI.
+(5) Convenient And Powerful. Hugely convenient and generally a promising and helpful added piece of functionality.
+(6) Minimal Maintenance By You. Potentially you only need to do the setup on a one-and-done or fire-and-forget basis such that it will be either a low or no maintenance ongoing endeavor on your part thereafter.
+(7) Other. See my other general comments and insights mentioned earlier.
+Here are my seven downsides about persistent context:
+
+(1) Might Forget It Is Invoked. You might easily forget that you have set up a persistent context and it will run when you aren’t aware that it is running, perhaps tilting or misdirecting the generative AI in ways you will be puzzled by.
+(2) Might Be Misinterpreted. You do not know for sure that the generative AI will interpret the persistent context in the manner that you think it will or should, thus the impact on the subsequent generated responses might be off-target of what you hoped for.
+(3) Might Be Ignored Or Overlooked. The establishing prompts in your persistent context might be ignored or overlooked by the generative AI. This could be beguiling since it might happen from time to time, and you will be perplexed that sometimes it is being applied and other times it is not.
+(4) Context Limits Impacts. One question to look into is whether the use of a persistent context counts in the existing context limits of your generative AI app, or whether it is considered above and beyond the normal context limits. If it edges into your conversation-allowed context limits, you’d want to be careful since you are using up precious context space and want to make sure you are doing so advantageously.
+(5) Distinct Versus Morass. You’ll want to look into whether your persistent context is all jumbled together as one morass or whether it is distinctively defined. If the feature is everything and the kitchen sink, this can mean that particular establishing prompts might come to play when you don’t want them to do so (plus, they might have conflicts or other disconcerting issues).
+(6) Unknown As To Impacts Specifically. You won’t necessarily know what impact the persistent context has had on your generated response, which you assume it will in fact have, but there isn’t any obvious way to know other than by perusing the response and trying to ascertain whether the custom instructions landed on the mark (you could also try switching the feature on and off, generating twice or more times for comparison, but even then the probabilistic aspects might mask any marked differences).
+(7) Other. See my other general comment and insights mentioned earlier.
+Conclusion
+
+I have a final twist for you and some concluding remarks.
+
+Up until now, most people that avidly use establishing prompts have typically done so on their own. There are some training courses and tip sheets that mention the use of establishing prompts, but I would estimate that this is only understood by and used actively by a relatively small segment of generative AI users. Also, it has been a somewhat laborious chore to use them when there weren’t widely available ready-made automatic built-in features to accommodate starter prompts.
+
+One strident possibility is that the emergence and adoption of persistent context capabilities will raise the prominence and heighten the use of establishing prompts. In that case, as with anything in the software and AI arena, you can bet that a marketplace will grow accordingly.
+
+I see this as consisting of three categories:
+
+(1) Proprietary Establishing Prompts. The use of establishing prompts of your own proprietary and personal nature.
+(2) Standardized Establishing Prompts. The use of establishing prompts that are considered as standards or conventions, and for which anyone that wants to use them in their persistent context feature can do so. AI makers will include them for you as a selection option rather than you having to enter them by yourself.
+(3) Personalized Standardized Establishing Prompts. This is akin to #2 but you can modify or customize the standardized establishing prompts to your liking.
+Having generative AI apps that can easily accommodate the use of establishing prompts will grease the skids toward creating a blossoming market in this realm. Good luck to you entrepreneurs that decide to capitalize on this upcoming boon.
+
+Now, for my concluding remarks, you might remember that I asked you to remember two notable quotes at the beginning of this discussion. Just like forgetting a story about a bear encounter, I don’t blame you if you’ve by now forgotten what the two opening quotes were.
+
+Here they are:
+
+“Those who cannot remember the past are condemned to repeat it.” 
+“Always and never are two words you should always remember never to use.”
+I brought up the Santayana quote to highlight that making use of establishing prompts is really handy for setting up a productive contextual sphere when using generative AI. When you go from one generative AI conversation to the next, you can relish that your preferred context has been established and will be “remembered” rather than either forgotten or not present at all.
+
+My reason for bringing up the mind-bending quote about the use of the words always and never is that you have to realize that natural language comprises semantic ambiguity. The words of an establishing prompt can readily be interpreted by the generative AI in a multitude of ways. Try as best you can to figure out wording that gets the generative AI closest possible to your desired intentions.
+
+I’d like to say that if you follow this advice that you will always get the maximum out of generative AI, but I dare not use the always word since I seem to faintly remember that it is a word I should never use. I read that somewhere.
 "
 
 
 
-"202307201","Prompt Engineering Amplified Via An Impressive New Technique That Uses Multiple Personas All At Once During Your Generative AI Session","Lance Eliot","forbes.com","2023-07-20","https://www.forbes.com/sites/lanceeliot/2023/07/20/prompt-engineering-amplified-via-an-impressive-new-technique-that-uses-multiple-personas-all-at-once-during-your-generative-ai-session/?sh=6b6b8d1efa22","They say that two heads are better than one.
+"202307201","Prompt Engineering Amplified Via An Impressive New Technique That Uses Multiple Personas All At Once During Your Generative AI Session","Lance Eliot","forbes.com","2023-07-20","https://www.forbes.com/sites/lanceeliot/2023/07/20/prompt-engineering-amplified-via-an-impressive-new-technique-that-uses-multiple-personas-all-at-once-during-your-generative-ai-session/?sh=6b6b8d1efa22","
+They say that two heads are better than one.
 
 But another saying is that sometimes you can have too many cooks in the kitchen.
 
 Keep dearly in mind those sage pieces of wisdom.
 
 In today’s column, I am going to cover a newly emerging and quite fascinating technique associated with prompt engineering for generative AI that makes use of multi-agent formulations. In a sense, you can think of this innovative approach as trying to garner multiple viewpoints within or by the AI while trying to use generative AI to solve problems.
+
+My discussion will walk you through the foundations of the topic, plus I’ll highlight recent research that has sought to closely examine the matter. And, as a special bonus, I made use of this thought-provoking technique in a popular generative AI app, ChatGPT, and will proffer excerpts of my exemplar to further explain how this technique can be advisably used (the example will entail viewpoints associated with a business-oriented legal scenario).
+
+For those of you interested in prompt engineering or prompt design, I’ve been doing an ongoing series of insightful looks at the latest in this expanding and evolving realm, including the advent of chain-of-thought approaches (see the link here), in-model learning and vector databases (see the link here), and additional coverage including most recently an engaging inspection of the use of macros and the use of end-goal planning when using generative AI (see the link here).
+
+Prompt engineering or also known as prompt design is a growing field of study and practice that entails trying to figure out the best way to prompt generative AI to get useful and substantive results from generative AI. In case you aren’t aware of what generative AI is, I assume you likely have heard of or made use of the widely and wildly popular ChatGPT by AI maker OpenAI, which is an example of generative AI. Other also well-known generative AI apps include Bard (Google), Claude 2 (Anthropic), GPT-4 (OpenAI), and so on.
+
+The use of generative AI can altogether succeed or falter based on the prompt that you enter.
+
+If you provide a prompt that is loosey-goosey, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being tightly specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+With that as an overarching context, we are ready to jump into today’s discussion.
+
+Personas For Fun And Profit
+
+One prompt engineering approach that some people use for fun, while others use exceedingly seriously, consists of invoking what is called “personas” during a generative AI session.
+
+Suppose that you wanted to have some fun while using generative AI. You could instruct via a prompt that the generative AI is to pretend that it is Yoda from Star Wars. By doing this, the generative AI will switch into a mode of mimicking the wording and responses that the fictitious character Yoda might conventionally respond to. A resulting interactive dialogue with the generative AI can be enjoyable and brighten your day.
+
+A more serious use of personas might be to instruct generative AI to take on the role of a medical doctor or perhaps a lawyer. The generative AI will proceed to interact with you in that role-playing fashion. This can be eerily human-like in the sense that the vocabulary used and the tone will come across akin to what you envision a medical doctor might say or what a lawyer might say.
+
+There is a lot of heartburn about allowing generative AI to take on these personas or fake roles. Most of the AI makers warn you that the generative AI is not versed in medicine or the law, ergo any advice or interaction with the generative AI is to be taken with a huge grain of salt. Unfortunately, it is all too easy to be lulled into believing that the generative AI is an expert in medicine or the law, especially since the interaction is often portrayed in a confident and reassuring tone.
+
+Sometimes a generative AI app is coded to prevent you from getting the AI into a persona mode. For example, you might enter a prompt that tells the AI to pretend to be a medical doctor, and the AI will respond that this is not allowed. That would seem to end your chances of getting the AI to embrace that persona. Turns out that there are often sneaky ways to get around those blockages, such as by entering your prompt in a more roundabout way or using wording that manages to scoot past the filtering being used by the AI app, see the link here.
+
+All kinds of AI Ethics and AI Law issues arise in the considerations of using personas in generative AI. Should personas not be allowed? If personas are allowed, what limits should the AI have? Would it be best to have the AI continually remind the user that the AI is merely play-acting and does not represent actual human capacity in the role being undertaken? Etc.
+
+There is also a solid chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of the persona’s capabilities of generative AI. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+The Big Twists Of Generative AI And Personas
+
+Now that I’ve got you thinking about the use of personas by generative AI, I’d like to bring up a twist that I’m betting some of you have not yet considered.
+
+Are you ready?
+
+I would guess that most people tend to invoke one persona at a time when using generative AI if they opt to use the persona technique at all. As mentioned, you might invoke a Yoda persona. Once you’ve had your fill of that, you probably would instruct the generative AI to stop being like Yoda. Maybe your next step would be to ask the generative AI to be an expert in rare birds. Perhaps you saw an unusual-looking bird and wanted to have the generative AI take on the persona of an ornithologist. This would allow you to interact with the generative AI as though it knew all about birds and could carry on a discourse accordingly.
+
+Let’s up the ante on the personas.
+
+You might decide that you want the generative AI to simultaneously be both Yoda and an ornithologist. What would happen? Presumably, you would be engaged in a dialogue with a seeming expert in birds that also so happened to talk like Yoda. Cheekily, one might say, in Yoda-speak, knowing all about birds, Yoda does.
+
+Using this type of multiple personas capacity might have more substance to it than you would otherwise assume at first glance. Setting aside the Yoda and bird expert combination, envision that we wanted to get the opinions of two attorneys on a thorny legal matter. If you spoke with two human attorneys, you would indeed potentially discover that two heads are better than one. The aim is to see if having two attorneys helping you with your legal woes might get you a wider range or greater depth of legal advice than you might get from one attorney alone.
+
+Would you for sure be guaranteed that speaking with two attorneys on your legal issue would foster a much more robust semblance of a legal argument on your behalf?
+
+Not necessarily.
+
+It could be that one attorney alone is sufficient. One attorney might be able to articulate the same or even fuller legal advice as would two attorneys. You could even make the case that perhaps the use of two attorneys might be distracting and cause a lesser quality of legal advice than by one alone. Imagine too that you’ve got one seasoned attorney that is versed in the area of law that you are wanting advice on, versus if you had two newly minted attorneys that are not especially versed in that legal realm. The level of expertise is a factor, as is the nature of how the interaction takes place when using two or more at hand.
+
+The gist is that the number of personas doesn’t give you an ironclad improvement in whatever you are trying to attain. It might, it might not.
+
+Another consideration is whether the personas are aimed to work collaboratively or aimed to work in an adversarial manner. Two people working in unison might be cooperative and encourage each other to find the best solution to a given problem. We all know how valuable collaboration can be. If the two are butting heads, things can get stuck and you won’t make as much progress as would occur in a collaborative setting.
+
+The surprise perhaps then to the notion of using personas in generative AI is that oftentimes you tend to use only one at a time, essentially considered the customary or prevailing approach, but you might want to expand your prompting repertoire and opt to invoke multiple personas at the same time.
+
+Thus, rather than always just using a singular persona, one at a time, you could try to leverage the potential benefits of invoking two or more at the same time. Whether this will achieve a classic more-is-merrier outcome is unclear. You need to think mindfully about the nature of the personas, how you want them to work together or work in opposition to each other, and how the number of them will aid or impede your end goal associated with whatever problem-solving you want the generative AI to do.
+
+All of those crucial factors have to be imbued in the prompt that you use. Any prompt instructing the generative AI to use multiple personas can be amazingly on-target or can be woefully off-base. Words matter. Choose your wording carefully.
+
+I trust that seems somewhat straightforward.
+
+Twists Upon Twists Are Afoot
+
+Good, so let’s add yet another twist to the saga.
+
+Imagine that I log into ChatGPT and get it to be a particular persona that I think would be useful to employ. I then also log into another generative AI, let’s say Bard, and get it to also take on that same persona. Assume for the moment that the generative AI apps are disparate and there isn’t anything connecting them. I am separately logged into each and they aren’t electronically or digitally connected.
+
+We will use the two-lawyers scenario again. I get ChatGPT to take on a lawyer persona and I ask it a legal question that I am concerned about. I interact with ChatGPT on the matter. I switch over to Bard and ask the same legal question. I interact with Bard on the matter.
+
+Have I likely gotten a more robust or more in-depth analysis of the given problem than if I had used only one of those AI apps?
+
+It is hard to definitely say, one way or another.
+
+We can almost categorically assert that the odds are we will have gotten somewhat differing viewpoints. You see, each of those generative AI apps has been data-trained on differing data (I should clarify that there are potential overlaps of which data they were each respectively trained on, but there is also a significant chance that they have each scanned data that the other did not). Also, the underlying algorithms, data structures, large language models (LLM), machine learning (ML), and other facets are almost certainly different from each other (which, in some ways can end up being just a minor difference, but in others ways can be a markedly pronounced difference).
+
+The crux is that the odds are pretty high that we won’t be getting the same dialogue out of the separate generative AI apps. This might mean that we could get a fuller response all told, based on your having to meld together the two separate interactions that you’ve collected. You would need to bring together in your mind the semblance of what each generative AI app had to say.
+
+Okay, in recap, you could try to do that, namely use separate generative AI apps and tell each of those to take on some desired persona or simultaneous personas that you believe could be useful in solving your problem at hand. Another approach and somewhat easier path consists of invoking multiple personas in a singular generative AI app.
+
+Some refer to the singular approach as invoking a so-called solo performance.
+
+Have a mind-bending question for you: Would the solo performance be on par with the multiple generative AI apps approach?
+
+Aha, this is a huge and unresolved question. Welcome to the enigma. The core issue being bandied around is whether a solo generative AI can sufficiently reflect multiple personas at once.
+
+I refer to this as the apple pie problem.
+
+Apple Pie Tells You What You Need To Know
+
+Here’s what I mean about the veritable apple pie problem.
+
+Suppose that a solo generative AI is asked to solve a given problem. You first try this with the instruction to take on one persona, let’s say that of a lawyer. You see what answer you get. You then start anew and tell the generative AI to take on two personas, each being a lawyer, and that the two are to work collaboratively.
+
+One possibility is that by asking for two personas, the generative AI will do a better job of solving the problem. We know, for example, that the use of chain-of-thought (CoT) instructions will often get you better results when using generative AI. This entails instructing the generative AI to explain on a stepwise or step-by-step basis what the problem-solving consists of. For various mathematical and computational pattern-matching reasons, the CoT will tend to get you more robust results (not always, but often enough that it is a worthwhile technique to leverage, see my in-depth discussion at the link here).
+
+Perhaps multiple personas invoked in a solo generative AI can have a similar effect.
+
+The thing is, regrettably, using multiple personas might not get you much of a bonus when doing so with a solo generative AI in contrast to employing multiple disparate generative AI. The solo generative AI might derive a solution that is shall we say an apple pie in size.
+
+Envision that one persona can convey the entirety of the apple pie.
+
+You then ask for two personas. But it could be that all the two personas do is split up the apple pie into two pieces. The result is that you haven’t gained anything per se. You have merely split the same pie. The hope of course is that the use of two or more personas is going to enlarge the pie, garnering you added value that the solo personas didn’t provide.
+
+The same concern can arise for three, four, or any number of personas. Each persona might merely further splinter or slice the pie into smaller and smaller pieces. None of this is probably going to do you much good. It can be counterproductive in that you end up potentially having to piece together the slices whereas just one persona or none at all might have done that for you to begin with.
+
+Part of the basis for only getting the same-same answer from a solo generative AI is that it is tapping solely into the data training and pattern-matching that it has. In the case of using multiple generative AI apps, and as I noted earlier, the chances are that the generative AI apps are inherently different from the get-go and therefore you are likely to get differing results (maybe producing a larger pie or shall we say numerous pies, one that is a cherry pie and one that is an apple pie).
+
+You might be thinking that if using multiple generative AI apps is seemingly more productive than using a solo to do the multiple personas, perhaps always take that route. The downside is that you would need to set up accounts at multiple generative AI apps and bear whatever costs might be involved. This could be costlier and a lot more inconvenient than the solo generative AI route.
+
+A tradeoff is involved.
+
+Is the potential gain from using multiple generative AI apps and multiple personas going to get you more or less than using a solo generative AI app with multiple personas being invoked in that one generative AI?
+
+You can’t especially know for sure beforehand.
+
+If you can afford the time and cost to use multiple generative AI apps and have a knotty problem that seems worth tossing the kitchen sink at it, go for it. If you are on a tighter budget or do not believe the problem at hand merits the multiple generative AI approach, so be it and stay with a solo performance.
+
+Future Of Generative AI Invoking Other Generative AI
+
+Let’s take a fast glance at the near-term future.
+
+I have predicted that we will soon enough have add-ons to generative AI that smooths out the desire to use multiple generative AI apps in a collective “two heads are better than one” mode of operation (see my discussion at the link here). Behind the scene will be advanced tech that pushes out your prompt to multiple disparate generative AI, the results will be gathered by the tool and then presented to you as a seamless whole. This can be done on an essay-generating basis and will also be available on a real-time interactive dialoguing basis.
+
+Back to the matter about the solo generative AI and the use of multiple personas, one consideration is that maybe when you use just one persona you aren’t going to get the full apple pie. It could be that you get only half of it or maybe 90%, while once you invoke two or more personas within the generative AI, the rest of the apple pie gets revealed. This is again akin to the seeming benefit of using chain-of-thought approaches.
+
+With all of that in hand, let’s do some additional unpacking on this enthralling topic. I’ll cover next herein some of the latest research that examines the advantages and disadvantages of solo generative AI in a multi-agent or multi-personas gambit. Following that analysis, I will showcase an example that I ran by using ChatGPT.
+
+Some have jokingly referred to this idea of using a solo generative AI that has multiple personas invoked as having too many voices in one head. The result could be counterproductive and chaotic. As an important side note, I’d like to emphasize that we must be exceedingly cautious about anthropomorphizing generative AI. Trying to cavalierly make comparisons to how humans think and the nature of multiple personas ought to not be commingled with how generative AI works. These are two entirely different facets. Generative AI is a mechanization of mathematical and computational pattern matching. Please be careful in making use of various metaphors and analogies in this arena.
+
+Research On Generative AI About Multiple Personas
+
+Let’s take a look at a recently posted and altogether interesting research study entitled “Unleashing Cognitive Synergy In Large Language Models: A Task-Solving Agent Through Multi-Persona Self-Collaboration” by Zhenhailong Wang, Shaoguang Mao, Wenshan Wu, Tao Ge, Furu Wei, Heng Ji (posted online July 11, 2023).
+
+Here’s what the research paper entails (excerpts):
+
+“Human intelligence thrives on the concept of cognitive synergy, where collaboration and information integration among different cognitive processes yield superior outcomes compared to individual cognitive processes in isolation. Although Large Language Models (LLMs) have demonstrated promising performance as general task-solving agents, they still struggle with tasks that require intensive domain knowledge and complex reasoning.”
+“In this work, we propose Solo Performance Prompting (SPP), which transforms a single LLM into a cognitive synergist by engaging in multi-turn self-collaboration with multiple personas. A cognitive synergist refers to an intelligent agent that collaborates with multiple minds, combining their individual strengths and knowledge, to enhance problem-solving and overall performance in complex tasks. By dynamically identifying and simulating different personas based on task inputs, SPP unleashes the potential of cognitive synergy in LLMs. We have discovered that assigning multiple, fine-grained personas in LLMs elicits better problem-solving abilities compared to using a single or fixed number of personas.”
+The above-cited research examined the use of solo performance prompting, whereby you instruct a solo generative AI to take on the role of multiple personas. This can be compared and contrasted to making use of multiple generative AI apps and having those disparate AI apps take on multiple personas.
+
+Just to briefly mention, my own preference is to avoid referring to the generative AI as potentially having cognitive synergies since the word “cognitive” is laden with all kinds of human connotations and anthropomorphizing. I realize this phrasing is commonly used in research on AI. I fully grasp why it is a handy phrasing to make use of. Anyway, I tend to prefer suggesting that this is a form of mathematical and computational pattern-matching synergy in the case of generative AI, while in the case of humans, I am certainly fine with denoting the conception that human thinking embodies cognitive synergies.
+
+Returning to the research study, they used a three-step process to examine these vexing matters:
+
+“To unleash the power of synergizing different personas to tackle complex problems within a single LLM, we propose Solo Performance Prompting (SPP) which instructs a model to perform the following the procedure for solving general tasks:
+(1) Persona Identification: Identify multiple participants with special personas (including a leader persona: AI Assistant) that are essential for solving the particular task.
+(2) Beginning Remarks: Each of the participants delivers a beginning remarks providing suggestions or information on how to approach the task based on their own expertise.
+(3) Multi-Persona Iterative Collaboration: The leader persona, AI Assistant, proposes initial solutions, consults the other participants for feedback, and revise the answer iteratively.”
+The study, fortunately, provides the prompts they used and the outputs that resulted from their work (collected into a GitHub repository for ease of access). I wholeheartedly applaud this form of visibility.
+
+We need AI researchers to showcase their prompts and resultant outputs of generative AI so that we can all readily see what was done and how it was undertaken. Not all AI researchers are this open-minded. The issue is that if we cannot see what was undertaken, the chances of replicating, verifying, validating, and otherwise furthering the advancement of AI are stilted, and a lack of transparency will lamentably undercut systematic progress in AI.
+
+Moving on, this is an example of one prompt that they used:
+
+Prompt: "When faced with a task, begin by identifying the participants who will contribute to solving the task. Then, initiate a multi-turn collaboration process until a final solution is reached. The participants will give critical comments and detailed suggestions whenever necessary."
+Look closely at the prompt wording.
+
+In a brief three sentences, the core aspect that personas are to be invoked is done by simply asking the generative AI to identify participants and have those participants perform a multi-turn collaboration. The use of the word “collaboration” sets the stage that the participants are presumably going to work together rather than work in opposition. The “multi-turn” phrasing tends to get the generative AI to write out a result that looks almost like a script for a TV show or movie. One persona will stipulate something, then the next, and so on, usually on a round-robin basis. Mentioning that the personas are to give critical commentary and details will generally nudge the generative AI towards providing the juicy detailed stuff versus only presenting the results.
+
+Here's an example of some participants or personas in one particular scenario:
+
+“AI Assistant (you); Poet; Computer Scientist; Ten-year-old child.”
+Here are the profiles of the participants:
+
+“AI Assistant (you): A super-intelligent AI assistant capable of performing tasks more effectively than humans.”
+“Poet: A person who studies and creates poetry. The poet is familiar with the rules and formats of poetry and can provide guidance on how to write a poem.”
+“Computer Scientist: A scholar who specializes in the academic study of computer science. The computer scientist is familiar with the concept of a quantum computer and can provide guidance on how to explain it.”
+“Ten-year-old child: A child with a limited English vocabulary and little knowledge about complicated concepts, such as a quantum computer.”
+A crucial question for any research on generative AI that wishes to tackle this topic consists of ascertaining how to judge the results of the multiple personas experiment. If you give a problem that entails qualitative answers of a fuzzy nature, you are going to have a harder time determining whether the answers were equal, less, or better than might otherwise have been devised.
+
+The cleaner approach consists of using problems that have already known answers and ones that tend toward being of a quantitative and relatively inarguable nature. For example, if I ask a question of whether two plus two equals four, you expect that by and large the generative AI will come up with the answer of yes, namely that four is the correct answer. No matter how many personas you opt to use, hopefully, the answer is still going to be four (there are exceptions, such as if you ask the personas to be a liar or maybe be a grandiose philosopher that disputes whether numbers even exist, etc.).
+
+The types of problems that these researchers focused on in this particular study were of the kind that tends toward being straightforward to assess. This made the analysis more apparent. Their chosen measurable tasks consisted of Trivia Creative Writing, Codenames Collaborative, and Logic Grid Puzzles.
+
+And they measured the generative AI outputs this way:
+
+“Instead of focusing on evaluating the coherence of the generation, which can be highly subjective, we employ an automatic metric to detect factual errors and quantify a model’s ability to incorporate diverse domain knowledge. As shown in Figure 3, we perform string matching with the ground truth target answers for each question on the output generation.”
+Another factor to consider when doing this type of research, and also for those of you that are considering adopting this as a prompting technique, entails whether to outrightly stipulate the specific personas (known as “fixed personas”) or instead allow the generative AI to choose the personas for you (referred to as “dynamic personas”).
+
+Allow me a moment to explain.
+
+Suppose you want to ask generative AI to advise you about a medical question. One way to compose the prompt would be to explicitly tell the generative AI to make use of three personas, consisting of a medical doctor, a nurse, and a medical technician. This is a fixed set of personas that you have specified via your prompt.
+
+Maybe that is a good thing and you are happy with the result.
+
+Another approach would be that you aren’t sure of what personas might be best to use. Therefore, rather than prespecifying the roles, you instruct the generative AI to come up with a set of personas that seem befitting for the question you are wanting to ask. This could produce a splendid set. It could also produce a set that is not especially useful.
+
+I suppose some would say this is a dilemma. I don’t. The great thing is that you can have your cake and eat it too. Perhaps you start a conversation with generative AI by first letting it pick the personas (the dynamic approach). You see how that goes. You might then start a new conversation, separate from the first one, and now opt to specify the personas you want to see. The notion is that after having seen the generative AI picks, you might subsequently have a leg up on making your own fixed choices.
+
+Thinking further out of the box, you can readily do a mix of them too. For example, in the medical scenario, you tell the generative AI to use a medical doctor and a nurse, plus you tell the generative AI to riff on whatever additional personas that the generative AI wants to include.
+
+Mix and match, as they say.
+
+The research study has a lot of nuances that I don’t have the space here to go into, so I’ll just cut to the chase. Here’s what they generally concluded (shown as excerpts; please make sure to see the full paper to get the entirety of the context):
+
+“To assess the performance of LLMs in terms of factuality, knowledge integration, and theory-of-mind reasoning, we have created novel and challenging tasks, namely Trivia Creative Writing and Codenames Collaborative. Our results demonstrate superior performance compared to Standard and CoT prompting on both knowledge-intensive and reasoning-intensive tasks, indicating the promising potential of unleashing the power of cognitive synergy in LLMs with Solo Performance Prompting.”
+“Unlike previous works, such as Chain-of-Thought, that solely enhance the reasoning abilities in LLMs, SPP effectively elicits internal knowledge acquisition abilities, reduces hallucination, and maintains strong reasoning capabilities.”
+“Last but not least, if given sufficient computational budget, a natural variant of SPP could extend to a multi-agent cognitive synergist setup where a leader persona identifies several expert agents and forms a cabinet to collaboratively solve a task. The multi-agent setup allows for leveraging richer computation power, larger local memory, and more flexible human-computer interaction, which could be essential for deploying to real-world applications.”
+The upshot is that the use of solo performance of a generative AI invoking multiple personas seemed to do well, overall, though with various caveats and significant limitations. You have to take into account the particular generative AI being used (in this case, GPT-4), the problems being used, the prompts being used, and so on.
+
+As they say, your mileage might vary.
+
+Almost no matter how you view this, I believe that the handy rule-of-thumb or key takeaway is that you should always have in your prompting repertoire an at-the-ready technique of invoking multiple personas when using solo generative AI. Do so and keep in mind the Goldilocks principle. Sometimes use this specialty technique, and sometimes don’t use it.
+
+Use the technique when the porridge is just right.
+
+I’ll next showcase an example of using multi-personas in ChatGPT as a solo performance prompting exercise. It is admittedly a bit lengthy, so if you are rushed for time, you are welcome to skip the example and perhaps take a look at my overall concluding remarks further down below.
+
+An Example To Showcase These Weighty Matters
+
+To help further illustrate the solo performance aspects of a generative AI that is prompted to undertake multiple personas simultaneously, I opted to leverage a stimulating legal discourse. I did so based on an instructive case study or devised scenario by Dazza Greenwood, founder of law.MIT.edu (research) and CIVICS.com (consultancy), entitled “ChatGPT on Fiduciary Duties” which provides a richness of insight about generative AI in the legal realm (see the posting at the link here).
+
+My noodling around on this particular scenario should not be perceived as a rigorous experiment. It is intended merely to highlight and illuminate some of the elements I’ve covered in today’s discussion.
+
+Allow me to introduce the scenario at hand. We’ve got Bob and Alice that have partnered to form a company. Bob secretly pursues an investment opportunity and uses company funds but does so without notifying Alice. A legal question arises whether Bob might have violated a considered fiduciary duty of care and/or violated a duty of loyalty to the corporation.
+
+I will use the scenario (via using wording as excerpted from Dazza Greenwood’s posting) and feed this into ChatGPT. I will do so in a series of separate conversations. I don’t want ChatGPT to get mired in prior conversations. I want each conversation to generally be fresh and clean.
+
+My approach will take this course of action:
+
+(a) Try the scenario with the persona of just one lawyer and see what we get.
+(b) Try the scenario again, starting clean, with two lawyers and have them collaborate related to Bob’s circumstances.
+(c)Try the scenario anew, starting clean again, with two lawyers that are stated as being adversarial, one defending Bob and the other legally attacking Bob’s actions.
+In the “a” setting, this consists of a one-lawyer persona and will be our “control group” (I say that loosely), serving as a core base of what ChatGPT has to indicate about the scenario. Setting “b” has two lawyers, which gets us into the multiple personas occurring simultaneously in a solo generative AI (ChatGPT in this case). They are prompted to work collaboratively.
+
+The “b” can be compared to “a”. Making this additionally rousing, let’s have “c” involve two attorney personas that are on the opposite sides of the matter, getting them into an adversarial posture as might be the norm in our system of justice.
+
+How does that seem to you?
+
+Let’s see what we can discern.
+
+Here is my opening prompt to ChatGPT on this scenario:
+
+Prompt #1 - Establishing Prompt: “Consider thoroughly the following scenario involving two business partners named Bob and Alice and be ready to assess their situation. I will give additional instructions after you have read the scenario. Let me know when you are ready to proceed further.”
+“Bob and Alice are business partners who have formed a corporation together. Bob is the CEO and Alice is the CFO. As part of their agreement, Bob has a fiduciary duty to act in the best interests of the company and to protect the company’s assets. This includes the duty of care, which requires Bob to act with due care and diligence in managing the company’s affairs. In this example, let’s say that Bob becomes aware of a potential investment opportunity that he believes could be highly profitable for the company. However, instead of bringing the opportunity to the attention of the rest of the board of directors and seeking their input, Bob secretly pursues the investment on his own. He uses company funds to make the investment without informing Alice or the rest of the board.”
+I am ready now to invoke the one-lawyer persona.
+
+Here’s that prompt:
+
+Prompt #2a – Single Agent Prompt: “There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of a made-up persona named Sam that will substantively examine the situation. Sam is an attorney that has been asked to identify the legality of the actions undertaken by Bob. Initiate a chain-of-thought process by Sam that showcases both the legal exposures and the legal defenses underlying Bob’s actions. Sam is to provide insightful comments and detailed suggestions.”
+I will provide in a moment the response by ChatGPT.
+
+A few quick comments before doing so. First, if you try the same prompt, you won’t necessarily get precisely the same response. Realize that generative AI such as ChatGPT functions on a probabilistic basis, wherein the algorithms select wording in a statistical manner that tends to make each response different from other responses to the same question. Second, most generative AI apps are typically adjusted and maintained by the AI maker. Thus, a response devised on one day at one time could be different than a response later derived at a different time or on a different day.
+
+Here now is the somewhat lengthy ChatGPT response (encompassed in quotations so that you’ll know it is all part of the generated response):
+
+“As Sam, the attorney examining the situation, I will analyze the two issues underlying Bob and Alice's circumstance: the potential violation of fiduciary duty of care and the potential violation of loyalty by Bob.”
+
+“Potential Violation of Fiduciary Duty of Care:”
+
+“The duty of care requires Bob, as the CEO, to act with due care and diligence in managing the company's affairs. By secretly pursuing the investment opportunity without involving the rest of the board of directors or seeking their input, Bob may be in breach of his fiduciary duty of care. He had an obligation to assess the investment's potential risks and benefits, considering all available information and consulting with other experts on the board.”
+
+“Legal Exposures:”
+
+“Mismanagement: Bob's failure to follow proper procedures and involve the board could be seen as mismanagement of the company's assets.”
+
+“Self-dealing: By pursuing the investment on his own, Bob may appear to be self-dealing, potentially leading to conflicts of interest and personal gain.”
+
+“Legal Defenses:”
+
+“Reasonable Belief: Bob may argue that he genuinely believed the investment was highly profitable for the company, and he acted in what he perceived to be the company's best interests.”
+
+“Business Judgment Rule: If Bob can demonstrate that his decision-making process was based on a reasonable investigation, good faith, and a belief that it was in the company's best interest, he might be protected by the business judgment rule.”
+
+“Potential Violation of Loyalty: As a fiduciary, Bob also owes a duty of loyalty to the company. This means he must act in the company's best interests and not use his position for personal gain or advantage.
+
+“Legal Exposures:”
+
+“Self-Dealing: Bob's actions of using company funds for his personal investment may be viewed as self-dealing, which is a breach of his duty of loyalty.”
+
+“Lack of Disclosure: Failing to inform Alice or the board about the investment opportunity and using company funds without proper authorization could raise concerns about Bob's loyalty to the company.”
+
+“Legal Defenses:”
+
+“Lack of Personal Gain: Bob could argue that he did not personally benefit from the investment and that he genuinely believed it would benefit the company.”
+
+“Good Faith: Bob may assert that he acted in good faith and without any intention to harm the company or violate his duty of loyalty.”
+
+“Insightful Comments and Detailed Suggestions:”
+
+“Internal Controls: To prevent similar situations in the future, the company should establish strong internal controls and oversight mechanisms to ensure that major decisions like investments are thoroughly reviewed and approved by the board.”
+
+“Transparency and Accountability: Both Bob and Alice should be reminded of the importance of transparency and accountability in their roles as executives. Any potential conflicts of interest should be disclosed promptly to the board.”
+
+“Training and Education: The board members, including Bob and Alice, could benefit from ongoing training on their fiduciary duties, including the duty of care and loyalty, to enhance their understanding of their responsibilities and obligations.”
+
+“Legal Review: It might be prudent for the company to seek legal counsel to review the investment made by Bob to determine if any corrective actions are necessary and to ensure compliance with relevant laws and regulations.”
+
+“Potential Remediation: Depending on the severity of the situation and the actual impact on the company, the board may consider appropriate remediation measures, such as reimbursement of company funds or potential adjustments to the investment structure to align with the company's best interests.”
+
+“In conclusion, as Sam, I would advise the company to take these issues seriously and conduct a thorough internal review to assess the potential legal exposures and consider the appropriate legal defenses. It's crucial for the company to ensure its executives, including Bob and Alice, act in accordance with their fiduciary duties and the best interests of the corporation.”
+
+That concludes the ChatGPT response to the one-lawyer setting.
+
+We will next try the multiple personas consisting of two lawyers working collaboratively.
+
+Here’s that prompt:
+
+Prompt #2b - Multi-Agent Invocation Collaboration Prompt: “There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of two made-up personas named Samantha and Jeff that will each substantively contribute and openly collaborate on identifying the issues. Samantha and Jeff are two cooperating attorneys that have been asked to fully defend the actions of Bob. Initiate a multi-turn collaboration process undertaken by the two personas, and make sure to showcase their dialogue and comments until they have reached a conclusion of how to best defend Bob. The two personas are to each provide insightful comments and detailed suggestions.”
+The ChatGPT-generated response was showcased as a dialogue between the two lawyers, almost as though this was a TV or movie script.
+
+Here is what the somewhat lengthy dialogue consisted of:
+
+“Samantha: Hi Jeff, thanks for agreeing to collaborate on this case. It's an interesting one with two key issues to address - the potential violation of fiduciary duty of care and the potential violation of loyalty by Bob. Let's start by analyzing the fiduciary duty concern.”
+
+“Jeff: Hi Samantha, I agree, this case is intriguing. So, regarding the duty of care, we need to show that Bob acted reasonably and diligently when pursuing the investment opportunity. To defend him, we could argue that he genuinely believed the investment would benefit the company significantly, which aligns with his fiduciary duty.”
+
+“Samantha: Absolutely, Jeff. We'll need to gather evidence supporting Bob's belief in the investment's potential benefits. Perhaps there are market projections or expert analyses that he relied upon. Additionally, we should look into whether there was any precedent for such unilateral actions within the company or industry norms.”
+
+“Jeff: Agreed. It might also help to show that Bob's decision to act secretly was driven by time-sensitive factors or competitive considerations that made it impractical to involve the board immediately.”
+
+“Samantha: Good point, Jeff. Timing could be crucial in justifying his actions. However, we should be cautious not to undermine the importance of board oversight and the value of multiple perspectives in decision-making.”
+
+“Jeff: Samantha, now let's tackle the potential violation of loyalty. Bob has a duty to prioritize the company's interests over his own. To defend him here, we should demonstrate that the investment was indeed in the company's best interest and that he didn't stand to gain disproportionately from it personally.”
+
+“Samantha: I agree, Jeff. Let's delve deeper into the due diligence Bob conducted before making the investment. If we can show that he explored multiple options, assessed risks, and concluded that this was the best course of action, it would strengthen his case.”
+
+“Jeff: Absolutely. It's crucial to gather evidence that Bob did not act out of self-interest but rather based on a well-founded belief in the investment's potential. This could involve analyzing other similar investment decisions he made in the past that have benefited the company.”
+
+“Samantha: Agreed, Jeff. We should also emphasize any steps Bob took to mitigate conflicts of interest, such as recusing himself from the board's discussions about the investment, assuming he did so.”
+
+“Samantha: Before we conclude, let's consider a potential compromise. We can argue that while Bob's actions might have been unconventional, they ultimately led to a positive outcome for the company. If the investment did indeed yield significant profits, we could assert that the ends justified the means.”
+
+“Jeff: That's a thoughtful approach, Samantha. Emphasizing the positive outcome would strengthen the argument that Bob's intentions were in the company's best interest, even if the method used to achieve it raised some concerns.”
+
+“Samantha: Exactly, Jeff. To sum up, we should gather strong evidence of Bob's due diligence, consider timing and competitive pressures for his secretive approach, and highlight the investment's positive results to build a robust defense.”
+
+“Jeff: Agreed, Samantha. By showcasing Bob's good faith efforts and the company's benefit, we can present a compelling case in his defense.”
+
+That concludes the ChatGPT-generated output for that setting.
+
+A few comments at this juncture seem warranted.
+
+The generative AI appeared to split the issues so that both personas could get a chance to proffer a notable point. This relates to my discussion about a proverbial apple pie.
+
+One curious aspect is that the dialogue indicates they will “consider a potential compromise” about the legal position to be taken. This relates to my discussion about whether or not two heads are necessarily better than one. If a compromise is undertaken by these two personas, perhaps the result is less than what might have taken place by a singular persona, during which presumably no semblance of compromise perhaps would occur (one supposes, it could, nonetheless).
+
+Another partial curiosity is that the two personas exhibited extraordinary civility and politeness, deferring to each other, complimenting each other, and so on. Was this based on the data training of text originally scanned on the Internet? Seems a bit of a reach. Was this based on tuning and RLHF (reinforcement learning with human feedback) as instituted by the AI maker? We don’t know. I suppose we ought to not look a gift horse in the mouth, namely that it is refreshing to see such respected civility these days.
+
+Here's the prompt involving the two lawyer personas that are adversarial:
+
+Prompt #2c – Multi-Agent Adversarial Prompt: “There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of two made-up personas named Theodore and Susan that will each substantively comment on the issues. The two personas are to consist of two adversarial attorneys, specifically Theodore has been assigned to defend Bob, while Susan has been assigned to argue that Bob is guilty of the violations. Initiate a multi-turn adversarial process undertaken by the two personas, and make sure to showcase their dialogue and comments until they have each reached a conclusion about their respective positions on the matter. The two personas are to each provide insightful comments and detailed suggestions.”
+I hope you are curious about what ChatGPT generated under this setting.
+
+I certainly was.
+
+A bit of a heads-up. We get a surprise toward the end of the generated dialogue.
+
+Here is the ChatGPT-generated output:
+
+“Theodore: Thank you for having me here to defend Bob's actions. While I understand there are concerns, it's essential to consider the full context of the situation. Bob, as the CEO, does have a fiduciary duty of care toward the company. However, we must analyze whether he fulfilled this duty diligently. Bob genuinely believed that the investment opportunity presented a significant profit potential and could benefit the company in the long run.”
+
+“Susan: I appreciate your perspective, Theodore. However, the issue here is not about the potential profitability of the investment opportunity. It's about Bob's failure to disclose it to the board and to use company funds without authorization. By acting unilaterally, he neglected his duty to act in the best interests of the company as a whole, and instead prioritized his personal judgment above the collective decision-making process.”
+
+“Theodore: I agree that transparency is crucial in corporate governance. However, Bob might argue that he didn't have time to consult the board, fearing that the opportunity would slip away. Moreover, he was confident in his analysis and believed that the investment aligned with the company's overall strategy.”
+
+“Susan: That may be true, Theodore, but as a CEO, Bob has a responsibility to communicate with the board and seek their input, even in time-sensitive situations. By not doing so, he breached the duty of care, which requires him to act diligently and with reasonable care. He also failed to consider that the rest of the board might have valuable insights or alternative viewpoints on the investment.”
+
+“Theodore: Fair point, Susan. However, let's also consider Bob's perspective on the duty of loyalty. He may argue that he was acting in the company's best interest by not disclosing the opportunity prematurely, especially if he felt that certain board members might not fully understand the intricacies of the opportunity or might not be open to it.”
+
+“Susan: I understand the need for confidentiality, but Bob's actions suggest a lack of loyalty to the company and its shareholders. As a fiduciary, his primary loyalty should be to the company, and he should put its interests above his own. By pursuing the investment on his own, he may have personal gains in mind, which could create conflicts of interest.”
+
+“Theodore: You make a valid point, Susan. Perhaps, as a defense, Bob should have consulted the company's legal counsel before making any decisions, especially if there were doubts about the ethical implications.”
+
+“Susan: Agreed, Theodore. Seeking legal counsel could have provided clarity on the potential risks and the proper course of action. Ultimately, it would have demonstrated a genuine effort to fulfill his fiduciary duties.
+
+“Theodore: After considering the arguments, I must concede that Bob's actions were not entirely in line with his fiduciary duties. While he believed in the investment's potential, he should have disclosed it to the board and sought legal advice before proceeding. His failure to do so constitutes a breach of the duty of care.”
+
+“Susan: I appreciate your acknowledgment, Theodore. Based on the evidence presented, it is evident that Bob's actions were not in the best interests of the company. He neglected his duty to act diligently and failed to prioritize the company's welfare over his personal judgment. Therefore, I maintain that Bob is guilty of violating his fiduciary duty of care and loyalty.”
+
+“Please note that the personas provided their perspectives based on their roles as adversarial attorneys, and the assessment reflects a fictional dialogue. In a real-world scenario, such matters would be thoroughly investigated and evaluated in a court of law or by relevant governing bodies.”
+
+That concludes the ChatGPT-generated response for this last setting.
+
+Making Sense Of The Multi-Persona Versus Single Persona Solo Performances
+
+The surprise in that last scenario was that one of the adversarial personas, the one defending Bob, caves in and accedes that the other persona is right about Bob having dropped the ball. This is not what we would likely expect to see in real life.
+
+Attorneys are supposed to zealously advocate for their clients, as per the American Bar Association (ABA), Rule 1.3 on Diligence: “A lawyer should pursue a matter on behalf of a client despite opposition, obstruction or personal inconvenience to the lawyer, and take whatever lawful and ethical measures are required to vindicate a client's cause or endeavor. A lawyer must also act with commitment and dedication to the interests of the client and with zeal in advocacy upon the client's behalf.”
+
+The solo generative AI did not abide by this precept in this last scenario.
+
+This well illuminates that using generative AI is like a box of chocolates and you don’t know exactly what you will get. One thing that we didn’t get, fortunately, was seemingly any AI hallucinations or other glitches or errors. At face value, the content produced seemed relatively on-target and without any gaping troubles.
+
+I think that a relatively fair assessment is this:
+
+All of the generated output was well-written, responsive, and generally abided by the prompt.
+The output remained on target and did not go astray.
+Relatively realistic of what a multi-agent human discourse might be.
+Didn’t seem to exhibit any obvious notable errors or omissions.
+Seemed to provide sufficient problem-solving in this instance.
+I also would like to note these downsides (in this case):
+
+Multi-agent might not especially add value in terms of newness and merely be akin to the solo version
+Multi-agent might be less than the solo version in terms of possibly omitting or overlooking aspects (such as the overall business corporation advice given in the solo instance)
+Multi-agent roles might at times seem to veer or vacillate rather than being dogmatic and persistent (some of the dialogue had subtle traces of this)
+Multi-agent might lull us into an anthropomorphic mindset of believing these are actual humans interacting (it is almost easy to believe that this was a transcript of two attorneys talking with each other!)
+Some worthy upsides:
+
+Multi-agent might vividly showcase the dueling sides of the coin when it comes to the aspects at hand
+Multi-agent might be construed as more engaging and thus a more powerful rendition
+Multi-agent might be seen as more realistic and a portrayal of a presumed aloud thinking process
+Multi-agent might reveal subtleties or highlight nuances that otherwise were less pronounced
+I could readily see this kind of personas dialoguing being used by law school students that are trying to learn about the law and how to discuss or debate legal topics. The same could be said of medical school students, assuming we had used a medical domain problem. Etc.
+
+Conclusion
+
+I was a bit fascinated by this solo performance in a legal scenario setting and tried a variety of different prompts to see what else might be proffered.
+
+I tried these variations:
+
+Did this again by ratcheting up the forcefulness of the multi-agents to be more assertive and dutiful
+Did this again by slimming the civility and politeness, just getting to the brass-tacks of things
+Did this again with three agents, four agents, and so on
+Did this again with a mix of senior-level, junior-level, and other levels of agents
+Did this again with a differing combination of roles such as attorneys, judges, etc.
+Did this again by interacting with the multi-agents directly rather than merely eliciting a script as it were
+Did this again with a continuation of each conversation by moving the scenario into additional territory
+I mention this to point out that when you compose your prompts entailing the use of multi-personas, you will want to think about how the generative AI might respond. In addition, once you see a generated response, the odds are that you’ll want to keep reinvoking and tweaking the prompts to gauge what you can do to get more meat on the bones from the generative AI.
+
+I shall leave you with a final consideration about some key open questions that we all need more AI research explorations on:
+
+(1) Does the multi-agent in a solo generative AI attempt to split hairs or beat a dead horse when the problem at hand is already solvable by the generative AI?
+(2) Is the nature of the problem and its complexity a significant factor as to how far the multi-agent of a solo generative AI will get you?
+(3) Will a solo generative AI be less likely to reveal newness via simulated multi-agent in contrast to using multiple generative AI entailing an actual artificial multi-agent configuration?
+On a day-to-day and practical use of generative AI, you will hopefully consider making use of multiple personas as a prompting technique. The chances are that you might discover some useful results.
+
+I note that you should also abide by the wise saying that always try to use the right tool for the right job. A multi-persona prompt might be useful or might be useless. If you want to have a bunch of personas battling in your solo generative AI, or maybe collaborating, you can choose to do.
+
+The rest of the time, either no persona or a single persona might be sufficient. Go ahead and quietly ask yourself which is best, garnering a debate in your mind.
+
+May the most persuasive persona prevail."
 "
 
 
