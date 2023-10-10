@@ -1452,6 +1452,64 @@ You might be thinking that if using multiple generative AI apps is seemingly mor
 
 A tradeoff is involved.
 
+Is the potential gain from using multiple generative AI apps and multiple personas going to get you more or less than using a solo generative AI app with multiple personas being invoked in that one generative AI?
+
+You can’t especially know for sure beforehand.
+
+If you can afford the time and cost to use multiple generative AI apps and have a knotty problem that seems worth tossing the kitchen sink at it, go for it. If you are on a tighter budget or do not believe the problem at hand merits the multiple generative AI approach, so be it and stay with a solo performance.
+
+Future Of Generative AI Invoking Other Generative AI
+
+Let’s take a fast glance at the near-term future.
+
+I have predicted that we will soon enough have add-ons to generative AI that smooths out the desire to use multiple generative AI apps in a collective two heads are better than one mode of operation (see my discussion at the link here). Behind the scene will be advanced tech that pushes out your prompt to multiple disparate generative AI, the results will be gathered by the tool and then presented to you as a seamless whole. This can be done on an essay-generating basis and will also be available on a real-time interactive dialoguing basis.
+
+Back to the matter about the solo generative AI and the use of multiple personas, one consideration is that maybe when you use just one persona you aren’t going to get the full apple pie. It could be that you get only half of it or maybe 90%, while once you invoke two or more personas within the generative AI, the rest of the apple pie gets revealed. This is again akin to the seeming benefit of using chain-of-thought approaches.
+
+With all of that in hand, let’s do some additional unpacking on this enthralling topic. I’ll cover next herein some of the latest research that examines the advantages and disadvantages of solo generative AI in a multi-agent or multi-personas gambit. Following that analysis, I will showcase an example that I ran by using ChatGPT.
+
+Some have jokingly referred to this idea of using a solo generative AI that has multiple personas invoked as having too many voices in one head. The result could be counterproductive and chaotic. As an important side note, I’d like to emphasize that we must be exceedingly cautious about anthropomorphizing generative AI. Trying to cavalierly make comparisons to how humans think and the nature of multiple personas ought to not be commingled with how generative AI works. These are two entirely different facets. Generative AI is a mechanization of mathematical and computational pattern matching. Please be careful in making use of various metaphors and analogies in this arena.
+
+Research On Generative AI About Multiple Personas
+
+Let’s take a look at a recently posted and altogether interesting research study entitled Unleashing Cognitive Synergy In Large Language Models: A Task-Solving Agent Through Multi-Persona Self-Collaboration by Zhenhailong Wang, Shaoguang Mao, Wenshan Wu, Tao Ge, Furu Wei, Heng Ji (posted online July 11, 2023).
+
+Here’s what the research paper entails (excerpts):
+
+Human intelligence thrives on the concept of cognitive synergy, where collaboration and information integration among different cognitive processes yield superior outcomes compared to individual cognitive processes in isolation. Although Large Language Models (LLMs) have demonstrated promising performance as general task-solving agents, they still struggle with tasks that require intensive domain knowledge and complex reasoning.
+In this work, we propose Solo Performance Prompting (SPP), which transforms a single LLM into a cognitive synergist by engaging in multi-turn self-collaboration with multiple personas. A cognitive synergist refers to an intelligent agent that collaborates with multiple minds, combining their individual strengths and knowledge, to enhance problem-solving and overall performance in complex tasks. By dynamically identifying and simulating different personas based on task inputs, SPP unleashes the potential of cognitive synergy in LLMs. We have discovered that assigning multiple, fine-grained personas in LLMs elicits better problem-solving abilities compared to using a single or fixed number of personas.
+The above-cited research examined the use of solo performance prompting, whereby you instruct a solo generative AI to take on the role of multiple personas. This can be compared and contrasted to making use of multiple generative AI apps and having those disparate AI apps take on multiple personas.
+
+Just to briefly mention, my own preference is to avoid referring to the generative AI as potentially having cognitive synergies since the word cognitive is laden with all kinds of human connotations and anthropomorphizing. I realize this phrasing is commonly used in research on AI. I fully grasp why it is a handy phrasing to make use of. Anyway, I tend to prefer suggesting that this is a form of mathematical and computational pattern-matching synergy in the case of generative AI, while in the case of humans, I am certainly fine with denoting the conception that human thinking embodies cognitive synergies.
+
+Returning to the research study, they used a three-step process to examine these vexing matters:
+
+To unleash the power of synergizing different personas to tackle complex problems within a single LLM, we propose Solo Performance Prompting (SPP) which instructs a model to perform the following the procedure for solving general tasks:
+(1) Persona Identification: Identify multiple participants with special personas (including a leader persona: AI Assistant) that are essential for solving the particular task.
+(2) Beginning Remarks: Each of the participants delivers a beginning remarks providing suggestions or information on how to approach the task based on their own expertise.
+(3) Multi-Persona Iterative Collaboration: The leader persona, AI Assistant, proposes initial solutions, consults the other participants for feedback, and revise the answer iteratively.
+The study, fortunately, provides the prompts they used and the outputs that resulted from their work (collected into a GitHub repository for ease of access). I wholeheartedly applaud this form of visibility.
+
+We need AI researchers to showcase their prompts and resultant outputs of generative AI so that we can all readily see what was done and how it was undertaken. Not all AI researchers are this open-minded. The issue is that if we cannot see what was undertaken, the chances of replicating, verifying, validating, and otherwise furthering the advancement of AI are stilted, and a lack of transparency will lamentably undercut systematic progress in AI.
+
+Moving on, this is an example of one prompt that they used:
+
+Prompt: When faced with a task, begin by identifying the participants who will contribute to solving the task. Then, initiate a multi-turn collaboration process until a final solution is reached. The participants will give critical comments and detailed suggestions whenever necessary.
+Look closely at the prompt wording.
+
+In a brief three sentences, the core aspect that personas are to be invoked is done by simply asking the generative AI to identify participants and have those participants perform a multi-turn collaboration. The use of the word collaboration sets the stage that the participants are presumably going to work together rather than work in opposition. The multi-turn phrasing tends to get the generative AI to write out a result that looks almost like a script for a TV show or movie. One persona will stipulate something, then the next, and so on, usually on a round-robin basis. Mentioning that the personas are to give critical commentary and details will generally nudge the generative AI towards providing the juicy detailed stuff versus only presenting the results.
+
+Here's an example of some participants or personas in one particular scenario:
+
+AI Assistant (you); Poet; Computer Scientist; Ten-year-old child.
+Here are the profiles of the participants:
+
+AI Assistant (you): A super-intelligent AI assistant capable of performing tasks more effectively than humans.
+Poet: A person who studies and creates poetry. The poet is familiar with the rules and formats of poetry and can provide guidance on how to write a poem.
+Computer Scientist: A scholar who specializes in the academic study of computer science. The computer scientist is familiar with the concept of a quantum computer and can provide guidance on how to explain it.
+Ten-year-old child: A child with a limited English vocabulary and little knowledge about complicated concepts, such as a quantum computer.
+A crucial question for any research on generative AI that wishes to tackle this topic consists of ascertaining how to judge the results of the multiple personas experiment. If you give a problem that entails qualitative answers of a fuzzy nature, you are going to have a harder time determining whether the answers were equal, less, or better than might otherwise have been devised.
+
 "
 
 
