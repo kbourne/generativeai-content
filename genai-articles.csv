@@ -992,7 +992,11 @@ That’s about the end of today’s story.
 So, in a summary of a size of about 25 words in length, the gist is that Chain-of-Density is great for getting generative AI to do impressive summarization, possibly applicable in other settings too, so use the technique wisely and with aplomb.
 
 Enough said."
-"202307231","Prompt Engineering For Generative AI Gets Pumped Up Via Release Of Persistent Context Capabilities, Showcased By OpenAI’s New Custom Instructions ChatGPT Feature","Lance Eliot","forbes.com","2023-07-23","https://www.forbes.com/sites/lanceeliot/2023/07/23/prompt-engineering-for-generative-ai-gets-pumped-up-via-release-of-persistent-context-capabilities-showcased-by-openais-new-custom-instructions-chatgpt-feature/?sh=776b85f92020","In today’s column, I am going to continue my special coverage of some key new techniques and breakthroughs underlying prompt engineering when using generative AI. The latest and most notably significant advance is something that I generically refer to as persistent context capabilities, popularly also known as custom instructions and was recently announced and released as a new feature of ChatGPT.
+"202307231",
+"Prompt Engineering For Generative AI Gets Pumped Up Via Release Of Persistent Context Capabilities, Showcased By OpenAI’s New Custom Instructions ChatGPT Feature",
+"Lance Eliot",
+"forbes.com","2023-07-23","https://www.forbes.com/sites/lanceeliot/2023/07/23/prompt-engineering-for-generative-ai-gets-pumped-up-via-release-of-persistent-context-capabilities-showcased-by-openais-new-custom-instructions-chatgpt-feature/?sh=776b85f92020",
+"In today’s column, I am going to continue my special coverage of some key new techniques and breakthroughs underlying prompt engineering when using generative AI. The latest and most notably significant advance is something that I generically refer to as persistent context capabilities, popularly also known as custom instructions and was recently announced and released as a new feature of ChatGPT.
 
 A tidal wave of generative AI users will undoubtedly and inevitably adopt persistent context capabilities such as the custom instructions feature, no doubt about this. I will examine and highlight closely the custom instructions functionality of ChatGPT so that you’ll have a strident understanding of what these capabilities consist of and how to best leverage them in your ongoing daily prompt engineering endeavors.
 
