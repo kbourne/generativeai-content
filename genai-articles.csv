@@ -587,3 +587,408 @@ There is a longstanding adage or proverb pertaining to trees that goes like this
 We have a Tree of Thoughts capacity hiding within generative AI. Conventional generative AI can be coaxed into a Tree of Thoughts effort. With the research and experimentation underway to augment or even build specialized ToT components, the planted seeds will ultimately become an orchard.
 
 You might want to find a shady tree someplace and mull over the Tree of Thoughts approach. Your time will be well spent. Plus, you might have an apple fall on your head and have one of those amazing and rarely encountered eureka moments. Good luck and stay safe."
+"202309201","Prompt Engineering New Chain-Of-Density Technique Prompts Generative AI Toward Smartly Jampacking Crucial Content","Lance Eliot","forbes.com","2023-09-20","https://www.forbes.com/sites/lanceeliot/2023/09/20/prompt-engineering-new-chain-of-density-technique-prompts-generative-ai-toward-smartly-jampacking-crucial-content/?sh=70fe04d5214e","Trying to put five pounds of rocks into a three-pound bag.
+
+That old adage about filling a bag or sack is indicative that sometimes you are faced with the difficult chore of seeking to squeeze down something larger into something smaller in size. Turns out that we do this all the time, particularly when attempting to summarize materials such as a lengthy article or a voluminous blog posting. You have to figure out how to convey the essence of the original content and yet do so with less available space when doing so.
+
+Welcome to the world of summarization and the at times agonizing tradeoffs in deriving sufficient and suitable summaries. It can be challenging and exasperating to devise a summary. You want to make sure that crucial bits and pieces make their way into the summary. At the same time, you don’t want the summary to become overly unwieldy and perhaps begin to approach the same size as the original content being summarized.
+
+I bring up this topic because a common use of generative AI consists of getting the AI app to produce a summary for you. You feed an article or some narrative into the generative AI and ask for a handy dandy summary. The AI app complies. But you have to ask yourself, is the summary any good? Does it do a proper job of summarizing? Has anything vital been left out? Could the summary be more tightly conceived? Etc.
+
+A new method of devising summaries involves a clever prompting strategy that aims to bolster generative AI toward attaining especially superb or at least better than usual kinds of summaries. The technique is known as Chain-of-Density (CoD). Anybody versed in prompt engineering ought to become familiar with this insightful technique. Consider Chain-of-Density as not only helpful for producing summaries but there are a lot of other benefits garnered by understanding how the technique works and the ways in which this can power up your overall prompting prowess all-told.
+
+In today’s column, I am continuing my ongoing special series that closely explores the newest advances in prompt engineering for generative AI and will carefully reveal to you the keystone ins and outs of the Chain-of-Density prompting technique. The underlying research that has developed the technique will be examined. Furthermore, I will highlight several examples of how to do so in a practical day-to-day means of leveraging the CoD capacities.
+
+I’m glad you asked.
+
+Allow me a moment to explain.
+
+When you are trying to craft a summary, you often might do so in a series of successive attempts. Your first shot might be to craft a summary that has only a few of the biggest points that need to be included. After considering the initial draft, the odds are that you might further refine the summary by adding more elements to it. This can go on and on. Depending on how thorough you are, you might do a handful or more of these refining iterations. Each iteration can be construed as a chain of iterative summaries, one leading to the next for a given instance of trying to write a summary.
+
+That’s the “chain” part of this process.
+
+Let’s add some further terminology to describe the summary-making effort.
+
+A summary typically starts as somewhat sparse when you first toss it together. There isn’t much of any substance in the summary. You are usually seeking to further pack substance into the summary and do so while fighting the length of the summary. The more substance that you can jam into the summary, the higher the density of the summary.
+
+We can give a name to the substance by saying that we are trying to identify important “entities” within the original content. Those entities might be facts or figures. The entities are said to be anything especially instrumental to the overall meaning of the original content. A hope is to carry over as many of the demonstrative entities as feasible into the summary.
+
+Your summary-making process then is to iteratively devise a summary by starting with a sparse version and then adding more and more entities or substances to increase the density until you reach some desired or suitable end-state. The series of iterations acts as a chain. Each is used to connect to the next. You usually will retain the entities from one version to the next version, and be decidedly adding more of the entities available in the original as you seek to jampack the summary accordingly.
+
+Reflect on the adage of putting five pounds of rocks into a three-pound bag.
+
+Maybe you put one pound of rocks into the three-pound bag at the initial attempt. The bag is considered sparsely populated. There is still room to spare. The density is low. You then put a second pound of rocks into the bag. The density is increasing. The sparseness is lessening. Finally, you put in a third-pound of rocks. You have hit the maximum density and the sparseness has presumably dropped to near zero.
+
+Suppose that the bag can be elongated.
+
+Wonderful, you exclaim, being overjoyed at having more available space. Imagine though that you are going to hand the bag over to someone else. The larger and heavier the bag, the less useful it becomes. The same applies to summaries.
+
+A rule of thumb is that you want to minimize the length or size of the summary, meanwhile maximizing the summarization content. The two factors are often in contention with each other. You are tempted to increase the length to get more substance included. The length being increased will potentially undercut that the summary is supposed to be a summary.
+
+A person might seemingly just go ahead and read the original content if the summary approaches the size of the original material being summarized. The summary isn’t especially a summary anymore at that juncture. Indeed, sometimes a summary turns out to be longer than the original content that is supposedly being summarized.
+
+How can this be, you might be thinking?
+
+The answer has to do with being extractive versus being abstractive.
+
+During the summarization process, you are looking at two possibilities of the content being carried over into the summary. First, you aim to be extractive, primarily extracting key aspects and shoveling those into the summary. Second, you might at times be abstractive, whereby you go beyond the words themselves of the original content and begin to reinterpret or perhaps elaborate beyond what the summary per se has to say.
+
+A purely extractive summary is more likely to be construed as a fair and balanced reflection of the original content. You are not changing things up. You are only carrying the essentials (entities) over into the summary. The problem with an abstractive summary is that you are potentially changing up things and will be biasing or in some manner altering the meaning found within the original content being summarized. The danger is that this kind of summary is no longer seen as fair and balanced, and instead is based on the perceptions and opinions of the summarizer.
+
+In a sense, if you want an unadorned straightforward summary, you are better off with an extractive summary. If you want an adorned or embellished summary, that goes beyond the words presented in the original source, you might seek an abstractive summary. The thing is, the abstractive summary might no longer be an apt reflection of the original source. That is also how the summary might become longer than the original since the embellishments can possibly increase the size of things and you could find yourself looking at a summary that is much longer than the source used for the summary.
+
+A quick lighthearted recap of the aforementioned characteristics of summaries might be useful here.
+
+Here it is. I am reminded of the somewhat funny anecdote about a student in school who is trying to write an essay that summarizes a topic such as the life and times of Abraham Lincoln. Envision that the student hasn’t read the article assigned about the history of Lincoln. The student is in a panic because they are supposed to write a summary based on the reading and they haven’t read the piece at all.
+
+What does the student do?
+
+They wing it.
+
+Their essay starts by saying that Abraham Lincoln was an important person in history. Lincoln did great things, the essay says. People looked up to Lincoln. The essay raves about Lincoln being a super-duper. The student looks at their essay so far and realizes that the teacher is bound to detect that something is amiss. The essay doesn’t have a whit of substance or entities that are particularly notable regarding Lincoln, such as currently lacking to mention Lincoln as being a U.S. president or anything about the Civil War, and so on.
+
+The student will get nailed on the sparseness of the essay. It is abundantly sparse. They had better increase the density or they risk getting an F grade on the essay. So, the student adds the date of birth of Lincoln, the date of Lincoln’s assassination, and a few other facts and figures that are readily found in the original assigned article. The student is refining the summary. The first version is being chained across to a more elaborated version. The essay is increasing in density.
+
+I suppose we might grumble that the student is doing this in the worst of ways. The presumed purpose was for the student to study the article and learn something about Lincoln. After doing so, the essay or summary was only a means of showcasing what the student learned. Instead, the student is doing a somewhat rote method of merely aiming to produce an essay to get the assignment done.
+
+Well, I won’t delve any further into the plight of this stressed-out student and whether they were right or wrong in their endeavors. Some might be sympathetic to the plight of the student, perhaps having been in similar late-night homework-neglected (overworked?) dire circumstances when in school. Others might be upset that the student presumably is either lazy or not taking seriously the valued nature of the assignment.
+
+We shall move on.
+
+A summary of the key ideas introduced by my elaboration about summary-making is this:
+
+Extractive summary: A type of summary that tends to focus on extracting content from a source rather than embellishing the content (just the facts and nothing but the facts, as it were).
+Abstractive summary: A type of summary that tends to embellish content from the source and might intentionally or inadvertently veer by introducing additional meaning or interpretation into the budding summary.
+Entity: A substantive element such as facts or figures that exist in a source and that might be warranted for carryover into a summary.
+Sparse: A summary that lacks entities as per a relative ratio of the size of the summary versus the number of entities included.
+Density: An indication or ratio of the number of entities per the size of the summary and we usually aim to have a high density for a seemingly well-done summary.
+Chain: A series of iterative attempts at deriving a summary for which the entities are usually carried over from iteration to iteration.
+Here’s what we’ll cover next.
+
+I’ve ably prepared you for being able to leverage these summary-making precepts when using generative AI, especially by invoking a Chain-of-Density prompt engineering approach. I will explain what Chain-of-Density consists of. Examples will be shown.
+
+Before I dive into my in-depth exploration of this vital topic, let’s make sure we are all on the same page when it comes to the foundations of prompt engineering and generative AI. Doing so will put us all on an even keel.
+
+Prompt Engineering Is A Cornerstone For Generative AI
+
+As a quick backgrounder, prompt engineering or also referred to as prompt design is a rapidly evolving realm and is vital to effectively and efficiently using generative AI or the use of large language models (LLMs). Anyone using generative AI such as the widely and wildly popular ChatGPT by AI maker OpenAI, or akin AI such as GPT-4 (OpenAI), Bard (Google), Claude 2 (Anthropic), etc. ought to be paying close attention to the latest innovations for crafting viable and pragmatic prompts.
+
+Moving on, here’s a bold statement that pretty much has become a veritable golden rule these days:
+
+The use of generative AI can altogether succeed or fail based on the prompt that you enter.
+If you provide a prompt that is poorly composed, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being demonstrably specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+AI Ethics and AI Law also stridently enter into the prompt engineering domain. For example, whatever prompt you opt to compose can directly or inadvertently elicit or foster the potential of generative AI to produce essays and interactions that imbue untoward biases, errors, falsehoods, glitches, and even so-called AI hallucinations (I do not favor the catchphrase of AI hallucinations, though it has admittedly tremendous stickiness in the media; here’s my take on AI hallucinations at the link here).
+
+There is also a marked chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of generative AI. Regarding prompt engineering, there are likely going to be heated debates over putting boundaries around the kinds of prompts you can use. This might include requiring AI makers to filter and prevent certain presumed inappropriate or unsuitable prompts, a cringe-worthy issue for some that borders on free speech considerations. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+With the above as an overarching perspective, we are ready to jump into today’s discussion.
+
+Using Generative AI Prompting To Get Summaries Generated
+
+Making summaries in generative AI is easy-peasy.
+
+You can use a prompt as simple as this to do so:
+
+“Summarize the article that follows.”
+At that juncture, you would either directly include the article in the same prompt, or you could hit a return and the generative AI would likely say something like it is ready to summarize the article and please go ahead and provide the article in your next prompt.
+
+Voila, shortly thereafter you will have a nice new gleaning summary that has been generated by the AI app.
+
+I must caution you though that as I have repeatedly noted in my training classes about generative AI and prompt engineering, the results coming out of generative AI are like a box of chocolates. You never know what you might get.
+
+A summary generated by the AI could be amazing and spot-on. That is the happy face scenario. The summary might be atrocious and barely a summary of any value. That is the sad face scenario. The good news is that most of the time the odds are that the summary will be relatively well done. Summarizing is an intrinsic capability of most generative AI apps and exploits the impressive pattern-matching computational facilities therein.
+
+If you don’t like the summary or believe it could use some additional punching up, you can merely say so in your subsequent prompts. You tell the AI that perhaps the summary is not long enough. Or maybe the summary is overly long. The summary might be bereft of substance from the source of the summary. And so on.
+
+The AI app won’t complain. No whining will usually occur. The generative AI will comply and redo the summary. This can occur as much as you like. Unlike when dealing with a human who might have written a summary, you can endlessly prod and poke about revising the summary when using generative AI.
+
+How can you judge a summary?
+
+A common and obvious approach is to read the source material and compare it to the summary. You would want to see that whatever you consider to be significant was carried over into the summary. Another encompassed facet would be whether the carryover was faithful or opted to embellish or change up the meaning of the source.
+
+One confusion that sometimes gets in the way of assessing a summary is the matter of summarization versus simplification. Do not unduly equate those two. A summary doesn’t necessarily have to be a simplification. It could be that whatever complexity existed in the source is going to also come across in the summary. Simplification is a type of transformation involving simplifying one thing to be more readily accessible or understandable. A summary doesn’t have to be a simplification.
+
+If you want the summary to be simplified, you will usually need to ask for that to be undertaken. Remember though that I said that the generative AI is like a box of chocolates, such that the AI might do a simplification as part of the summarization. You might not have asked for a simplification outright. Nonetheless, the AI opted to go that path.
+
+All right, you probably already realized that generative AI by default has the capability to generate summaries and usually does a reasonably sound job in doing so. There is a chance that you might need to finesse things and do a series of prompts to guide the AI toward a summary that meets your needs.
+
+Seems like that is the end of the story.
+
+But you would be mistaken in believing so.
+
+We can try to ramp up the summary capabilities of generative AI. Let’s take the usual ad hoc means of doing so and turn it into something systematic and reusable. A devoted technique would be greatly advantageous for your prompt engineering skillset and can improve the odds of getting consistently buffo summaries.
+
+In a recent research paper entitled “From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting” by Griffin Adams, Alexander R. Fabbri, Faisal Ladhak, Eric Lehman, and Noémie Elhadad, posted online on September 8, 2023, the researchers present a new technique they have coined as Chain-of-Density (CoD).
+
+Here are some salient excerpts from the research paper:
+
+“Selecting the ‘right’ amount of information to include in a summary is a difficult task. A good summary should be detailed and entity-centric without being overly dense and hard to follow. To better understand this tradeoff, we solicit increasingly dense GPT-4 summaries with what we refer to as a “Chain of Density” (CoD) prompt.”
+“Specifically, GPT-4 generates an initial entity sparse summary before iteratively incorporating missing salient entities without increasing the length. Summaries generated by CoD are more abstractive, exhibit more fusion, and have less of a lead bias than GPT-4 summaries generated by a vanilla prompt.”
+The researchers opted to use GPT-4. That being said, just about any generative AI app can similarly be used. In a moment, I will be showing you examples based on using ChatGPT. The fundamentals of the technique remain about the same.
+
+In the research paper, the research structure consisted of summarizing articles of a general nature that were culled from a news database:
+
+“We conduct a human preference study on 100 CNN DailyMail articles and find that that humans prefer GPT-4 summaries that are more dense than those generated by a vanilla prompt and almost as dense as human written summaries. Qualitative analysis supports the notion that there exists a tradeoff between informativeness and readability. 500 annotated CoD summaries, as well as an extra 5,000 unannotated summaries, are freely available on HuggingFace.”
+A few points are worth noting about the above.
+
+First, they reviewed the generated summaries to try and assess whether the technique derived better summaries than a conventional vanilla prompt (similar to the prompt I showed you in the prior subsection herein), and whether they were as good as human-derived summaries. They conclude that indeed the CoD technique performed well.
+
+As an aside, make sure to read the details of the study if you want to see how they did those reviews. Any experimental setting can impact how outcomes arise and if you are thinking of doing akin experiments you might find it useful to explore what approach this research opted to undertake.
+
+Second, they ran into the usual conundrum about summarization whereby there are tradeoffs between informational compactness and readability. In short, you might get yourself a wicked summary but it is so jampacked that humans reading the summary are left with a foul taste in their mouths. A summary can lose steam if it is at the extremes of density.
+
+Third, for those of you who want to do similar research, the researchers kindly have put together a set of annotated CoD summaries and unannotated summaries for you to freely make use of. One of the biggest hurdles for doing generative AI research involves collecting data for your experimentation. Having a ready-made dataset can speed up the research effort, reduce costs, and allow for replicated studies.
+
+How does the Chain-of-Density technique work?
+
+They used a chain or series of iterative summaries that are launched by a prompt and the generative AI is told to incrementally or iteratively improve or make denser each summary based on stipulations given by the prompt. I trust that sounds familiar as per my earlier discussion on such matters.
+
+I will show the prompt in a second.
+
+I know you are eager to see it.
+
+Just first a quick overview by the researchers in their paper about the density aspects:
+
+“Yet, how dense is an open question. A summary is uninformative if it contains insufficient detail. If it contains too much information, however, it can become difficult to follow without having to increase the overall length. Conveying more information subject to a fixed token budget requires a combination of abstraction, compression, and fusion. There is a limit to how much space can be made for additional information before becoming illegible or even factually incorrect.”
+And, as stated in the paper, they went the route of starting with a sparse summary and having it iteratively infused with more and more entities:
+
+“In this paper, we seek to identify this limit by soliciting human preferences on a set of increasingly dense summaries produced by GPT-4. Treating entities, and, in particular, the average number of entities per token, as a proxy for density, we generate an initial, entity-sparse summary. Then, we iteratively identify and fuse 1-3 missing entities from the previous summary without increasing the overall length (5x overall). Each summary has a higher ratio of entities to tokens than the previous one.”
+Note that they opted to keep the length of the summary as a static size. This in a sense forces the AI app to stay within those stipulated bounds. If you want to use a three-pound bag, you make it so, and the AI app is not to try and be tricky by sneakily increasing the size. I will revisit this assumption later on.
+
+We shall now take a look at the prompt they used.
+
+I applaud researchers who show their prompts. If a study doesn’t reveal the prompts used, we are left in the dark. We have no means to judiciously weigh the results that the experimenters produced. Furthermore, the lack of showing prompts leaves practitioners in the lurch since they have nothing tangible to try and incorporate into their prompt engineering repertoire.
+
+Their utterly generic prompt that was used as a basis for comparison with this:
+
+“Article: {{ ARTICLE}}”
+“Write a VERY short summary of the Article. Do not exceed 70 words.”
+As is typical, the prompt asks that a summary be produced, emphasizing that it should be very short. Be forewarned that saying something vague such as being a very short summary is going to get you all kinds of wild variations in size. In this case, they immediately stated that the size of the summary should not exceed 70 words. That’s what they wanted in this particular setting.
+
+Next, their Chain-of-Density prompt consisted of two major parts. One part describes the iterative chaining process. The second part describes the guidelines that they want the generative AI to abide by.
+
+Here is the first part of their CoD prompt:
+
+“Article: {{ ARTICLE}}”
+“You will generate increasingly concise, entity-dense summaries of the Article that I will next provide to you.”
+“Repeat the following 2 steps 5 times.”
+“Step 1. Identify 1-3 informative Entities (‘; ‘ delimited) from the Article which are missing from the previously generated summary.”
+“Step 2. Write a new, denser summary of identical length which covers every entity and detail from the previous summary plus the Missing Entities.”
+“A Missing Entity is:”
+“- Relevant: to the main story.”
+“- Specific: descriptive yet concise (5 words or fewer).”
+“- Novel: not in the previous summary.”
+“- Faithful: present in the Article.”
+“- Anywhere: located anywhere in the Article.”
+I hope you can discern how this prompt tells the AI app to do a series of iterations when producing a summary. In this instance, they have said that they want two steps to be undertaken, doing so each time for a total of five iterations. The two steps consist of identifying some entities within the article that are not yet in the summary. They asked to find one to three such entities each time. The second step involves putting those “missing entities” into the summary.
+
+To clarify what kinds of entities they want the AI to find, they refer to the entities as missing entities meaning that they are currently entities missing from the iteratively produced summary. Those would be entities that are missing so far and that must meet the requirements of being relevant, specific, novel, faithful, and can be anywhere in the source being summarized.
+
+They also provide these guidelines as part of the prompt given to the AI app:
+
+“Guidelines:”
+“The first summary should be long (4-5 sentences, approximately 80 words) yet highly non-specific, containing little information beyond the entities marked as missing. Use overly verbose language and fillers (e.g., ‘this article discusses’) to reach approximately 80 words.”
+“Make every word count: re-write the previous summary to improve flow and make space for additional entities.”
+“Make space with fusion, compression, and removal of uninformative phrases like ‘this article discusses’.”
+“The summaries should become highly dense and concise yet self-contained, e.g., easily understood without the Article.”
+“Missing entities can appear anywhere in the new summary.”
+“Never drop entities from the previous summary. If space cannot be made, add fewer new entities.”
+“Remember, use the exact same number of words for each summary.”
+“Answer in JSON. The JSON should be a list (length 5) of dictionaries whose keys are ‘Missing_Entities’ and ‘Denser_Summary’.”
+Note that the guidelines stipulate that the initial summary should be about 80 words in size and consist of four to five sentences. This is how they did their experiment. You can of course make use of other parameters as suitable for a given summary situation at hand.
+
+The guidelines also direct the AI app to be careful and make every word count. The AI is told to aim for a high density. This is a prudent indication.
+
+An especially restrictive guideline is that entities cannot be dropped out of subsequent summaries during the iterative process. You can say that this is good because it makes sure that things don’t disappear throughout the iterations. You can also say that this might be a bit undermining if there is a chance that better entities could be fit into the summary that might now have less preferable entities as a carryover from a prior iteration (you might be willing to drop out lesser entities for greater entities, rather than being forced into a legacy carryover based on earlier guesses).
+
+This is a key tradeoff of how to conduct summarization.
+
+Devising Your Prompting Template For Summarization
+
+I made use of the CoD style prompt via a series of ad hoc experiments using ChatGPT for doing akin summarizations. They worked out pretty well. I’ll show you some in the next section.
+
+By the way, I didn’t use precisely the same wording and decided to play with things to see what impact different wording might have. There is a lot of flexibility in how you might word such instructions. Also, keep in mind that every generative AI app might react differently to a given prompt. Even the same generative AI app can react differently since there is a probabilistic and statistical variation embedded into the computational pattern-matching mechanisms.
+
+Here are ten crucial parameters that I came up with and can be chosen by you as desired when undertaking this style of prompting strategy:
+
+(1) Iterations. You specify the number of iterations to generate until a final summary is attained (the example stipulates 5 iterations currently; I tried less and tried more).
+(2) Words size. You specify the size of the desired summary in words (the example stipulates 80 words currently; I tried less and tried more).
+(3) Number of Sentences. You specify the size of the initial iterated summary size in terms of the number of sentences (the example stipulates 4-5 sentences currently; I tried less and tried more).
+(4) Persistence of Entities. Stipulates to keep entities persistent and carried over into each subsequent iteration (versus allowing for prioritizing or cherry-picking during generation).
+(5) Variability. All iterated summaries are capped at the same size in the number of words (versus allowing for expansion if suitable).
+(6) Number of Missing. The number of missing entities to be found during each iteration (stipulates 1 to 3 currently; I tried less and tried more).
+(7) Definitional Settings. Defines missing entities via a set of short definitions (stipulates these five of Relevant, Specific, Novel, Faithful, Anywhere; could redefine, could add more, could remove some; I removed some and added some).
+(8) Showcasing. Doesn’t explicitly ask to display each of the iterated summaries (ambiguous as to showcasing; versus explicitly asking to see each iteration).
+(9) Explaining. Doesn’t ask for an explanation of how summaries were derived (versus requiring an explanation of how each summary was derived and the differences between them).
+(10) Self-Rating. Doesn’t ask for a rating of the summaries or final summary (versus requiring that a self-rating be ascertained and displayed).
+Those last three of my above-listed parameters have to do with telling the generative AI to showcase each iterated summary, explain the basis, and do a self-rating of each iterated summary.
+
+I explicitly asked for those details so that I could gauge the impact of playing with the various other parameters. On a daily basis, I doubt you would want all of that added verbiage. It would be seemingly overly verbose. I did find the added indications quite telling and valuable when first determining how to best use this approach.
+
+You might want to try the same.
+
+Setting The Stage For A Close Look At Chain-of-Density
+
+I thought you might like to see some examples associated with using the Chain-of-Density approach.
+
+Am I right?
+
+I hope so.
+
+Furthermore, I decided that some plainly simple legal-domain examples might be interesting, informative, and viable to use when exploring the Chain-of-Density prompting technique.
+
+Before we get into the weeds, please realize that the research study that I’ve been discussing involved the summarization of general news articles. That is a suitable selection since generative AI is principally data-trained across the board and not especially honed to a specific domain. You would be safest to stick with general topics and not try to use conventional generative AI for domain-specific topics unless you’ve done something of a customized nature to try and get the AI up-to-speed in that desired domain.
+
+I have previously shown my honing of generative AI to the legal domain, see the link here and the link here, just to name a few such analyses regarding AI applied to the legal realm. Let me say this in the loudest and clearest of terms — you should be extremely cautious when trying to apply generative AI to specific domains for which the generative AI has not had additional dedicated data training accordingly. Two lawyers found out about this the hard way when using conventional ChatGPT for legal tasks and they got into quite hot water for doing so (see my analysis at the link here).
+
+Anyway, here’s what I did for this CoD exploration.
+
+I wanted to find some data that was already readily available and that had a legalese element to it. Right away, I thought of the now classic paper from long ago (the year 2019, which in AI years is a near lifetime!), entitled “Plain English Summarization of Contracts” by Laura Manor and Junyi Jessy Li, Proceedings of the Natural Legal Language Processing Workshop 2019, Association for Computational Linguistics.
+
+They examined licensing agreements that you sign up for or that you automatically accept whenever you visit various websites or play online games. I would venture that almost no one actually reads those licensing agreements. You ought to. The problem is that you are agreeing to things that you don’t even know what you’ve agreed to do, or not do. You are spinning the roulette wheel that there isn’t something in the licensing that is going to get you into trouble. Sheepishly, shamefully, we all do it. We are all at risk.
+
+Maybe there is a light at the end of that tunnel.
+
+Suppose that the legalese could be summarized in a manner that would be easier for you to comprehend. The idea is that people might pay attention to licensing agreements and be more circumspect if the often voluminous and legally imposing narratives were summarized and perhaps translated into plain language.
+
+The study by these authors sought to craft a dataset of licensing agreements along with human-derived summaries. Researchers who wanted to subsequently test out generative AI or any kind of AI that might do summaries could readily make use of the dataset.
+
+That’s me!
+
+Here is what the authors indicated they did (my selected excerpts):
+
+“Unilateral legal contracts, such as terms of service, play a substantial role in modern digital life. However, few read these documents before accepting the terms within, as they are too long and the language too complicated.”
+“We propose the task of summarizing such legal documents in plain English, which would enable users to have a better understanding of the terms they are accepting. We propose an initial dataset of legal text snippets paired with summaries written in plain English.”
+“We verify the quality of these summaries manually, and show that they involve heavy abstraction, compression, and simplification. Initial experiments show that unsupervised extractive summarization methods do not perform well on this task due to the level of abstraction and style differences.”
+I tried out several snippets of licensing agreements or terms of service, along with the human-derived best summary included. I aimed to use ChatGPT to do a Chain-of-Density summarization, playing with variants of the prompting technique, and do so by summarizing the licensing agreement snippets.
+
+A basis for comparison to what ChatGPT had to say could be made to the human-derived best summary in the dataset. Plus, I used my own noggin to do the comparisons too.
+
+I only have space here in today’s column to cover one such example. I am working on a potential follow-up encompassing a more detailed exposition, so keep your eyes out for that later coverage. Let’s focus here on one notably intriguing and useful example.
+
+This is an original snippet of a licensing agreement as available by the authors:
+
+Licensing snippet: “By using our Services, you are agreeing to these Terms, our Trainer Guidelines, and our Privacy Policy. If you are the parent or legal guardian of a child under the age of 13 (the “Parent”), you are agreeing to these Terms on behalf of yourself and your child(ren) who are authorized to use the Services pursuant to these Terms and in our Privacy Policy. If you don’t agree to these Terms, our Trainer Guidelines, and our Privacy Policy, do not use the Services.”
+Mull that over.
+
+Here is the human-derived summary that was obtained:
+
+Human-derived summary: “By playing this game, you agree to these terms. If you're under 13 and playing, your parent/guardian agrees on your behalf.”
+The human-derived summary is certainly short and seemingly in plain language. But, it is also rather wanting, if you give it a close look.
+
+I’ll explain some key problems with it.
+
+You might be tempted to proclaim that the summary is admirably short, coming in at around 20 words in size versus the 4x larger sized 80+ words of the source, and thus there is only so much room to squeeze in things if you want to be succinct. However, a summary is going to be problematic if it omits crucial elements (entities) or potentially misstates or misinterprets what is indicated in the original (extractive versus abstractive). This is especially so if we could get those points included or straightened out, and if doing so could still be done rather succinctly (either in the same 20 words or nearly in that same range).
+
+Here are some of the particularly worrying concerns about this particular human-derived summary:
+
+Major omission: The human-derived summary completely omits mentioning an important keystone, namely that the source essentially warns or urges you to not proceed ahead if you do not agree with the stated provisions (per the last sentence of the source content shown). A smarmy view would be that such a realization is obvious and ergo doesn’t need to be in the derived summary, but that is arguably imprudent to omit such a vital proviso. Undoubtedly, some or many would most certainly be caught unawares by not seeing this provision explicitly mentioned in the summary.
+Possible major misinterpretation: Says “Terms” in the source, meanwhile ambiguously states “terms” in lower case during the summary (are they the same?), plus this phrasing overlooks indicating that the original content also mentioned separately and distinctly both the Trainer Guidelines and Privacy Policy (unless you try to argue that they are all blended into “terms” though this is highly debatable and confounding).
+Possible misdirection: Says in the summary “by playing this game” which could potentially be notably different from the original stipulating “using our Services” (wherein the Services could encompass more than just the particular game being used at the time).
+Possible miscommunication: Says in the summary “your parent/guardian agrees on your behalf” but this is somewhat misleading in the sense that the parent/guardian would have to choose to agree and would also be binding to themselves and the child.
+I picked this example because it has some prominent lessons to be learned.
+
+First, just because a human does a summary doesn’t mean that the summary will be any good or perhaps not the best that the summary could potentially be. I mention this due to the likely retort by some that you should always use a human to devise a summary rather than AI, believing that the human will always do a better job. That is not necessarily the case.
+
+Second, it might be prudent to consider using generative AI to do a summary and then have a human refine the summary. The advantage is that the human is potentially going to expend much less effort than having to do a summary from scratch. That won’t always be the case because it could be that the AI-devised summary is totally off-base and the human will be doing more work than if they had started with a blank slate. I would dare say that a reasonably good generative AI is likely to produce a reasonably good summary and thus not require a human refiner to overwork the result.
+
+Third, in a domain such as the law, trying to summarize legalese is fraught with dangers. You can readily omit something of a legally important effect. You can misstate something. The person relying on the summary is taking a leap of faith that the summary is complete and correct. The famous line about consulting with an attorney is indeed the sensible thing to do whenever a layperson is trying to figure out a legal matter, even in the case of licensing agreements.
+
+You might find of interest that OpenAI squarely warns you to not use ChatGPT or GPT-4 for seeking legal advice and that you should consult with a human attorney, see my coverage on this aspect at the link here. A rather zany fad that has somewhat appeared regarding ChatGPT and other AI apps consists of people who use generative AI to produce legal-looking documents to try and intimidate others into thinking that an attorney has been consulted, see my discussion at the link here. Ugh.
+
+Returning to the CoD prompt technique, I used the above licensing passage as a means of data exploring the Chain-of-Density prompting approach. Let’s see what we can get generative AI to do on this. Can we get the AI to do a better job? Or, will the AI fall down on this summarization task and do worse than the human-derived summary?
+
+Place your bets and get yourself ready for a fun time at the roulette table.
+
+First, I asked ChatGPT to summarize the licensing passage. Keep in mind that I did so with a purely vanilla prompt that had no specific instructions or guidelines, and here’s what I got:
+
+“This passage outlines the terms of service for using a particular set of services. It requires users to agree to these terms, as well as abide by trainer guidelines and a privacy policy. If a user is a parent or legal guardian of a child under the age of 13, they are also bound by these terms on behalf of both themselves and their authorized children. Users who do not agree to these terms, trainer guidelines, and the privacy policy are advised not to use the services.”
+I’d say this was a dud or at least a letdown of a summary.
+
+The size in words is nearly the same as the source material. To some degree, you could also argue that the summary proffers a somewhat simplification of the source, though I did not explicitly ask for a simplification. All in all, we can applaud the AI app for having complied with the request, though the summary is not especially fruitful.
+
+I should bring up an allied factor. In this case, the source passage is only about 80 words in size. When using much larger narratives, the summary of a straight-ahead nature might be more useful. For example, I tried a different licensing snippet of about 500 words and got a summary of about 100 words. I found that summary useful since it covered the material in one-fifth less space.
+
+The size of the source matters heavily when considering summarizations. I will also add that you might not be able to summarize rather lengthy source material. Most of the generative AI apps have size limitations known as context length constraints. You cannot just feed an entire encyclopedia into generative AI and ask for a summary. The length goes over what is currently permitted. There are tricks to cope with this, and you can expect that ongoing advancements to generative AI will increase the size limits, see my coverage at the link here.
+
+Getting back to the matter at hand, I told ChatGPT to do a tighter job on the summary of the licensing agreement passage. I didn’t crow about the length. I merely asked to have the summary made tighter in a shorter length (no specification of the size that I wanted).
+
+Here’s what I got:
+
+“This passage states that by using the services, users agree to its terms, trainer guidelines, and privacy policy. Parents or legal guardians are also bound by these terms for themselves and their children under 13. Non-agreement means users should not use the services.”
+I kind of liked this summary that ChatGPT derived. The length is about 40 words, so roughly half the size of the source. The summary includes the things that I mentioned earlier that were missing in the human-derived summary. I would rate this summary better than the human-derived one.
+
+Can we do better?
+
+Let’s try the Chain-of-Density technique.
+
+I decided to make things “fair” by putting the size limit of the summaries at 40 words, ergo matching the above version that was derived by ChatGPT without any indication by me regarding the size. This will allow an apples-to-apples comparison. I also started a new conversation so that the prior effort to do the summary of the passage would not get mingled into the CoD directives.
+
+My prompt asked too that ChatGPT should show each of the iterated summaries. Here then are the five iterated summaries:
+
+“Summary 1: This article discusses terms and policies for using our services. Parents are responsible for agreeing on behalf of their children under 13. If you disagree, avoid using our services.”
+“Summary 2: Agree to our terms, Trainer Guidelines, and Privacy Policy when using our services. Parents represent themselves and their under-13 children. Avoid our services if you disagree.”
+“Summary 3: Use our services? You agree to our Terms, Trainer Guidelines, and Privacy Policy. Parents accept for themselves and their under-13 children. Disagreement means avoiding our services.”
+“Summary 4: Agree to Terms, Trainer Guidelines, Privacy Policy using our services. Parents represent selves and under-13 children. Avoid services if you disagree.”
+“Summary 5: Agree to Terms, Trainer Guidelines, Privacy Policy to use our services. Parents represent themselves and under-13 children. Disagree? Avoid our services.”
+The first summary is labeled as Summary 1 and would be the summary that is the first shot at doing a CoD series of summaries. You’ll notice that this initial summary contains the lingo of “this article discusses” which was part of the templated instructions for the CoD prompt.
+
+Further, note that the first summary has omitted the aspects about the Trainer Guidelines and the Privacy Policy. This is what the human-derived summary did too. In the case of the generative AI, it was essentially following orders and had been limited to just one to three entities for the first round.
+
+The second summary, labeled as Summary 2, does include those entities. All in all, this second summary seems pretty good.
+
+The third summary almost seemed to reach for a bit of tomfoolery. The flavorful question about using the services was not part of the source and seems to be an attempt to craft a more engaging summary. The fourth summary goes back to the roots and seems akin to the second summary, though the wording doesn’t flow as readily. Finally, the fifth summary is okay, but I still personally prefer the second summary.
+
+You might find of interest that I had ChatGPT do a self-rating of the summaries that the AI app produced, and here’s what the response was:
+
+“Self-Rating:”
+“Summary 1: 7/10”
+“Summary 2: 8/10”
+“Summary 3: 9/10”
+“Summary 4: 9/10”
+“Summary 5: 9/10”
+I agree that the first summary deserved a 7 out of 10 (this was a rating scale concocted by ChatGPT, which I had left open-ended for ChatGPT to ascertain). The second summary got an 8, though I would suggest it is a 9 if the others that follow are also 9s. Maybe we can agree to disagree on this, me and ChatGPT.
+
+I do give ChatGPT credit for not declaring that the final summary was a 10. This could happen in the sense that just as humans might overinflate their work, we can expect that ChatGPT might do the same. This is not due to sentience. It is due to pattern-matching on vast amounts of online text for which humans do that kind of puffery all the time.
+
+A few quick lessons from this are that sometimes a summary can be in the eye of the beholder. There is a point at which a summary rearranges items but does not particularly enhance the summary itself. I believe this might have occurred with my request in this case.
+
+Another lesson is that since the source had so few entities to play with, there is only so much that can be done to derive a summary. In my longer experiments that consisted of hundreds and thousands of words, there is much more to be dealt with. This, in turn, radically impacts the nature and quality of the summary produced.
+
+My example with the brief licensing agreement passage is quite short in size and sparse in the number of entities contained within. I would like to show you much longer examples, but the size limitation for today’s column is already at the allowed range. As mentioned earlier, if readers express interest, I can do a follow-up showcasing larger examples that are more robust.
+
+I am particularly pursuing the CoD as an instrumental approach in the legal domain. This appears to have especially worthwhile benefits for legal professionals. Others have noticed this too.
+
+Esteemed industry and scholarly colleague, Dazza Greenwood, founder of law.MIT.edu (research) and CIVICS.com (consultancy), recently posted online this notable insight:
+
+“I think this approach holds promise for further optimizing the summarization of large, complex legal documents and other legal materials where density is challenging. CoD's controlled iterative process could help legal professionals optimize the signal-to-noise ratio in summaries of contracts, case filings, discovery materials, and more. By starting sparse and incrementally adding high-value named entities, dates, locations, and other terms of art, CoD prompts may generate summaries that accurately capture the legal essence while maintaining clarity.”
+I wholeheartedly concur.
+
+Conclusion
+
+Time now to do a recap and provide final comments. I assuredly recommend that you include Chain-of-Density in your prompt engineering skillset. That’s the bottom line of the veracity of the technique.
+
+I give it two thumbs up.
+
+Play around with the capability. Be ready to use it when the situation seems suitable to do so. Don’t wait until the last minute and struggle with this latest prompting technique at the time of need. Do your homework beforehand (no last-minute essay summaries about Abraham Lincoln).
+
+In one sense, the CoD is an elephant gun. You should use this technique on larger-sized source materials and when the volume of entities is relatively high. For smaller-sized source materials, you can just use the plain vanilla summary, followed by a few additional clarification or refinement prompts. No need to shoot an ant with an elephant gun. The same goes for a larger source that has very few entities.
+
+A clever way to use Chain-of-Density would be to improve a prior summary that someone handed to you. There is a chance that the iterative process will make the summary tighter and better. A downside will be that if you don’t have the source that was used for that summary, you are gradually reaching a point of diminishing returns. Also, and perhaps obviously, if you do have the source, you probably don’t need to use the other summary anyway, unless you want to do a comparison and possibly have that aid the summarization process.
+
+One notable concern that you should always have at the top of your mind entails whether the generative AI might encounter an AI hallucination, error, falsehood, bias, glitch, or other malady when trying to generate a summary. The chances of this multi-step process possibly treading into an AI landmine are heightened due to the length of the process, though this is tempered by the seeming fact that when you get generative AI to do chains, such as Chain-of-Thought (see my analysis of the link here), this often seems to keep away the ghosts and goblins. A tradeoff might be occurring internally as the pattern-matching in a mathematical manner becomes more methodical yet also is undertaking more steps than usual.
+
+A final remark for now will give you some reasoned reflective thought.
+
+Here’s the deal. I have started using a similar directed iterative approach in other situations of prompting settings. My claim is that you can use the overarching conception of doing self-improvement iterations in circumstances beyond those of a summarization task. We already know that Chain-of-Thought is handy, along with Skeleton-of-Thought, and other stepwise directives. The Chain-of-Density is similar, though adds some niceties about how to incrementally make improvements.
+
+I’m a mixer and matcher when it comes to prompt engineering.
+
+Be on the lookout for an upcoming column that brings together a slew of other well-known prompting strategies. You either will admire their synergy and beauty in unison, or some might recoil at the Frankenstein appearance (well, don’t let the looks fool you, there are a lot of combinatorial benefits to be had).
+
+That’s about the end of today’s story.
+
+So, in a summary of a size of about 25 words in length, the gist is that Chain-of-Density is great for getting generative AI to do impressive summarization, possibly applicable in other settings too, so use the technique wisely and with aplomb.
+
+Enough said."
