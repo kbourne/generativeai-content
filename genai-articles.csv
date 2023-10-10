@@ -234,3 +234,356 @@ Outlines are great. They serve a useful purpose. Most people use them quite freq
 Skeleton-of-thought is an interesting and useful tool for prompt engineering. Use it well. Use it wisely. I’d advise that you have SoT in your toolbox of prompt engineering techniques and methods. Leverage SoT as seems befitting.
 
 Sometimes less is more and priming the pump is grandly fruitful."
+"202309081","Prompt Engineering Embraces Tree-Of-Thoughts As Latest New Technique To Solve Generative AI Toughest Problems","Lance Eliot","forbes.com","2023-09-08","https://www.forbes.com/sites/lanceeliot/2023/09/08/prompt-engineering-embraces-tree-of-thoughts-as-latest-new-technique-to-solve-generative-ai-toughest-problems/?sh=c1d7de22c8b2","Trees, you’ve got to love them.
+
+We seem to talk about trees quite a bit these days, especially as a markedly helpful metaphor or comparator. You undoubtedly have heard of the tree of knowledge and the symbolism thereof. We also speak of people who if they grow up suitably will be stout and stand tall like a resplendent tree. Joyce Kilmer, the famed poet, notably made this remark comparing poems and trees: “I think that I shall never see a poem lovely as a tree.”
+
+Turns out that trees or at least the conceptualization of trees are an important underpinning for the latest innovation in prompt engineering and generative AI.
+
+In today’s column, I am continuing my ongoing and popular series on advances in prompt engineering and will be covering the newest and especially exciting emergence of the so-called Tree of Thoughts (ToT) technique when using generative AI. This technique is definitely worthy of being mindfully considered and given proper due for anyone aiming to enhance their prompt engineering skills. I will walk you through the keystones of the Tree of Thoughts approach and also include examples to get you started on using this clever advancement.
+
+Consider first how the concept of trees is leveraged for computing purposes.
+
+You already know that a natural tree has a slew of branches, extending upward or outward from the base of a tree. It is also well-understood that trees have roots that branch out underneath the ground and help keep the tree well-rooted and grounded. Keep that imagery in mind.
+
+For those of you versed in the field of computer science, you undoubtedly have learned that a type of data structure known as a tree is commonly used to organize and search amongst data. The analogy to a nature-based tree is that the data structure has various branches or might have roots that extend from a base or key topic of interest. You can then use the computer to store the data and search the data by exploiting a tree-like capacity.
+
+Trees Exemplified Via Chess Playing
+
+Let’s use chess as a vivid indicator of computer-based data structures composed of trees.
+
+You are staring at a chessboard and trying to decide what move to next make. Your eyes glance at your chess pieces. Perhaps the next move ought to consist of using your pawn to threaten the queen of your adversary. If you move the pawn forward, the queen will be endangered. Is this a good move to make or might you be making a blunder?
+
+In your mind, you would likely want to think ahead about what might happen if you move your pawn. The queen could opt to take your pawn. If so, what should your follow-up move be? You consider what the consequences might consist of. All in all, you are mentally pursuing one line of thinking, namely the consequences or further steps that extend as a result of moving your pawn.
+
+Count that as a line of thinking or a series of thoughts shaped around a particular base or root. The base or root is that you are mulling over the possibilities that might arise due to moving your pawn. This might be likened to a branch of a tree. The branch extends outward and there might be offshoots of the branch. The branch has a bunch of offshoots such as in this case the queen might take the pawn or maybe a rook might take the pawn, and so on.
+
+Okay, that line of thinking is entirely about moving your pawn. Set that to the side for the moment. It could be that other possibilities exist such as moving your knight instead of moving your pawn. Well, any good chess player would want to ponder that move and whether it is a suitable choice to make. You then pursue mentally a branch of sorts about moving your knight and considering all the ramifications downstream by doing so.
+
+I trust that you can see that we now have two lines of thought, consisting of our having thought about moving the pawn and a second line of thought about moving the knight. We can keep doing this with all of our other pieces on the chessboard. We might end up with numerous lines of thought. They each have their own respective focus.
+
+What are we to do with these numerous lines of thought?
+
+One aspect would be to try and compare them to each other.
+
+The moving of the pawn might be advantageous over the moving of our knight. By examining those two lines of thought, hopefully, a decision can be made about which of the two is most meritorious. In general, you might want to somehow compare and contrast each of the distinctive lines of thought. There are many ways to do this. For example, you could try to use numeric weights and mentally calculate the winning potential of each line of thought. That would be one method. Another approach could be to directly compare side-by-side the lines of these thoughts. Etc.
+
+Suppose we develop an app that can play chess. The odds are that we would program the app to do something akin to how humans seem to play chess. When considering what next move to make, the chess-playing program would examine a potential candidate for a move, such as moving the pawn, and consider the consequences that might arise. This would all be done computationally.
+
+The data structure used to bring this about might consist of a tree-like structure. We have at the base the existing state of the chess game. The program chooses a piece such as the pawn and computationally explores what might happen if the pawn is moved. That is considered a branch now of this tree. The program chooses another piece, such as the knight, and computationally analyses what will happen if the knight is moved. This is another branch being explored. Rinse and repeat.
+
+Some would suggest that these are computationally based “thoughts” in the sense of being likened to how humans make use of thinking when they process such situations. There is heartburn over using that terminology. We cannot say for sure what goes on in the human mind when thinking about things such as which chess move to make. In any case, we all have agreed to refer to those human ponderance as thoughts.
+
+If we mimic this in a computer, is it fair or reasonable to label these as “thoughts” in the same sense as human thoughts?
+
+A commanding apprehension to be made is that this is an anthropomorphizing of the computing process. We are ascribing potentially a sense of sentience to the computer program by reusing a word that is normally reserved for sentient beings. Referring to the computer program making use of “thoughts” is disconcerting because it overly implies that the app is able to think.
+
+Despite those qualms, by and large most have gone along with referring to these computational confabulations as thoughts. I will do so here too. I wanted though for you to be aware that there is controversy over the use of such wording. Please do keep in mind that the alleged thoughts associated with a computer or computational process are not necessarily akin to that of human thoughts and therefore try to differentiate this throughout the rest of this discussion, thanks.
+
+I have now introduced you to an overarching foundational idea that we can in a program or app establish a computational means of composing “thoughts” and organizing them into a tree-like structure. Chess playing helps to illustrate this. You have the existing state of the game. The app examines the possibilities of moving a particular piece. This is a branch from the base or existing state of the game. The branch will be construed as a thought. Another branch is formed by examining the moving of a different piece. This is considered an additional thought. We will end up with lots of these so-called thoughts and they are being arranged in a tree-like manner.
+
+Ergo, we will boldly proclaim that these can be referred to as a Tree of Thoughts.
+
+A chess-playing app would leverage the Tree of Thoughts structure and mechanism to try and calculate what the best move is. As mentioned earlier, this could consist of a variety of ways to examine the tree. I will cover this in more detail shortly.
+
+All in all, we can use this same computationally based Tree of Thoughts capability when using generative AI and do so via clever prompt engineering. Before I dive into my in-depth exploration of this vital topic, let’s make sure we are all on the same page when it comes to the keystones of prompt engineering and generative AI. Doing so will put us all on an even keel.
+
+Prompt Engineering Is A Cornerstone For Generative AI
+
+As a quick backgrounder, prompt engineering or also referred to as prompt design is a rapidly evolving realm and is vital to effectively and efficiently using generative AI or the use of large language models (LLMs). Anyone using generative AI such as the widely and wildly popular ChatGPT by AI maker OpenAI, or akin AI such as GPT-4 (OpenAI), Bard (Google), Claude 2 (Anthropic), etc. ought to be paying close attention to the latest innovations for crafting viable and pragmatic prompts.
+
+Moving on, here’s a bold statement that pretty much has become a veritable golden rule these days:
+
+The use of generative AI can altogether succeed or fail based on the prompt that you enter.
+If you provide a prompt that is poorly composed, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being demonstrably specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+AI Ethics and AI Law also stridently enter into the prompt engineering domain. For example, whatever prompt you opt to compose can directly or inadvertently elicit or foster the potential of generative AI to produce essays and interactions that imbue untoward biases, errors, falsehoods, glitches, and even so-called AI hallucinations (I do not favor the catchphrase of AI hallucinations, though it has admittedly tremendous stickiness in the media; here’s my take on AI hallucinations at the link here).
+
+There is also a marked chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of generative AI. Regarding prompt engineering, there are likely going to be heated debates over putting boundaries around the kinds of prompts you can use. This might include requiring AI makers to filter and prevent certain presumed inappropriate or unsuitable prompts, a cringe-worthy issue for some that borders on free speech considerations. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+With the above as an overarching perspective, we are ready to jump into today’s discussion.
+
+Digging Into Tree Of Thoughts As A Special Prompt Engineering Technique
+
+Imagine that you are using generative AI to answer a question or solve a problem. Let’s try something relatively simple. You enter a prompt that asks the AI app to figure out whether a ball that was placed into a cup is still in the cup after having moved the cup around several times. This is a typical word problem that might be asked on a test.
+
+The answer presented by the generative AI might indicate that the ball is still in the cup. The AI app might be right, or it might be wrong. You have no guarantee that any generative AI will always be right. You have to be wary when using generative AI. The AI can fail to solve things or might encounter an AI issue such as an internal error, bias, glitch, and so on.
+
+A means to try and get generative AI to do a better job at answering consists of invoking a so-called Chain Of Thought (CoT) approach. You essentially tell the AI app to do a stepwise effort and showcase what steps were undertaken. By doing so, it seems that the AI app will be more computationally cautious and likely end up with a better answer. This doesn’t always bear out but it is often enough that doing so is likely worthwhile, see my detailed analysis at the link here.
+
+In a sense, noted via my earlier caveats in mind, you are getting the AI app to devise a “thought” that shows the steps or a chain-link of what logical item led to the next logical item. Consider how this relates to my chess analogy. The chain of steps about what happens when moving a pawn is a kind of single thought, as it were.
+
+The Chain of Thought typically deals with essentially one thought. A particular thought is being shown on a stepwise basis. As I said above, telling generative AI to do so can be helpful in possibly garnering better answers.
+
+I am betting that you might know where I am heading on this. If articulating one thought can be potentially beneficial, perhaps a multitude of thoughts might be even better. The more the merrier is an oft-used piece of sage advice. But you don’t want to just have a messy unformulated heaping of thoughts. They should be organized in some useful fashion.
+
+We can use a Tree of Thoughts for that purpose.
+
+Here’s the deal.
+
+We will ask generative AI a question or try to get it to solve a problem. In addition, we will tell it to pursue multiple avenues (i.e., thoughts) when doing so. On top of that, we will get the AI app to then use those multiple avenues to figure out which one is likely the best answer. Welcome to the Tree of Thoughts technique of prompt engineering.
+
+A prompt that will get this to occur is easily conveyed. There are various ways to accomplish this, of which the most common consists of making use of multi-personas. I’ve covered multi-personas previously, see the link here and the link here. The gist of multi-personas is that you tell the AI app to pretend it is several people and then get the AI to try and use those pretend people to solve a problem for you.
+
+We are going to simplify things by acting as though each of those personas will have one line of thinking. Pretend person A has one line of thinking. Person B has one line of thinking. Person C has one line of thinking. And so on, for as many personas as we want the AI to pretend to undertake. They are each a branch of our Tree of Thoughts. We will then also tell the AI app how we want those branches or distinct lines of thought to be combined or assessed.
+
+A sample prompt that serves as a template for you might be like this:
+
+Sample prompt to invoke a Tree of Thoughts — “Imagine that five different experts are going to answer the following question. They will work on one step at a time and share their steps with each other as they proceed. The experts will write down each step of their thinking and share it with the group. The experts will take a moment to examine each other’s steps and compare the stated steps. An expert can change their opinion based on seeing what another expert stated. Then all experts will go on to the next step. At the very end, the experts are to reach a final decision based on having seen each other’s stated steps throughout the problem-solving process. The question is as follows: {put your question here}.”
+The sample prompt is merely an example and was inspired by the work of Hulbert as will be mentioned later herein.
+
+You can play with the prompt.
+
+For example, the prompt shown refers to five experts. You might opt to ask for two experts rather than five, or fifty rather than five. We don’t yet know experimentally whether the number of pretending experts makes much of a difference. Namely, it could be that you might ask for too many or ask for too few. You will want to try different settings based on the problem at hand and the particular generative AI app that you are using.
+
+Speaking of the generative AI app, please realize that each generative AI app is different from the other generative AI app. Thus, you might compose a prompt for Tree of Thoughts that seems to work well for one generative AI app but flounders when using the same prompt on another generative AI app. Again, play around to see what works best for you and your circumstances.
+
+You can likely discern that the prompt is nudging the AI app toward doing a Chain of Thought approach, doing so by emphasizing that the experts are to work on a step-at-a-time basis. We are going beyond the typical Chain of Thought by having the Tree of Thoughts invoke multi-personas at once and getting the AI app to have each do a stepwise solving process.
+
+In terms of how to get the multi-personas to reach a final answer, the prompt in this case merely provides a vague indication. Doing so will let the AI app ascertain what way might be suitable. If you have a specific consolidation or firming-up approach that you want generative AI to undertake, you will want to mention it as such in the prompt.
+
+Ways To Implement Tree Of Thoughts For Generative AI
+
+I’ve shown you how to do a Tree of Thoughts approach by entering a prompt into a conventional generative AI app. I consider this to be a vanilla flavor of Tree of Thoughts.
+
+It is the easiest way to go.
+
+Another means consists of purposely augmenting a generative AI app to have an add-on capability that explicitly implements a Tree of Thoughts capability. You are likely to get a more robust result. The downside is that installing the add-on might be arduous or create other complications. I’m not suggesting you should avoid such add-on’s and only realistically point out that the newness of those add-on’s can involve twists and turns. I gladly declare that if you are serious about Tree of Thoughts, you would be wise to pursue an add-on.
+
+You can also anticipate that some AI makers are likely to build a Tree of Thoughts specialized component into their generative AI for future versions of their app. We will gradually all become used to readily being able to invoke an in-depth Tree of Thoughts capacity. Not right now, but in later iterations of generative AI.
+
+I’ve identified that there are four major approaches to a Tree of Thoughts implementation:
+
+(1) Conventional. Prompting in a conventional generative AI that lacks a specialized ToT capability and performs generically (this is the easiest, presently).
+(2) Add-on. Use a generative AI app that has a ToT add-on and then enter a prompt to invoke the add-on (mainly done by researchers right now).
+(3) Revamp. Revamping a conventional generative AI app to include a ToT specialized component and utilize the capability via a prompt (future).
+(4) Bulit-in. Build specialized ToT directly into a generative AI app and invoke the functionality via a prompt (further in the future).
+Be on the watch for Tree of Thoughts gaining attention and traction.
+
+Be Mindful When Invoking Tree Of Thoughts
+
+There are important caveats worth considering about Tree of Thoughts.
+
+First, if you are paying for the use of your generative AI app, there is a possibility that trying to use a Tree of Thoughts technique or technology might incur added costs. The same applies generally to doing any advanced prompting techniques such as Chain of Thought, Skeleton of Thought (see my coverage at the link here), multi-personas, mega-personas, etc. It is conceivable that the generative AI will undertake more computational activity to undertake those techniques.
+
+For those of you who are paying for your generative AI by utilization such as computing cycles, this might boost your costs. That’s the sad face side of things. The happy face is that you might find any such added costs to be negligible, or the added cost is worthwhile because you might end up with better answers out of the generative AI. Your mileage may vary.
+
+Second, you have no ironclad assurance that the use of Tree of Thoughts will make one wit of a difference. The Tree of Thoughts might produce the same answer that would have been produced otherwise. Worse still, the Tree of Thoughts might adversely inadvertently stir the AI astray and you will generate an answer that is not only wrong but was not the right answer that you might have gotten by avoiding using the technique at the get-go. That hurts.
+
+Third, a Tree of Thoughts might be like trying to use an elephant when you only needed an ant. The Tree of Thoughts could be an overkill in whatever you are doing with generative AI. If the cost is free, I suppose you might not care. Some though have argued that we should be economical with our use of generative AI due to various environmental and societal implications, see my coverage at the link here.
+
+You ought to weigh the value of using Tree of Thoughts and the tradeoff of these caveats and other potential downsides. I urge that you take the classic Goldilocks perspective. Try to use the Tree of Thoughts thoughtfully. Don’t do so when the porridge is too cold or too hot.
+
+Research At The Cutting Edge Of Tree Of Thoughts
+
+Tree of Thoughts for generative AI is a cutting-edge endeavor. You can anticipate that AI researchers will continue to examine what works and what doesn’t work when it comes to ToT. In an upcoming column, I will cover some additional newly emerging prompt engineering and generative AI advanced pursuits such as Graph of Thoughts and Algorithm of Thoughts that are perceived as either variants of ToT or considered close cousins of ToT.
+
+Be on the watch for my additional coverage.
+
+Let’s right now take a quick look at some of the latest AI research underlying the Tree of Thoughts approach. I’ll start with a research paper entitled “Tree Of Thoughts: Deliberate Problem Solving With Large Language Models” by Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, and Karthik Narasimhan, posted online on May 17, 2023.
+
+Here are some key excerpts from that AI research paper:
+
+“Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role.”
+“To surmount these challenges, we introduce a new framework for language model inference, “Tree of Thoughts” (ToT), which generalizes over the popular “Chain of Thought” approach to prompting language models, and enables exploration over coherent units of text (“thoughts”) that serve as intermediate steps toward problem solving.”
+“ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models’ problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of tasks, our method achieved a success rate of 74%.”
+As you can observe from the above excerpts, the AI researchers performed experiments that suggested the Tree of Thoughts technique can indeed make a substantive difference toward generative AI problem-solving. They used three particular tasks, consisting of a game-playing setting, a writing setting, and a crossword-solving setting. The generative AI app used was OpenAI’s GPT-4.
+
+Most experiments assessing the Tree of Thoughts will be designed to compare ToT to doing an everyday Chain of Thought (CoT) approach. This makes abundant sense. We generally know that Chain of Thought is easy to do and doesn’t seem to raise much-added cost when invoked. If Tree of Thoughts can’t do better than Chain of Thought, you might as well stick with Chain of Thought. No sense in going the extra mile unless needed.
+
+A difficulty with doing these kinds of research studies is that the nature of the problem being solved can make a huge difference in terms of whether Tree of Thoughts is worthy or not. Furthermore, the particular generative AI app being used can also make a big difference. As stated earlier, each generative AI app will perform differently. Just because a particular generative AI app does well on some selected set of problems in an experiment doesn’t necessarily indicate that the same will hold true in other generative AI apps.
+
+Moving on, I’ve explained herein what the Tree of Thoughts generally refers to. For those of you who are keenly inquisitive, you might be desirous of a somewhat crisp definition for Tree of Thoughts. If so, here is this handy definition that was posted online in a piece entitled “Tree of Thoughts (ToT)”, Prompt Engineering Guide:
+
+“ToT maintains a tree of thoughts, where thoughts represent coherent language sequences that serve as intermediate steps toward solving a problem. This approach enables an LM to self-evaluate the progress intermediate thoughts make toward solving a problem through a deliberate reasoning process. The LM's ability to generate and evaluate thoughts is then combined with search algorithms (e.g., breadth first search and depth-first search) to enable systematic exploration of thoughts with lookahead and backtracking.” (via DAIR.AI, 2023).
+I mention this definition to highlight that so far I’ve not especially covered the various methods that can be used to consolidate or arrive at a final answer from the multitude of thoughts that are populated into a Tree of Thoughts. Those of you who are computer science-oriented might already know that there are breadth-first searches (BFS), depth-first searches (DFS), and a variety of computational methods that can be used. If there is sufficient interest in this subtopic, I’ll cover those details in a subsequent column posting.
+
+Another research paper that you might find of interest because it delineates an effort to implement the Tree of Thoughts as an add-on to generative AI was depicted in “Large Language Model Guided Tree-of-Thought” by Jieyi Long, posted online on May 15, 2023.
+
+Here’s an excerpt:
+
+“To implement ToT as a software system, we augment an LLM with additional modules including a prompter agent, a checker module, a memory module, and a ToT controller. In order to solve a given problem, these modules engage in a multi-round conversation with the LLM. The memory module records the conversation and state history of the problem solving process, which allows the system to backtrack to the previous steps of the thought process and explore other directions from there. To verify the effectiveness of the proposed technique, we implemented a ToT-based solver for the Sudoku Puzzle. Experimental results show that the ToT framework can significantly increase the success rate of Sudoku puzzle solving.”
+As noted in the above excerpt, an add-on to generative AI that consists of several modules was devised and then tested using a problem-solving setting involving figuring out Sudoku puzzles. The researchers provided results that once again suggest the Tree of Thoughts technique and technology can be beneficial.
+
+I had mentioned that the easiest way to invoke the Tree of Thoughts consists of using an ordinary prompt in conventional generative AI rather than seeking out a generative AI that has been augmented with ToT per se. An interesting set of experiments using ChatGPT was undertaken as noted in an online posting entitled “Using Tree-of-Thought Prompting To Boost ChatGPT's Reasoning” by Dave Hulbert, GitHub, May 2023.
+
+I will in a moment take you through some ad hoc experiments that I also performed, doing so by leveraging the same approach and trying to see what I could also get ChatGPT to do regarding ToT.
+
+Here’s the prompt used by Hulbert to perform the ToT experiments:
+
+“Imagine three different experts are answering this question. All experts will write down 1 step of their thinking, then share it with the group. Then all experts will go on to the next step, etc. If any expert realizes they're wrong at any point then they leave. The question is...”
+The problem to be solved consisted of this issue associated with a cup and a ball in the cup:
+
+“Bob is in the living room. He walks to the kitchen, carrying a cup. He puts a ball in the cup and carries the cup to the bedroom. He turns the cup upside down, then walks to the garden. He puts the cup down in the garden, then walks to the garage. Where is the ball?”
+We’ll come back to that shortly.
+
+You can find online additional variants of the prompt proffered in the above work, including these variations posted by kyegomez/tree-of-thoughts on GitHub:
+
+“Simulate three brilliant, logical experts collaboratively answering a question. Each one verbosely explains their thought process in real-time, considering the prior explanations of others and openly acknowledging mistakes. At each step, whenever possible, each expert refines and builds upon the thoughts of others, acknowledging their contributions. They continue until there is a definitive answer to the question. For clarity, your entire response should be in a markdown table. The question is...”
+“Imagine three highly intelligent experts working together to answer a question. They will follow a tree of thoughts approach, where each expert shares their thought process step by step. They will consider the input from others, refine their thoughts, and build upon the group's collective knowledge. If an expert realizes their thought is incorrect, they will acknowledge it and withdraw from the discussion. Continue this process until a definitive answer is reached. Present the entire response in a markdown table. The question is...”
+“Three experts with exceptional logical thinking skills are collaboratively answering a question using a tree of thoughts method. Each expert will share their thought process in detail, taking into account the previous thoughts of others and admitting any errors. They will iteratively refine and expand upon each other's ideas, giving credit where it's due. The process continues until a conclusive answer is found. Organize the entire response in a markdown table format. The question is...”
+“Envision a group of three experts working in unison to tackle a question by employing a tree of thoughts strategy. Each expert will thoroughly explain their line of thinking at every step, while also considering the insights provided by their peers. They will openly recognize any mistakes and build upon the group's shared understanding. This iterative process will continue until a definitive solution is reached. Structure the entire response as a markdown table. The question is...”
+I show several sample prompts to encourage you to consider how you might want to formulate your own favored prompt to invoke the Tree of Thoughts when using conventional generative AI. Those demonstrative examples give you a semblance of various ways to compose such a prompt.
+
+Using Tree Of Thoughts In ChatGPT On A Classic Puzzle Problem
+
+We are now ready to undertake a deep dive into an engaging and informative exploration of the use of the Tree of Thoughts as a promising and productive prompt engineering technique.
+
+I noted earlier that a cup and a ball problem was used to experiment with the Tree of Thoughts in ChatGPT, illustrating ToT prompting in essentially a conventional generative AI setting. Here again, is the stated problem to be solved:
+
+“Bob is in the living room. He walks to the kitchen, carrying a cup. He puts a ball in the cup and carries the cup to the bedroom. He turns the cup upside down, then walks to the garden. He puts the cup down in the garden, then walks to the garage. Where is the ball?”
+I’d like you to ruminate on the cup and ball problem.
+
+The cut-to-the-chase viewpoint is that a ball is put into a cup. The cup later gets turned upside down. We would normally expect that the ball would fall out of the cup. This is gravity doing what it does best. The cup is then presumably empty at that pivotal juncture. In this story, the ball is somewhere in the bedroom after having fallen out of the cup (well, we assume this to be the case). Next, when the now empty cup is taken to the garden and placed in the garden, the ball is apparently still sitting there back in the bedroom. That’s what we seem to be able to discern from the imprecise facts given to us.
+
+Our logically derived answer to the final question is that the ball is in the bedroom, as best as we can determine. Congrats, because you’ll be happy to know that indeed the ball being in the bedroom is considered the prevailing correct answer. Score a thousand points for our ingenious insight and glorious mind-bending puzzle-solving prowess.
+
+There is though room for doubt.
+
+A smarmy person could argue that maybe the cup contains fast-acting glue and the ball is therefore in the cup forever. Thus, the answer is that the ball is still in the cup which is in the garden. Or, if the fast-acting glue idea seems farfetched, maybe the ball barely fits into the cup and has become lodged inside the cup. Once again, the proper answer in that scenario would seem to be that the ball is still in the cup and the garden. We could also debate whether this whole tale is even taking place on Earth. If the situation involves being on a planet with a different gravitational pull, perhaps the ball didn’t have time to fall out. Etc.
+
+I am only getting started on these various other perceived possibilities (I’ll go with a Prince Bride series of possibilities!). Suppose that we concede that the ball fell out of the cup in the bedroom. We’ll grant that. But turns out that the ball rolled out of the bedroom and landed in the kitchen. Aha, the answer in that case is that the ball is in the kitchen. Then again, perhaps the ball rolled through the kitchen and finally came to a stop in the living room. The living room is our final answer.
+
+On and on this zany puzzle goes.
+
+The presumed correct answer is that the ball is in the bedroom. We’ll stick with that for the moment. You are welcome to disagree vehemently and do so until the cows come home. I’ll wait.
+
+Anyway, I decided to see what ChatGPT has to say. I entered a prompt with the Bob-related question. I did not do any other prompting. We are not yet going to invoke a Tree of Thoughts activity.
+
+Here is the answer from ChatGPT:
+
+“The ball is in the cup, which is currently in the garden.”
+The garden!
+
+The ball is not in the bedroom instead it is in the garden (and still inside the cup).
+
+Yikes, it seems as though ChatGPT has gone the route of somehow computationally figuring out that the ball didn’t leave the cup and therefore it is in the garden where the cup was finally placed. We might wonder how this conclusion was arrived at. Did fast-acting glue come into play? Was the ball lodged inextricably into the cup?
+
+Inquiring minds want to know.
+
+I opted to compose an additional prompt that would get ChatGPT to do a Chain of Thought approach on this answer. Maybe we can see what logic the generative AI is using to arrive at the garden as an answer.
+
+My prompt to ChatGPT was this:
+
+“Double-check your answer by doing a step-by-step explanation of how the answer is being determined.”
+ChatGPT responded with this:
+
+“Certainly! Let's break down the sequence of events step by step to determine where the ball is:”
+“Bob is in the living room.”
+“He walks to the kitchen, carrying a cup.”
+“He puts a ball in the cup (implied).”
+“He carries the cup to the bedroom.”
+“He turns the cup upside down (but the presence of the ball is not mentioned).”
+“He walks to the garden.”
+“He puts the cup down in the garden.”
+“He walks to the garage.”
+“Now, we need to determine where the ball is based on the given information:”
+“Step 3 implies that Bob placed a ball in the cup in the kitchen.”
+“Step 5 mentions that he turned the cup upside down, but it doesn't mention anything about removing the ball.”
+“In Step 7, Bob puts the cup down in the garden.”
+“Since there is no information provided that suggests the ball was removed from the cup at any point after Bob put it in, we can conclude that the ball is still in the cup. Therefore, the ball is in the cup, which is currently in the garden.”
+Surprisingly, the logic shown isn’t one of those zany or smarmy countervailing schemes that I had previously listed. Thankfully so. ChatGPT seems to be saying that since the story doesn’t explicitly state that the ball came out of the cup, we cannot assume that the ball was “removed” from the cup.
+
+The word “remove” might be an indication or telltale clue that the “logic” of ChatGPT is that a ball can only be manually or overtly taken out of a cup. There is no seeming indication that a ball could have simply fallen out of a cup. Is this due to a lack of being data-trained about gravity and what gravity can do? Or is this one of those circumstances of expecting to be told on a rote basis the precise aspects of a situation, such that if the scenario doesn’t openly say that the ball came out, we can be under the base assumption that the ball is still securely ensconced in the cup?
+
+I suppose you could argue that the logic displayed by ChatGPT is at least semi-logical, despite not arriving at the decreed correct answer. If ChatGPT had stated that the ball was still in the cup because of magical magnetic forces from outer space, we would have reason to be concerned that maybe the AI app was suffering from AI hallucinations or some error in data training. A bit of relief is that Chain of Thought logic has logic and isn’t on the face of things entirely crazily illogical.
+
+Hulbert tried the same kind of experimental steps with ChatGPT and then opted to use a Tree of Thoughts prompting strategy. Here’s what he indicated happened (I’ve included some bracketed lines to help showcase the key elements of the response):
+
+“Imagine three different experts are answering this question. All experts will write down 1 step of their thinking, then share it with the group. Then all experts will go on to the next step, etc. If any expert realizes they're wrong at any point then they leave. The question is...”
+{Here is the first step}
+“Expert 1: The ball is in the living room.”
+“Expert 2: The ball is in the kitchen.”
+“Expert 3: The ball is in the bedroom.”
+{Here is the next step}
+“Expert 1: Bob carries the cup to the bedroom, so the ball must be in the cup.”
+“Expert 2: Oh, I see my mistake. Yes, the ball is in the cup.”
+“Expert 3: Agreed, the ball is in the cup in the bedroom.”
+{Here is the next step}
+“Expert 1: Next, Bob turns the cup upside down in the bedroom.”
+“Expert 2: After that, Bob walks to the garden and puts the cup down.”
+“Expert 3: Therefore, the ball must have fallen out of the cup when Bob turned it upside down in the bedroom. So, the ball is in the bedroom, not in the cup anymore.”
+{Here is the next step}
+“Expert 1: Oh, you're right. I made a mistake. The ball is in the bedroom, not in the cup.”
+“Expert 2: Agreed, the ball is in the bedroom.”
+“Expert 3: Bob then walks to the garage, so the ball remains in the bedroom. It is not in the garden or the garage.”
+{Here is the next step}
+“Expert 1: Absolutely, the ball is still in the bedroom.”
+“Expert 2: Yes, the ball hasn't moved from the bedroom.”
+“Expert 3: Therefore, the ball is in the bedroom, not in the garden or the garage.”
+{Final answer}
+“All three experts agree that the ball is in the bedroom.”
+The answer by ChatGPT in this ToT-based run is the considered correct answer, specifically that the ball is in the bedroom.
+
+We also got quite a spirited exchange between the three experts or personas. One of the experts was able to seemingly nudge another one toward the assumption that the ball fell out of the cup. You can certainly grumble about other facets of the explicated narrative. All in all, we’ll give this a passing grade for getting the answer right and doing so with a semblance of the preferred underlying logic. I mention this last point because the answer could have been indeed stated as the bedroom, but the logic might have claimed that the ball teleported across space and time to end up in the bedroom. We would be dubious of the value provided by the ToT in that farfetched exposition.
+
+Another consideration to always keep in your presence of mind is that sometimes a generative AI app will devise a response that is aimed at appeasing you. I am not suggesting that this is due to any semblance of sentience. It is merely as a result of the data training on zillions of writing compositions from the Internet that the generative AI was data-trained on, see my detailed explanation at the link here.
+
+In this case, suppose that the prompt was interpreted by the generative AI as intending that a debate amongst experts was desired. Juicing the debate would involve having one expert seemingly correct another one. We do not know if the AI app simply concocted this contrivance for our satisfaction or whether it was truly a computational back-and-forth that took place (unlikely, but at least faintly possible).
+
+We Need To Look Further Into Tree Of Thoughts As A Prompt-Only Venue
+
+I wondered whether ChatGPT would give me the same answer if I also used the Tree of Thoughts prompting approach.
+
+It might.
+
+It might not.
+
+You need to keep in mind that generative AI works on a probabilistic basis, thus any answer will potentially be different from any other answer previously given by generative AI. Each time that you ask a question, a statistical pattern-matching mechanization takes place. Like a box of chocolates, you never know for sure what you are going to get. I repeatedly exhort during my workshops on prompt engineering that you have to clearly set aside the usual deterministic same-input begets same-output expectations that one has with nearly any ordinary conventional app.
+
+You can’t expect that with generative AI.
+
+Also, I’d like to emphasize that this experiment involves conventional generative AI and does not reflect what we might get with an AI app augmented with ToT capabilities. Recall my point made earlier that you cannot expect prompting alone to get you to the high heavens of the Tree of Thoughts. A more robust and full-on implementation encompassing a specialized ToT component is much more likely to get the deed done.
+
+Let’s see what I got via using the widely and widely popular generic generative AI app of ChatGPT too, and doing so solely via the use of prompts (no add-ons). Due to space limitations for the size of this column, I’ll try to keep things succinct and won’t chew up space by showing the full dialogue narratives that took place.
+
+First, I tried a Tree of Thoughts prompt akin to the template or example that I noted at the start of this discussion. I asked for a dialogue among several personas. The response showed them seemingly interacting, and then here’s what was the conclusion:
+
+Response by ChatGPT: “At this point, it's highly likely that the ball would have fallen out of the cup when Bob turned it upside down in the bedroom. Therefore, the ball is most likely in the bedroom where it fell out of the cup when Bob turned the cup upside down.”
+Bingo, you can see that strikingly the right answer was derived. The icing on the cake is that this time the explanation hit the nail on the head and stated that the ball most likely fell out of the cup. Gravity got into the equation; one might assert. A round of applause for ChatGPT is warranted.
+
+I did the same prompting in a series of trials with two personas, three personas, four personas, and then five personas. For each trial, I began with a new conversation to clear out any potential residual baggage or tip-offs. Sometimes I got a response similar to the one listed above.
+
+Sometimes I received an odd answer.
+
+Take a look at this oddball answer:
+
+Response by ChatGPT: “Considering the steps provided by the other experts, I concur with their assessment that the ball is indeed in the cup in the bedroom. So, all of the experts agree that the ball is in the cup in the bedroom based on the given sequence of actions.”
+The reason I am declaring this an odd answer is that the final answer seems to suggest that the ball never fell out of the cup and that it is still inside the cup and residing in the bedroom. If you had only asked where the ball is, the right answer would have been stated that the ball is in the bedroom. But the elaborated explanation shows that something has gone amiss. The cup is no longer in the bedroom. The ball is no longer in the cup.
+
+A disconcerting “right” answer that falters in the explanation.
+
+A subtle change in wording would have made things less disturbing. For example, if the response said that the ball “was” indeed in the cup in the bedroom, such a statement is correct. The problem though is that the answer says the ball “is indeed in the cup in the bedroom” and implies that the ball is still there and the cup is still there (ignoring or somehow confusing the aspect that the cup was moved elsewhere).
+
+I suppose that might appear to be nit-picking.
+
+Well, you’ll want to sit down for the next example of an odd-ish answer.
+
+Here is an entirely off-the-rails response:
+
+Response by ChatGPT: “The experts assumed that when Bob turned the cup upside down in the bedroom, the ball might have fallen out, and that's why they concluded the ball was in the garden where the cup was placed. However, if the ball was indeed in the cup when Bob turned it upside down in the bedroom, the ball would still be in the cup, and the cup itself would be in the bedroom. In this case, the ball would not have been left in the garden. So, the key misunderstanding was assuming that turning the cup upside down meant the ball was removed from it, when it wasn't explicitly stated in the scenario. The ball was left in the cup, which remained in the bedroom.”
+I challenge you to try and straighten out this head-turning response. It is altogether convoluted and messed up. Gibberish. You might either laugh at it or cry, depending upon whether you were hoping that the generative AI would have gotten things perfectly on target or ended up off by a country mile.
+
+Like I said, generative AI is like a box of chocolates. Sometimes you get oddball chocolates. You can also sometimes get pure rubbish.
+
+Be on alert.
+
+Stay on your toes.
+
+Conclusion
+
+I urge you to add Tree of Thoughts to your prompt engineering repertoire.
+
+To make sure you are familiar with this new prompting technique, go ahead and set aside time to play with it. Do your own experimentation. Whichever generative AI app that you are using might give you great results or might give you lousy results. Don’t expect consistency. Until the Tree of Thoughts is well-tested and included via either add-on or built-in, you are likely rolling the dice.
+
+My suggestion is that you should have the Tree of Thoughts prompting technique for conventional generative AI in your handy-dandy back pocket. Bring it out from time to time. You’ll almost certainly want to first tackle any question or problem with the classic Chain of Thought technique. If you believe the derived response is lacking, go ahead and up the ante by using the Tree of Thoughts.
+
+I implore you to double-check whatever response you get. Of course, that’s always my recommendation, regardless of what you are doing with generative AI. The zany responses can be obvious or they can be subtle and hard to detect. No matter what prompt you enter, you must be vigilant and double-check any generated response. Period, end of story.
+
+I shall conclude with a final thought about the Tree of Thoughts.
+
+There is a longstanding adage or proverb pertaining to trees that goes like this: “A seed hidden in the heart of an apple is an orchard invisible.”
+
+We have a Tree of Thoughts capacity hiding within generative AI. Conventional generative AI can be coaxed into a Tree of Thoughts effort. With the research and experimentation underway to augment or even build specialized ToT components, the planted seeds will ultimately become an orchard.
+
+You might want to find a shady tree someplace and mull over the Tree of Thoughts approach. Your time will be well spent. Plus, you might have an apple fall on your head and have one of those amazing and rarely encountered eureka moments. Good luck and stay safe."
