@@ -1930,4 +1930,40 @@ Nobody can say for sure, but the research I am about to cover suggests that the 
 Step-by-step hasn’t traditionally been used by human reviewers of generative AI. Why? It can be laborious to do. It can be costlier for the AI maker. Time and cost are vital factors to consider. Getting your generative AI into the marketplace has become a mighty gold rush. Using up tons of cash to get there can also be daunting. Consider too that a make-or-break question would be that if the result is that the generative AI is about the same, anyway, you probably could convincingly argue that the outcome-based approach is sufficient, and thus there is no bona fide cause to invoke a more laboriously and costlier process-based approach, all else being equal.
 
 Let’s take a look at the OpenAI research on this intriguing and vital topic.
+
+“Large language models are capable of solving tasks that require complex multistep reasoning by generating solutions in a step-by-step chain-of-thought format (Nye et al., 2021; Wei et al., 2022; Kojima et al., 2022). However, even state of-the-art models are prone to producing falsehoods — they exhibit a tendency to invent facts in moments of uncertainty (Bubeck et al., 2023). These hallucinations (Maynez et al., 2020) are particularly problematic in domains that require multi-step reasoning, since a single logical error is enough to derail a much larger solution. Detecting and mitigating hallucinations is essential to improve reasoning capabilities” (source: research paper entitled “Let’s Verify Step By Step” by Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe).
+As you can see, the research is motivated by the hope of reducing the chances of AI hallucinations in generative AI (note that the reference to large language models, known also as LLMs, amounts to the same thing as generative AI, for the purposes of discussion herein). Also, recall that I’ve earlier mentioned that the step-by-step approach can potentially aid in reducing or mitigating various kinds of generative AI maladies including AI hallucinations, errors, biases, glitches, falsehoods, and the like.
+
+Next, the researchers delineate the difference between outcome-based assessments and the use of process-based or step-by-step assessments:
+
+“Outcome-supervised reward models (ORMs) are trained using only the final result of the model’s chain-of-thought, while process-supervised reward models (PRMs) receive feedback for each step in the chain-of-thought. There are compelling reasons to favor process supervision. It provides more precise feedback, since it specifies the exact location of any errors that occur. It also has several advantages relevant to AI alignment: it is easier for humans to interpret, and it more directly rewards models for following a human-endorsed chain-of-thought” (ibid).
+I’ll dive a bit into that excerpt and provide some added context.
+
+One aspect of having human reviewers examine the step-by-step of generative AI is that humans can hopefully spot the problematic steps and call them out. By doing so, the generative AI will possibly on a mathematical and computational basis be able to hone the stepwise efforts of the generative AI. For more about how generative AI computationally works under the hood, see my analysis at the link here.
+
+There is another crucial aspect to this too. When using generative AI, we cannot in a sense take the word of the generative AI per se at face value. We will often need to ask the generative AI to explain how its result came to be derived. The step-by-step elucidations themselves can be immensely valuable to humans using generative AI. Therefore, it makes strident sense to try and nudge the generative AI in the direction of producing useful step-by-step and not perhaps trudging out step-by-step that are unproductive.
+
+For this particular study by OpenAI, the researchers opted to examine the kind of step-by-step that you would use in solving various math problems. Think back to those days in school when you had to show the steps that you took to solve an algebraic equation or had to provide a logic-based stepwise mathematical proof. Maybe you enjoyed doing so. Or, perhaps you dreaded having to show the details of your handiwork (knowing that you would get dinged points for each missed or incorrect step).
+
+Here's what the OpenAI research study found regarding their analysis of a step-by-step in a mathematics-solving domain for generative AI guidance:
+
+“We have shown that process supervision can be used to train much more reliable reward models than outcome supervision in the domain of mathematical reasoning. We have also shown that active learning can be used to lower the cost of human data collection by surfacing only the most valuable model completions for human feedback. We release PRM800K, the full dataset of human feedback used to train our state-of-the-art reward model, with the hope that removing this significant barrier to entry will catalyze related research on the alignment of large language models. We believe that process supervision is currently under-explored, and we are excited for future work to more deeply investigate the extent to which these methods generalize” (ibid).
+In their particular study, and when focused on step-by-step in a mathematics-oriented context, they seemed to showcase that the step-by-step or process-based assessment can do better (in some ways) than the outcome-based assessments, though I urge you to closely read the research paper (posted at OpenAI) and also consider looking at and possibly leveraging their GitHub posting of the dataset that they devised. There are all sorts of important research design points made in the paper, along with notable caveats, limitations, and calls for follow-on research of a like kind.
+
+The avowed assertion that the step-by-step approach or process-based assessment is under-explored is something I wholeheartedly concur with. We need much more research examining these notable matters. I gladly and earnestly emphasize that such research be undertaken. Please join in that noble quest.
+
+Conclusion
+
+I’ve tried to be your safari guide on an insightful and hopefully engaging expedition of the emerging and advancing role of step-by-step techniques associated with generative AI. Your key takeaway is this:
+
+Key Takeaway: Make sure to include in your personal skillset the valued step-by-step approach, doing so for everyday life experiences and especially when using generative AI.
+It is easy to do when logged into generative AI. Just explicitly identify in your prompts that you want to have step-by-step involved. As mentioned earlier, you can get the generative AI to produce step-by-step outputs, you can engage in interactive dialogues on a step-by-step basis, you can ask for a follow-up to a generated answer that the generative AI presents the underlying steps, and so on.
+
+A few final thoughts for now on this heady topic.
+
+Emily Dickinson, the acclaimed American poet, said this about step-by-step approaches: “One step at a time is all it takes to get you there.” The same might be said of prudently making use of generative AI. You can at times get better results and more useful interactions by leveraging a step-by-step philosophy.
+
+Speaking of being philosophical, we are still at a formidable and vast distance from figuring out how to best devise and utilize generative AI. We have only scratched the surface, maybe barely made a notch in a thousand-mile trek. Doing more research on the integration of step-by-step and generative AI is essential.
+
+I suppose you could earnestly say that a journey of a thousand miles begins with a heartfelt single step.
 "
