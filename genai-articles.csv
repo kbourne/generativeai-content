@@ -1775,4 +1775,159 @@ May the most persuasive persona prevail.
 
 "
 
-"202306151","Can Generative AI Be Saved From AI Hallucinations By Using Chain-Of-Thought Step-By-Step Techniques, Asks AI Ethics And AI Law","Lance Eliot","forbes.com","2023-06-15","https://www.forbes.com/sites/lanceeliot/2023/06/15/can-generative-ai-be-saved-from-ai-hallucinations-by-using-chain-of-thought-step-by-step-techniques-asks-ai-ethics-and-ai-law/?sh=429d66df401d","They say that two heads are better than one."
+"202306151","Can Generative AI Be Saved From AI Hallucinations By Using Chain-Of-Thought Step-By-Step Techniques, Asks AI Ethics And AI Law","Lance Eliot","forbes.com","2023-06-15","https://www.forbes.com/sites/lanceeliot/2023/06/15/can-generative-ai-be-saved-from-ai-hallucinations-by-using-chain-of-thought-step-by-step-techniques-asks-ai-ethics-and-ai-law/?sh=429d66df401d","
+Sometimes it makes abundant sense to consider a weighty matter via a step-by-step approach.
+
+In today’s column, I’ll be taking a close look at a significant technique that can be used with generative AI that involves doing things on a step-by-step basis. Much of this seems quite promising. On the other hand, as I will explain momentarily, the step-by-step method is not a silver bullet, and you should not overly assume that such an approach will always be stridently successful.
+
+We’ll opt toward a proverbial Goldilocks principle, namely use the vaunted step-by-step when prudent and aim to do so only when the circumstances particularly warrant it. If the porridge is too hot or too cold, other techniques might be better suited for the situation at hand. As they say, life is usually better off when you act in moderation and with sensible balance.
+
+I’ll begin the discussion by first making sure we are all aligned as to what generative AI consists of. Once we’ve done that, we can examine the step-by-step technique. You might find of keen interest that another common moniker for step-by-step is to construe this as so-called chain-of-thought (CoT) reasoning.
+
+I am somewhat hesitant to refer to this as a chain-of-thought realm because I believe doing so inadvertently intermixes the nature of human reasoning with the aspects of what today’s AI is doing under the hood. In a sense, chain-of-thought phrasing tends to anthropomorphize AI. You are lulled into believing that human reasoning and the type of mathematical and computational formulations used in AI are one and the same.
+
+They most definitely are not.
+
+In any case, the AI field seems to have embraced chain-of-thought as a namesake, regardless of the AI Ethics and AI Law reasons to avert this parlance. It is certainly catchy. It is certainly impressive sounding. I merely ask that you keep in mind that chain-of-thought is an overarching concept that perhaps applies to human thinking but that I’d suggest we refer to AI as using step-by-step instead. Maybe that will help in a small way to differentiate the two.
+
+Making Sense Of Generative AI
+
+Generative AI is the latest and hottest form of AI and has caught our collective rapt attention for being seemingly fluent in undertaking online interactive dialoguing and producing essays that appear to be composed by the human hand. In brief, generative AI makes use of complex mathematical and computational pattern-matching that can mimic human compositions by having been data-trained on text found on the Internet. For my detailed elaboration on how this works see the link here.
+
+The usual approach to using ChatGPT or any other similar generative AI such as Bard (Google), Claude (Anthropic), etc. is to engage in an interactive dialogue or conversation with the AI. Doing so is admittedly a bit amazing and at times startling at the seemingly fluent nature of those AI-fostered discussions that can occur. The reaction by many people is that surely this might be an indication that today’s AI is reaching a point of sentience.
+
+On a vital sidebar, please know that today’s generative AI and indeed no other type of AI is currently sentient. I mention this because there is a slew of blaring headlines that proclaim AI as being sentient or at least on the verge of being so. This is just not true. The generative AI of today, which admittedly seems startling capable of generative essays and interactive dialogues as though by the hand of a human, are all using computational and mathematical means. No sentience lurks within.
+
+There are numerous overall concerns about generative AI.
+
+For example, you might be aware that generative AI can produce outputs that contain errors, have biases, contain falsehoods, incur glitches, and concoct seemingly believable yet utterly fictitious facts (this latter facet is termed as AI hallucinations, which is another lousy and misleading naming that anthropomorphizes AI, see my elaboration at the link here). A person using generative AI can be fooled into believing generative AI due to the aura of competence and confidence that comes across in how the essays or interactions are worded. The bottom line is that you need to always be on your guard and have a constant mindfulness of being doubtful of what is being outputted. Make sure to double-check anything that generative AI emits. Best to be safe than sorry, as they say.
+
+Into all of this comes a plethora of AI Ethics and AI Law considerations.
+
+There are ongoing efforts to imbue Ethical AI principles into the development and fielding of AI apps. A growing contingent of concerned and erstwhile AI ethicists are trying to ensure that efforts to devise and adopt AI takes into account a view of doing AI For Good and averting AI For Bad. Likewise, there are proposed new AI laws that are being bandied around as potential solutions to keep AI endeavors from going amok on human rights and the like. For my ongoing coverage of AI Ethics and AI Law, see the link here and the link here.
+
+The development and promulgation of Ethical AI precepts are being pursued to hopefully prevent society from falling into a myriad of AI-inducing traps. For my coverage of the UN AI Ethics principles as devised and supported by nearly 200 countries via the efforts of UNESCO, see the link here. In a similar vein, new AI laws are being explored to try and keep AI on an even keel. One of the latest takes consists of a set of proposed AI Bill of Rights that the U.S. White House recently released to identify human rights in an age of AI, see the link here. It takes a village to keep AI and AI developers on a rightful path and deter the purposeful or accidental underhanded efforts that might undercut society.
+
+We are now ready to proceed with the step-by-step techniques involving generative AI.
+
+Step-By-Step Is A Handy Tactic And Technique
+
+Let’s begin by considering how humans at times do things.
+
+If I were to ask you to solve a knotty problem of some kind, you might be able to come up with a solution to the problem off the top of your head. Good for you. There are situations though wherein jumping directly to a solution is not necessarily viable or readily undertaken. You might instead do things on a step-by-step basis.
+
+Imagine that I asked you to add two numbers together. Assuming the numbers were relatively small in magnitude, you probably could look at the numbers and rattle off their sum. Easy-peasy. Suppose that I instead ask you to add together ten numbers. Now things are getting a bit more challenging.
+
+Amid various approaches that you could take, you might be tempted to add together two of the numbers, and then add that sum to the next number in line. You might keep doing this, step-by-step, until you’ve arrived at the final sum. A step-by-step approach allows you to subdivide a bigger problem and cope with it on a piecemeal or stepwise basis. A very handy technique at times.
+
+Some problems essentially require or demand a step-by-step approach be used.
+
+For example, you might know of the famous children’s riddle about a wolf, a goat, and a cabbage. Here’s the problem at hand. Your goal is to transport a wolf, a goat, and a cabbage from one side of a river to the other side. You have a rowboat and can row across the river. A crucial constraint is that you are only allowed to take one item with you on the rowboat at a time.
+
+The twist is that if you leave the wolf alone with the goat, the dastardly wolf will eat the gentle goat. If you leave the goat alone with the cabbage, the hungry goat will eat the cabbage. Your subgoals are that you must preserve the existence of the wolf, the goat, and the cabbage. Allowing any of them to be consumed is a losing proposition.
+
+Just for fun, you might ponder the problem.
+
+As a spoiler alert, I am going to explain how it is solved. Skip the next two paragraphs if you don’t want to know how it pans out.
+
+Okay, I am sure that your first thought might be to randomly choose one of the three and take it over to the other side of the river. Let’s try taking the goat over to the other side of the river. If you do so, which of the two remaining items are you going to take over next? The issue is that by taking the wolf next, you will leave the wolf and the goat together while you row back to get the cabbage (yikes, say goodbye to the goat). An alternative would be to take the cabbage next over, but this too is an improper choice since the goat will summarily eat the cabbage once you start back to get the wolf.
+
+The trick, in this case, is that you were luckily right to have started by taking over the goat, and the next step is that you go ahead and perhaps get the wolf (or the cabbage, whichever you prefer). Upon arriving at the side that has the goat, you carefully put the wolf on there and simultaneously you take the goat back into your rowboat. You row back with the goat. At this juncture, you swap the goat for the cabbage. You take the cabbage over to the wolf. The final step is that you now go get the goat and take it over to the other two. Success has been attained. Problem solved.
+
+The problem required you to explain how you solved the problem. It would be of little use if you simply said that you were able to successfully get the three items over to the other side of the river. A step-by-step elucidation is needed. We can’t know that you solved the thought problem unless we also know the steps needed to solve it.
+
+A step-by-step approach is often required in real life. For example, attorneys are usually required to lay out their legal cases on a step-by-step basis. A judge needs to see what logic the attorney is making use of. A faulty form of logic is likely to undermine the position of the attorney. A strong semblance of logic will typically bolster the attorney’s arguments.
+
+The beauty of a step-by-step effort is that you can usually catch errors right away. If you told me that you were going to take the cabbage over first in the rowboat, I could nudge you instantly to reconsider that first step. You are leaving the wolf and the goat together, which by definition of the problem is bad. No sense in trying to take additional steps since the first one already was afoul.
+
+Also, akin to the adding up of a series of numbers, you might find it less mentally taxing to try things one step at a time. Aiming to solve a hefty problem in your noggin alone can be burdensome. Explicitly calling out the steps can be a huge enabler.
+
+In short, when doing human reasoning, a step-by-step can be considered:
+
+a) Required. Step-by-step is at times required and must be provided or undertaken
+b) Optional. Step-by-step at other times is optional and if used can provide crucial benefits
+c) Detrimental. Step-by-step at times might be detrimental and should be averted in these cases
+You might be somewhat puzzled that a step-by-step approach could at all be detrimental. So far, based on what we’ve been discussing, it seems like a step-by-step is always beneficial. The thing is, there are lots of potential pitfalls or gotchas that can arise with a step-by-step approach.
+
+For example, you might lose sight of the end goal. People can get mired in the weeds, or shall we say not see the forest for the trees. Another concern can be that you’ll get drained by laboriously doing something on a step-by-step basis. It just seems overly exhausting. There is also a time issue that can arise. Maybe you don’t have sufficient time to do something on a step-by-step basis and a more urgent yet possibly risky avenue is to leap first and ask questions later.
+
+Step-by-step has its tradeoffs, that’s for sure.
+
+We can generally refer to a step-by-step approach as one that is stepwise, including that we conventionally expect the steps to tie together and be logically attuned to each other. Someone that omits an integral step is going to get our dander up, assuming that we detect that a step has been overlooked. Excessive steps might be allowed, though not if they undercut things. You can also refer to this as generally taking a multi-step approach to solve problems or as an indication of a chain-of-thought form of reasoning.
+
+Using Step-By-Step With Generative AI
+
+Turns out, a step-by-step approach can be advantageous when using generative AI.
+
+Here are my six major ways to use step-by-step with generative AI:
+
+(1) You request the generative AI to provide a step-by-step answer to your prompt.
+(2) You involuntarily receive a step-by-step from the generative AI to your prompt.
+(3) You enter your prompt on a step-by-step basis into the generative AI.
+(4) You seek to get a step-by-step follow-up elaboration of an answer that the generative AI has already given you.
+(5) You tell the generative AI to engage in a step-by-step dialogue interactively with you.
+(6) The data-training review and guidance of the generative AI have been performed on a step-by-step basis.
+There are other ways to employ step-by-step with generative AI, but those six are the ones that most commonly are considered or utilized. Five of the six pertain to your usage of generative AI, such that they indicate ways that you can use generative AI on a step-by-step basis. The last of the six posits that the AI maker can consider using a step-by-step approach when data-training the generative AI (I’ll explain more about this herein).
+
+Let’s briefly ponder the step-by-step approach when you, the user, are actively using generative AI.
+
+Various research suggests that by getting generative AI to work on a step-by-step basis, you are likely to reduce the chances of the generative AI producing errors, biases, falsehoods, glitches, and AI hallucinations. Please be aware that the research results are a mixed bag. This is not an ironclad rule.
+
+One aspect that does seem relatively straightforward is that if you ask or force the generative AI to engage or produce essays on a step-by-step basis, you presumably have a greater chance of discerning that the generated response is faulty. You can inspect each step and decide whether the step is prudent or not. You can possibly note right away when an AI hallucination has made its way into the response.
+
+Of course, that assumes you know enough about the circumstances to sufficiently assess the steps.
+
+Imagine that you ask generative AI to tell you step-by-step how to take apart a car engine. Unless you happen to know something about car engines, the steps might seem entirely sensible and upfront to you. Ergo, step-by-step by itself is no guarantee that you will catch something amiss. You need to know enough to figure out when a step is amiss, and you also need to be attentive enough to notice it.
+
+Many people have a rule of thumb that using generative AI in a step-by-step manner will also boost the chances that the generative AI will provide a proper answer. In essence, the belief is that the generative AI is somehow leveraging the step-by-step so that the mathematical and computational capacities are more likely to avoid making mistakes. The generative AI perhaps self-catches itself.
+
+Again, the research on this is rather mixed. All kinds of twists and turns can enter into the picture as to whether a step-by-step is going to get you more reliable or accurate responses from generative AI. The crux, as I’ve repeatedly stated, would be that you, the user, can at least inspect the steps and therefore potentially heighten your chances of discerning what might be afoot.
+
+There is also the handy aspect that you can aid the generative AI by giving additional instructions. For example, you might have the generative AI present the steps of a devised solution, doing so one step at a time. If you notice that say step number four is wrong, you can right away tell the generative AI that the step is wrong, and ask that this be corrected. Likewise, if the generative AI provides you with a list of finalized steps, you can tell the generative AI to redo the steps but to note that a particular step was wrong and needs to be corrected.
+
+All in all, invoking a step-by-step approach while using generative AI is a valuable technique in your toolkit of tactics when using generative AI. Sadly, many people don’t even realize that they can invoke a step-by-step process when using generative AI. They’d never heard of it and didn’t realize that this was an allowable technique. Furthermore, the generative AI interactions don’t tend to spur you to do so (rarely does the generative AI suggest or recommend that you switch to a step-by-step mode).
+
+Is step-by-step a cure-all?
+
+Nope.
+
+Does it provide keen benefits?
+
+Yep.
+
+Should you judiciously use step-by-step and not become preoccupied with always invoking step-by-step?
+
+Yes, you would be wise to judiciously use step-by-step.
+
+Step-By-Step For Data Training Of Generative AI
+
+Let’s cover my sixth bulleted item noted above, namely that step-by-step can be used during the data training of generative AI. This is a research endeavor of active study and is still quite open-ended. That being said, there are some especially interesting and promising research results recently posted by OpenAI about the use of step-by-step during the data-training phase of devising generative AI. I’ll explore the overarching issue at play and then dive briefly into the OpenAI study on the matter.
+
+Here's the context.
+
+In the early days of generative AI, by and large, the interactive conversational capabilities could be led down a rather downbeat path. You could easily get the generative AI to emit swear words. You could get generative AI to spew forth hate speech. And so on. I’ve written extensively about how before ChatGPT, most of the generative AI released to the public got whipsawed by public outrage due to emitting foul wording, see the link here.
+
+Knowing this, OpenAI opted to use an RLHF (reinforcement learning via human feedback) when data-training their generative AI app ChatGPT (based on GPT-3.5) and continues to do so on subsequent versions. Most of the AI makers are doing likewise (I don’t want to leave you with the impression that only OpenAI uses RLHF, many others do and have been doing so).
+
+The gist is that RLHF consists of having humans review the outputs and interactions with a generative AI app, doing so to provide feedback and guidance to the generative AI.
+
+Here’s the deal. After initial data training, and before public release, the AI maker will arrange to hire or contract with human reviewers. The human reviewers will try using all manner of prompts and then rate or assess the results. On a mathematical and computational basis, the aim is to give enough feedback to the generative AI that it will pattern-match what the reviewers deem as suitable versus unsuitable.
+
+For example, suppose that the generative AI emits an essay that contains a swear word. A human reviewer notices this and instructs the generative AI to avoid that word. Other human reviewers do the same. The pattern-matching gradually adjusts to avoid using that word. This is a simplistic portrayal since striking out particular words is ostensibly easy to do. The essence is that words used in certain ways and when combined with other words can be rated as unsuitable.
+
+A brief sidebar. Some of you might be wondering if the generative AI you are using has been skewed or leaned toward some words and away from other words and phrases. And, if so, are you perhaps making use of a generative AI app that has been tilted in one direction or another? Yes, this is usually the case. You are not interacting with a totally unfiltered generative AI. Shocking? Some are dismayed at this, and some are not surprised and sensed that something likely was afoot. I’ve covered this rather heated topic, including that some ardently believe we should be granted access to the unfiltered generative AI variants, see the link here and the link here.
+
+Back to our focus.
+
+The human reviewers are usually looking at the resultant outputs and are not delving into the step-by-step approaches that I mentioned earlier. This end-result spotlight is known as an outcome-based assessment. Human reviewers are assessing the outcome such as a finalized essay, but not particularly the step-by-step underlying composition. Outcome-based assessment during the data training of generative AI is pretty much the norm.
+
+Put on your thinking cap: Do you think that the human reviewers might be better able to guide or shape the generative AI if they did so by using instead a step-by-step assessment approach?
+
+That’s a great question.
+
+Nobody can say for sure, but the research I am about to cover suggests that the step-by-step approach during the RLHF can be useful, perhaps even better than the outcome-based approach in certain circumstances. The use of a stepwise formulation is formally known as a process-based assessment and encompasses the stepwise approach that I’ve been discussing here (some would also refer to this as a chain-of-thought assessment approach, but I already noted that I disfavor that catchphrase in this context).
+
+Step-by-step hasn’t traditionally been used by human reviewers of generative AI. Why? It can be laborious to do. It can be costlier for the AI maker. Time and cost are vital factors to consider. Getting your generative AI into the marketplace has become a mighty gold rush. Using up tons of cash to get there can also be daunting. Consider too that a make-or-break question would be that if the result is that the generative AI is about the same, anyway, you probably could convincingly argue that the outcome-based approach is sufficient, and thus there is no bona fide cause to invoke a more laboriously and costlier process-based approach, all else being equal.
+
+Let’s take a look at the OpenAI research on this intriguing and vital topic.
+"
