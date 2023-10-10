@@ -992,18 +992,32 @@ That’s about the end of today’s story.
 So, in a summary of a size of about 25 words in length, the gist is that Chain-of-Density is great for getting generative AI to do impressive summarization, possibly applicable in other settings too, so use the technique wisely and with aplomb.
 
 Enough said."
-"202307231","Prompt Engineering For Generative AI Gets Pumped Up Via Release Of Persistent Context Capabilities, Showcased By OpenAI’s New Custom Instructions ChatGPT Feature","Lance Eliot","forbes.com","2023-08-06","https://www.forbes.com/sites/lanceeliot/2023/07/23/prompt-engineering-for-generative-ai-gets-pumped-up-via-release-of-persistent-context-capabilities-showcased-by-openais-new-custom-instructions-chatgpt-feature/?sh=776b85f92020","Sometimes less is more.
 
-Another oft-used proverb is that at times you ought to prime the pump.
 
-We will be using those valued pieces of sage advice so please keep them in mind.
 
-In today’s column, I am further extending my ongoing series about the latest advances in prompt engineering. My focus this time will be on a plain sailing but amazingly powerful new advance known as skeleton-of-thought (SoT), a creative adaptation of the exceedingly popular chain-of-thought (CoT) prompting technique. I’ll explain what this is and why it is a crucial method that you ought to include in your prompt engineering strategies and tactics.
 
-The use of skeleton-of-thought can substantively boost your generative AI results, though please be aware that it is a specialized technique and has its own right time and place for being exercised.
+"202307231","Prompt Engineering For Generative AI Gets Pumped Up Via Release Of Persistent Context Capabilities, Showcased By OpenAI’s New Custom Instructions ChatGPT Feature","Lance Eliot","forbes.com","2023-07-23","https://www.forbes.com/sites/lanceeliot/2023/07/23/prompt-engineering-for-generative-ai-gets-pumped-up-via-release-of-persistent-context-capabilities-showcased-by-openais-new-custom-instructions-chatgpt-feature/?sh=776b85f92020","In today’s column, I am going to continue my special coverage of some key new techniques and breakthroughs underlying prompt engineering when using generative AI. The latest and most notably significant advance is something that I generically refer to as persistent context capabilities, popularly also known as custom instructions and was recently announced and released as a new feature of ChatGPT.
 
-As a quick background, SoT builds upon the greatly popular chain-of-thought approach that often is used by those aiming to get generative AI to stepwise showcase its presumed logic when answering a question or solving a problem. You merely instruct generative AI to explain step-by-step what it is doing. This is easy-peasy to request. Why do so? Well, remarkedly, research studies have indicated that this is not only insightful for you (i.e., being able to see detailed explanations produced by AI), but it also tends to get generative AI to produce seemingly more reliable and on-target answers.
+A tidal wave of generative AI users will undoubtedly and inevitably adopt persistent context capabilities such as the custom instructions feature, no doubt about this. I will examine and highlight closely the custom instructions functionality of ChatGPT so that you’ll have a strident understanding of what these capabilities consist of and how to best leverage them in your ongoing daily prompt engineering endeavors.
 
-I’ve covered the basics of chain-of-thought approaches previously, see the link here. Readers have ardently requested more details and seem eager to know more about the latest advances regarding this fundamental technique.
+Before diving into the details, I’ve got two famous and quite pertinent quotes for you to contemplate.
+"
 
-I am pleased to oblige."
+
+
+"202307201","Prompt Engineering Amplified Via An Impressive New Technique That Uses Multiple Personas All At Once During Your Generative AI Session","Lance Eliot","forbes.com","2023-07-20","https://www.forbes.com/sites/lanceeliot/2023/07/20/prompt-engineering-amplified-via-an-impressive-new-technique-that-uses-multiple-personas-all-at-once-during-your-generative-ai-session/?sh=6b6b8d1efa22","They say that two heads are better than one.
+
+But another saying is that sometimes you can have too many cooks in the kitchen.
+
+Keep dearly in mind those sage pieces of wisdom.
+
+In today’s column, I am going to cover a newly emerging and quite fascinating technique associated with prompt engineering for generative AI that makes use of multi-agent formulations. In a sense, you can think of this innovative approach as trying to garner multiple viewpoints within or by the AI while trying to use generative AI to solve problems.
+"
+
+
+
+
+"202306151","Can Generative AI Be Saved From AI Hallucinations By Using Chain-Of-Thought Step-By-Step Techniques, Asks AI Ethics And AI Law","Lance Eliot","forbes.com","2023-06-15","https://www.forbes.com/sites/lanceeliot/2023/06/15/can-generative-ai-be-saved-from-ai-hallucinations-by-using-chain-of-thought-step-by-step-techniques-asks-ai-ethics-and-ai-law/?sh=429d66df401d","Sometimes it makes abundant sense to consider a weighty matter via a step-by-step approach.
+
+In today’s column, I’ll be taking a close look at a significant technique that can be used with generative AI that involves doing things on a step-by-step basis. Much of this seems quite promising. On the other hand, as I will explain momentarily, the step-by-step method is not a silver bullet, and you should not overly assume that such an approach will always be stridently successful.
+"
