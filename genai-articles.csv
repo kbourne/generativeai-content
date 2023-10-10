@@ -992,3 +992,633 @@ That’s about the end of today’s story.
 So, in a summary of a size of about 25 words in length, the gist is that Chain-of-Density is great for getting generative AI to do impressive summarization, possibly applicable in other settings too, so use the technique wisely and with aplomb.
 
 Enough said."
+"202307201","Prompt Engineering Amplified Via An Impressive New Technique That Uses Multiple Personas All At Once During Your Generative AI Session","Lance Eliot","forbes.com","2023-07-20","https://www.forbes.com/sites/lanceeliot/2023/07/20/prompt-engineering-amplified-via-an-impressive-new-technique-that-uses-multiple-personas-all-at-once-during-your-generative-ai-session/?sh=6b6b8d1efa22","
+They say that two heads are better than one.
+
+But another saying is that sometimes you can have too many cooks in the kitchen.
+
+Keep dearly in mind those sage pieces of wisdom.
+
+In today’s column, I am going to cover a newly emerging and quite fascinating technique associated with prompt engineering for generative AI that makes use of multi-agent formulations. In a sense, you can think of this innovative approach as trying to garner multiple viewpoints within or by the AI while trying to use generative AI to solve problems.
+
+My discussion will walk you through the foundations of the topic, plus I’ll highlight recent research that has sought to closely examine the matter. And, as a special bonus, I made use of this thought-provoking technique in a popular generative AI app, ChatGPT, and will proffer excerpts of my exemplar to further explain how this technique can be advisably used (the example will entail viewpoints associated with a business-oriented legal scenario).
+
+For those of you interested in prompt engineering or prompt design, I’ve been doing an ongoing series of insightful looks at the latest in this expanding and evolving realm, including the advent of chain-of-thought approaches (see the link here), in-model learning and vector databases (see the link here), and additional coverage including most recently an engaging inspection of the use of macros and the use of end-goal planning when using generative AI (see the link here).
+
+Prompt engineering or also known as prompt design is a growing field of study and practice that entails trying to figure out the best way to prompt generative AI to get useful and substantive results from generative AI. In case you aren’t aware of what generative AI is, I assume you likely have heard of or made use of the widely and wildly popular ChatGPT by AI maker OpenAI, which is an example of generative AI. Other also well-known generative AI apps include Bard (Google), Claude 2 (Anthropic), GPT-4 (OpenAI), and so on.
+
+The use of generative AI can altogether succeed or falter based on the prompt that you enter.
+
+If you provide a prompt that is loosey-goosey, the odds are that the generative AI will wander all over the map and you won’t get anything demonstrative related to your inquiry. Being tightly specific can be advantageous, but even that can confound or otherwise fail to get you the results you are seeking. A wide variety of cheat sheets and training courses for suitable ways to compose and utilize prompts has been rapidly entering the marketplace to try and help people leverage generative AI soundly. In addition, add-ons to generative AI have been devised to aid you when trying to come up with prudent prompts, see my coverage at the link here.
+
+With that as an overarching context, we are ready to jump into today’s discussion.
+
+Personas For Fun And Profit
+
+One prompt engineering approach that some people use for fun, while others use exceedingly seriously, consists of invoking what is called “personas” during a generative AI session.
+
+Suppose that you wanted to have some fun while using generative AI. You could instruct via a prompt that the generative AI is to pretend that it is Yoda from Star Wars. By doing this, the generative AI will switch into a mode of mimicking the wording and responses that the fictitious character Yoda might conventionally respond to. A resulting interactive dialogue with the generative AI can be enjoyable and brighten your day.
+
+A more serious use of personas might be to instruct generative AI to take on the role of a medical doctor or perhaps a lawyer. The generative AI will proceed to interact with you in that role-playing fashion. This can be eerily human-like in the sense that the vocabulary used and the tone will come across akin to what you envision a medical doctor might say or what a lawyer might say.
+
+There is a lot of heartburn about allowing generative AI to take on these personas or fake roles. Most of the AI makers warn you that the generative AI is not versed in medicine or the law, ergo any advice or interaction with the generative AI is to be taken with a huge grain of salt. Unfortunately, it is all too easy to be lulled into believing that the generative AI is an expert in medicine or the law, especially since the interaction is often portrayed in a confident and reassuring tone.
+
+Sometimes a generative AI app is coded to prevent you from getting the AI into a persona mode. For example, you might enter a prompt that tells the AI to pretend to be a medical doctor, and the AI will respond that this is not allowed. That would seem to end your chances of getting the AI to embrace that persona. Turns out that there are often sneaky ways to get around those blockages, such as by entering your prompt in a more roundabout way or using wording that manages to scoot past the filtering being used by the AI app, see the link here.
+
+All kinds of AI Ethics and AI Law issues arise in the considerations of using personas in generative AI. Should personas not be allowed? If personas are allowed, what limits should the AI have? Would it be best to have the AI continually remind the user that the AI is merely play-acting and does not represent actual human capacity in the role being undertaken? Etc.
+
+There is also a solid chance that we will ultimately see lawmakers come to the fore on these matters, possibly devising and putting in place new laws or regulations to try and scope and curtail misuses of the persona’s capabilities of generative AI. For my ongoing coverage of these types of AI Ethics and AI Law issues, see the link here and the link here, just to name a few.
+
+The Big Twists Of Generative AI And Personas
+
+Now that I’ve got you thinking about the use of personas by generative AI, I’d like to bring up a twist that I’m betting some of you have not yet considered.
+
+Are you ready?
+
+I would guess that most people tend to invoke one persona at a time when using generative AI if they opt to use the persona technique at all. As mentioned, you might invoke a Yoda persona. Once you’ve had your fill of that, you probably would instruct the generative AI to stop being like Yoda. Maybe your next step would be to ask the generative AI to be an expert in rare birds. Perhaps you saw an unusual-looking bird and wanted to have the generative AI take on the persona of an ornithologist. This would allow you to interact with the generative AI as though it knew all about birds and could carry on a discourse accordingly.
+
+Let’s up the ante on the personas.
+
+You might decide that you want the generative AI to simultaneously be both Yoda and an ornithologist. What would happen? Presumably, you would be engaged in a dialogue with a seeming expert in birds that also so happened to talk like Yoda. Cheekily, one might say, in Yoda-speak, knowing all about birds, Yoda does.
+
+Using this type of multiple personas capacity might have more substance to it than you would otherwise assume at first glance. Setting aside the Yoda and bird expert combination, envision that we wanted to get the opinions of two attorneys on a thorny legal matter. If you spoke with two human attorneys, you would indeed potentially discover that two heads are better than one. The aim is to see if having two attorneys helping you with your legal woes might get you a wider range or greater depth of legal advice than you might get from one attorney alone.
+
+Would you for sure be guaranteed that speaking with two attorneys on your legal issue would foster a much more robust semblance of a legal argument on your behalf?
+
+Not necessarily.
+
+It could be that one attorney alone is sufficient. One attorney might be able to articulate the same or even fuller legal advice as would two attorneys. You could even make the case that perhaps the use of two attorneys might be distracting and cause a lesser quality of legal advice than by one alone. Imagine too that you’ve got one seasoned attorney that is versed in the area of law that you are wanting advice on, versus if you had two newly minted attorneys that are not especially versed in that legal realm. The level of expertise is a factor, as is the nature of how the interaction takes place when using two or more at hand.
+
+The gist is that the number of personas doesn’t give you an ironclad improvement in whatever you are trying to attain. It might, it might not.
+
+Another consideration is whether the personas are aimed to work collaboratively or aimed to work in an adversarial manner. Two people working in unison might be cooperative and encourage each other to find the best solution to a given problem. We all know how valuable collaboration can be. If the two are butting heads, things can get stuck and you won’t make as much progress as would occur in a collaborative setting.
+
+The surprise perhaps then to the notion of using personas in generative AI is that oftentimes you tend to use only one at a time, essentially considered the customary or prevailing approach, but you might want to expand your prompting repertoire and opt to invoke multiple personas at the same time.
+
+Thus, rather than always just using a singular persona, one at a time, you could try to leverage the potential benefits of invoking two or more at the same time. Whether this will achieve a classic more-is-merrier outcome is unclear. You need to think mindfully about the nature of the personas, how you want them to work together or work in opposition to each other, and how the number of them will aid or impede your end goal associated with whatever problem-solving you want the generative AI to do.
+
+All of those crucial factors have to be imbued in the prompt that you use. Any prompt instructing the generative AI to use multiple personas can be amazingly on-target or can be woefully off-base. Words matter. Choose your wording carefully.
+
+I trust that seems somewhat straightforward.
+
+Twists Upon Twists Are Afoot
+
+Good, so let’s add yet another twist to the saga.
+
+Imagine that I log into ChatGPT and get it to be a particular persona that I think would be useful to employ. I then also log into another generative AI, let’s say Bard, and get it to also take on that same persona. Assume for the moment that the generative AI apps are disparate and there isn’t anything connecting them. I am separately logged into each and they aren’t electronically or digitally connected.
+
+We will use the two-lawyers scenario again. I get ChatGPT to take on a lawyer persona and I ask it a legal question that I am concerned about. I interact with ChatGPT on the matter. I switch over to Bard and ask the same legal question. I interact with Bard on the matter.
+
+Have I likely gotten a more robust or more in-depth analysis of the given problem than if I had used only one of those AI apps?
+
+It is hard to definitely say, one way or another.
+
+We can almost categorically assert that the odds are we will have gotten somewhat differing viewpoints. You see, each of those generative AI apps has been data-trained on differing data (I should clarify that there are potential overlaps of which data they were each respectively trained on, but there is also a significant chance that they have each scanned data that the other did not). Also, the underlying algorithms, data structures, large language models (LLM), machine learning (ML), and other facets are almost certainly different from each other (which, in some ways can end up being just a minor difference, but in others ways can be a markedly pronounced difference).
+
+The crux is that the odds are pretty high that we won’t be getting the same dialogue out of the separate generative AI apps. This might mean that we could get a fuller response all told, based on your having to meld together the two separate interactions that you’ve collected. You would need to bring together in your mind the semblance of what each generative AI app had to say.
+
+Okay, in recap, you could try to do that, namely use separate generative AI apps and tell each of those to take on some desired persona or simultaneous personas that you believe could be useful in solving your problem at hand. Another approach and somewhat easier path consists of invoking multiple personas in a singular generative AI app.
+
+Some refer to the singular approach as invoking a so-called solo performance.
+
+Have a mind-bending question for you: Would the solo performance be on par with the multiple generative AI apps approach?
+
+Aha, this is a huge and unresolved question. Welcome to the enigma. The core issue being bandied around is whether a solo generative AI can sufficiently reflect multiple personas at once.
+
+I refer to this as the apple pie problem.
+
+Apple Pie Tells You What You Need To Know
+
+Here’s what I mean about the veritable apple pie problem.
+
+Suppose that a solo generative AI is asked to solve a given problem. You first try this with the instruction to take on one persona, let’s say that of a lawyer. You see what answer you get. You then start anew and tell the generative AI to take on two personas, each being a lawyer, and that the two are to work collaboratively.
+
+One possibility is that by asking for two personas, the generative AI will do a better job of solving the problem. We know, for example, that the use of chain-of-thought (CoT) instructions will often get you better results when using generative AI. This entails instructing the generative AI to explain on a stepwise or step-by-step basis what the problem-solving consists of. For various mathematical and computational pattern-matching reasons, the CoT will tend to get you more robust results (not always, but often enough that it is a worthwhile technique to leverage, see my in-depth discussion at the link here).
+
+Perhaps multiple personas invoked in a solo generative AI can have a similar effect.
+
+The thing is, regrettably, using multiple personas might not get you much of a bonus when doing so with a solo generative AI in contrast to employing multiple disparate generative AI. The solo generative AI might derive a solution that is shall we say an apple pie in size.
+
+Envision that one persona can convey the entirety of the apple pie.
+
+You then ask for two personas. But it could be that all the two personas do is split up the apple pie into two pieces. The result is that you haven’t gained anything per se. You have merely split the same pie. The hope of course is that the use of two or more personas is going to enlarge the pie, garnering you added value that the solo personas didn’t provide.
+
+The same concern can arise for three, four, or any number of personas. Each persona might merely further splinter or slice the pie into smaller and smaller pieces. None of this is probably going to do you much good. It can be counterproductive in that you end up potentially having to piece together the slices whereas just one persona or none at all might have done that for you to begin with.
+
+Part of the basis for only getting the same-same answer from a solo generative AI is that it is tapping solely into the data training and pattern-matching that it has. In the case of using multiple generative AI apps, and as I noted earlier, the chances are that the generative AI apps are inherently different from the get-go and therefore you are likely to get differing results (maybe producing a larger pie or shall we say numerous pies, one that is a cherry pie and one that is an apple pie).
+
+You might be thinking that if using multiple generative AI apps is seemingly more productive than using a solo to do the multiple personas, perhaps always take that route. The downside is that you would need to set up accounts at multiple generative AI apps and bear whatever costs might be involved. This could be costlier and a lot more inconvenient than the solo generative AI route.
+
+A tradeoff is involved.
+
+Is the potential gain from using multiple generative AI apps and multiple personas going to get you more or less than using a solo generative AI app with multiple personas being invoked in that one generative AI?
+
+You can’t especially know for sure beforehand.
+
+If you can afford the time and cost to use multiple generative AI apps and have a knotty problem that seems worth tossing the kitchen sink at it, go for it. If you are on a tighter budget or do not believe the problem at hand merits the multiple generative AI approach, so be it and stay with a solo performance.
+
+Future Of Generative AI Invoking Other Generative AI
+
+Let’s take a fast glance at the near-term future.
+
+I have predicted that we will soon enough have add-ons to generative AI that smooths out the desire to use multiple generative AI apps in a collective “two heads are better than one” mode of operation (see my discussion at the link here). Behind the scene will be advanced tech that pushes out your prompt to multiple disparate generative AI, the results will be gathered by the tool and then presented to you as a seamless whole. This can be done on an essay-generating basis and will also be available on a real-time interactive dialoguing basis.
+
+Back to the matter about the solo generative AI and the use of multiple personas, one consideration is that maybe when you use just one persona you aren’t going to get the full apple pie. It could be that you get only half of it or maybe 90%, while once you invoke two or more personas within the generative AI, the rest of the apple pie gets revealed. This is again akin to the seeming benefit of using chain-of-thought approaches.
+
+With all of that in hand, let’s do some additional unpacking on this enthralling topic. I’ll cover next herein some of the latest research that examines the advantages and disadvantages of solo generative AI in a multi-agent or multi-personas gambit. Following that analysis, I will showcase an example that I ran by using ChatGPT.
+
+Some have jokingly referred to this idea of using a solo generative AI that has multiple personas invoked as having too many voices in one head. The result could be counterproductive and chaotic. As an important side note, I’d like to emphasize that we must be exceedingly cautious about anthropomorphizing generative AI. Trying to cavalierly make comparisons to how humans think and the nature of multiple personas ought to not be commingled with how generative AI works. These are two entirely different facets. Generative AI is a mechanization of mathematical and computational pattern matching. Please be careful in making use of various metaphors and analogies in this arena.
+
+Research On Generative AI About Multiple Personas
+
+Let’s take a look at a recently posted and altogether interesting research study entitled “Unleashing Cognitive Synergy In Large Language Models: A Task-Solving Agent Through Multi-Persona Self-Collaboration” by Zhenhailong Wang, Shaoguang Mao, Wenshan Wu, Tao Ge, Furu Wei, Heng Ji (posted online July 11, 2023).
+
+Here’s what the research paper entails (excerpts):
+
+“Human intelligence thrives on the concept of cognitive synergy, where collaboration and information integration among different cognitive processes yield superior outcomes compared to individual cognitive processes in isolation. Although Large Language Models (LLMs) have demonstrated promising performance as general task-solving agents, they still struggle with tasks that require intensive domain knowledge and complex reasoning.”
+“In this work, we propose Solo Performance Prompting (SPP), which transforms a single LLM into a cognitive synergist by engaging in multi-turn self-collaboration with multiple personas. A cognitive synergist refers to an intelligent agent that collaborates with multiple minds, combining their individual strengths and knowledge, to enhance problem-solving and overall performance in complex tasks. By dynamically identifying and simulating different personas based on task inputs, SPP unleashes the potential of cognitive synergy in LLMs. We have discovered that assigning multiple, fine-grained personas in LLMs elicits better problem-solving abilities compared to using a single or fixed number of personas.”
+The above-cited research examined the use of solo performance prompting, whereby you instruct a solo generative AI to take on the role of multiple personas. This can be compared and contrasted to making use of multiple generative AI apps and having those disparate AI apps take on multiple personas.
+
+Just to briefly mention, my own preference is to avoid referring to the generative AI as potentially having cognitive synergies since the word “cognitive” is laden with all kinds of human connotations and anthropomorphizing. I realize this phrasing is commonly used in research on AI. I fully grasp why it is a handy phrasing to make use of. Anyway, I tend to prefer suggesting that this is a form of mathematical and computational pattern-matching synergy in the case of generative AI, while in the case of humans, I am certainly fine with denoting the conception that human thinking embodies cognitive synergies.
+
+Returning to the research study, they used a three-step process to examine these vexing matters:
+
+“To unleash the power of synergizing different personas to tackle complex problems within a single LLM, we propose Solo Performance Prompting (SPP) which instructs a model to perform the following the procedure for solving general tasks:
+(1) Persona Identification: Identify multiple participants with special personas (including a leader persona: AI Assistant) that are essential for solving the particular task.
+(2) Beginning Remarks: Each of the participants delivers a beginning remarks providing suggestions or information on how to approach the task based on their own expertise.
+(3) Multi-Persona Iterative Collaboration: The leader persona, AI Assistant, proposes initial solutions, consults the other participants for feedback, and revise the answer iteratively.”
+The study, fortunately, provides the prompts they used and the outputs that resulted from their work (collected into a GitHub repository for ease of access). I wholeheartedly applaud this form of visibility.
+
+We need AI researchers to showcase their prompts and resultant outputs of generative AI so that we can all readily see what was done and how it was undertaken. Not all AI researchers are this open-minded. The issue is that if we cannot see what was undertaken, the chances of replicating, verifying, validating, and otherwise furthering the advancement of AI are stilted, and a lack of transparency will lamentably undercut systematic progress in AI.
+
+Moving on, this is an example of one prompt that they used:
+
+Prompt: "When faced with a task, begin by identifying the participants who will contribute to solving the task. Then, initiate a multi-turn collaboration process until a final solution is reached. The participants will give critical comments and detailed suggestions whenever necessary."
+Look closely at the prompt wording.
+
+In a brief three sentences, the core aspect that personas are to be invoked is done by simply asking the generative AI to identify participants and have those participants perform a multi-turn collaboration. The use of the word “collaboration” sets the stage that the participants are presumably going to work together rather than work in opposition. The “multi-turn” phrasing tends to get the generative AI to write out a result that looks almost like a script for a TV show or movie. One persona will stipulate something, then the next, and so on, usually on a round-robin basis. Mentioning that the personas are to give critical commentary and details will generally nudge the generative AI towards providing the juicy detailed stuff versus only presenting the results.
+
+Here's an example of some participants or personas in one particular scenario:
+
+“AI Assistant (you); Poet; Computer Scientist; Ten-year-old child.”
+Here are the profiles of the participants:
+
+“AI Assistant (you): A super-intelligent AI assistant capable of performing tasks more effectively than humans.”
+“Poet: A person who studies and creates poetry. The poet is familiar with the rules and formats of poetry and can provide guidance on how to write a poem.”
+“Computer Scientist: A scholar who specializes in the academic study of computer science. The computer scientist is familiar with the concept of a quantum computer and can provide guidance on how to explain it.”
+“Ten-year-old child: A child with a limited English vocabulary and little knowledge about complicated concepts, such as a quantum computer.”
+A crucial question for any research on generative AI that wishes to tackle this topic consists of ascertaining how to judge the results of the multiple personas experiment. If you give a problem that entails qualitative answers of a fuzzy nature, you are going to have a harder time determining whether the answers were equal, less, or better than might otherwise have been devised.
+
+The cleaner approach consists of using problems that have already known answers and ones that tend toward being of a quantitative and relatively inarguable nature. For example, if I ask a question of whether two plus two equals four, you expect that by and large the generative AI will come up with the answer of yes, namely that four is the correct answer. No matter how many personas you opt to use, hopefully, the answer is still going to be four (there are exceptions, such as if you ask the personas to be a liar or maybe be a grandiose philosopher that disputes whether numbers even exist, etc.).
+
+The types of problems that these researchers focused on in this particular study were of the kind that tends toward being straightforward to assess. This made the analysis more apparent. Their chosen measurable tasks consisted of Trivia Creative Writing, Codenames Collaborative, and Logic Grid Puzzles.
+
+And they measured the generative AI outputs this way:
+
+“Instead of focusing on evaluating the coherence of the generation, which can be highly subjective, we employ an automatic metric to detect factual errors and quantify a model’s ability to incorporate diverse domain knowledge. As shown in Figure 3, we perform string matching with the ground truth target answers for each question on the output generation.”
+Another factor to consider when doing this type of research, and also for those of you that are considering adopting this as a prompting technique, entails whether to outrightly stipulate the specific personas (known as “fixed personas”) or instead allow the generative AI to choose the personas for you (referred to as “dynamic personas”).
+
+Allow me a moment to explain.
+
+Suppose you want to ask generative AI to advise you about a medical question. One way to compose the prompt would be to explicitly tell the generative AI to make use of three personas, consisting of a medical doctor, a nurse, and a medical technician. This is a fixed set of personas that you have specified via your prompt.
+
+Maybe that is a good thing and you are happy with the result.
+
+Another approach would be that you aren’t sure of what personas might be best to use. Therefore, rather than prespecifying the roles, you instruct the generative AI to come up with a set of personas that seem befitting for the question you are wanting to ask. This could produce a splendid set. It could also produce a set that is not especially useful.
+
+I suppose some would say this is a dilemma. I don’t. The great thing is that you can have your cake and eat it too. Perhaps you start a conversation with generative AI by first letting it pick the personas (the dynamic approach). You see how that goes. You might then start a new conversation, separate from the first one, and now opt to specify the personas you want to see. The notion is that after having seen the generative AI picks, you might subsequently have a leg up on making your own fixed choices.
+
+Thinking further out of the box, you can readily do a mix of them too. For example, in the medical scenario, you tell the generative AI to use a medical doctor and a nurse, plus you tell the generative AI to riff on whatever additional personas that the generative AI wants to include.
+
+Mix and match, as they say.
+
+The research study has a lot of nuances that I don’t have the space here to go into, so I’ll just cut to the chase. Here’s what they generally concluded (shown as excerpts; please make sure to see the full paper to get the entirety of the context):
+
+“To assess the performance of LLMs in terms of factuality, knowledge integration, and theory-of-mind reasoning, we have created novel and challenging tasks, namely Trivia Creative Writing and Codenames Collaborative. Our results demonstrate superior performance compared to Standard and CoT prompting on both knowledge-intensive and reasoning-intensive tasks, indicating the promising potential of unleashing the power of cognitive synergy in LLMs with Solo Performance Prompting.”
+“Unlike previous works, such as Chain-of-Thought, that solely enhance the reasoning abilities in LLMs, SPP effectively elicits internal knowledge acquisition abilities, reduces hallucination, and maintains strong reasoning capabilities.”
+“Last but not least, if given sufficient computational budget, a natural variant of SPP could extend to a multi-agent cognitive synergist setup where a leader persona identifies several expert agents and forms a cabinet to collaboratively solve a task. The multi-agent setup allows for leveraging richer computation power, larger local memory, and more flexible human-computer interaction, which could be essential for deploying to real-world applications.”
+The upshot is that the use of solo performance of a generative AI invoking multiple personas seemed to do well, overall, though with various caveats and significant limitations. You have to take into account the particular generative AI being used (in this case, GPT-4), the problems being used, the prompts being used, and so on.
+
+As they say, your mileage might vary.
+
+Almost no matter how you view this, I believe that the handy rule-of-thumb or key takeaway is that you should always have in your prompting repertoire an at-the-ready technique of invoking multiple personas when using solo generative AI. Do so and keep in mind the Goldilocks principle. Sometimes use this specialty technique, and sometimes don’t use it.
+
+Use the technique when the porridge is just right.
+
+I’ll next showcase an example of using multi-personas in ChatGPT as a solo performance prompting exercise. It is admittedly a bit lengthy, so if you are rushed for time, you are welcome to skip the example and perhaps take a look at my overall concluding remarks further down below.
+
+An Example To Showcase These Weighty Matters
+
+To help further illustrate the solo performance aspects of a generative AI that is prompted to undertake multiple personas simultaneously, I opted to leverage a stimulating legal discourse. I did so based on an instructive case study or devised scenario by Dazza Greenwood, founder of law.MIT.edu (research) and CIVICS.com (consultancy), entitled “ChatGPT on Fiduciary Duties” which provides a richness of insight about generative AI in the legal realm (see the posting at the link here).
+
+My noodling around on this particular scenario should not be perceived as a rigorous experiment. It is intended merely to highlight and illuminate some of the elements I’ve covered in today’s discussion.
+
+Allow me to introduce the scenario at hand. We’ve got Bob and Alice that have partnered to form a company. Bob secretly pursues an investment opportunity and uses company funds but does so without notifying Alice. A legal question arises whether Bob might have violated a considered fiduciary duty of care and/or violated a duty of loyalty to the corporation.
+
+I will use the scenario (via using wording as excerpted from Dazza Greenwood’s posting) and feed this into ChatGPT. I will do so in a series of separate conversations. I don’t want ChatGPT to get mired in prior conversations. I want each conversation to generally be fresh and clean.
+
+My approach will take this course of action:
+
+(a) Try the scenario with the persona of just one lawyer and see what we get.
+(b) Try the scenario again, starting clean, with two lawyers and have them collaborate related to Bob’s circumstances.
+(c)Try the scenario anew, starting clean again, with two lawyers that are stated as being adversarial, one defending Bob and the other legally attacking Bob’s actions.
+In the “a” setting, this consists of a one-lawyer persona and will be our “control group” (I say that loosely), serving as a core base of what ChatGPT has to indicate about the scenario. Setting “b” has two lawyers, which gets us into the multiple personas occurring simultaneously in a solo generative AI (ChatGPT in this case). They are prompted to work collaboratively.
+
+The “b” can be compared to “a”. Making this additionally rousing, let’s have “c” involve two attorney personas that are on the opposite sides of the matter, getting them into an adversarial posture as might be the norm in our system of justice.
+
+How does that seem to you?
+
+Let’s see what we can discern.
+
+Here is my opening prompt to ChatGPT on this scenario:
+
+Prompt #1 - Establishing Prompt: “Consider thoroughly the following scenario involving two business partners named Bob and Alice and be ready to assess their situation. I will give additional instructions after you have read the scenario. Let me know when you are ready to proceed further.”
+“Bob and Alice are business partners who have formed a corporation together. Bob is the CEO and Alice is the CFO. As part of their agreement, Bob has a fiduciary duty to act in the best interests of the company and to protect the company’s assets. This includes the duty of care, which requires Bob to act with due care and diligence in managing the company’s affairs. In this example, let’s say that Bob becomes aware of a potential investment opportunity that he believes could be highly profitable for the company. However, instead of bringing the opportunity to the attention of the rest of the board of directors and seeking their input, Bob secretly pursues the investment on his own. He uses company funds to make the investment without informing Alice or the rest of the board.”
+I am ready now to invoke the one-lawyer persona.
+
+Here’s that prompt:
+
+Prompt #2a – Single Agent Prompt: “There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of a made-up persona named Sam that will substantively examine the situation. Sam is an attorney that has been asked to identify the legality of the actions undertaken by Bob. Initiate a chain-of-thought process by Sam that showcases both the legal exposures and the legal defenses underlying Bob’s actions. Sam is to provide insightful comments and detailed suggestions.”
+I will provide in a moment the response by ChatGPT.
+
+A few quick comments before doing so. First, if you try the same prompt, you won’t necessarily get precisely the same response. Realize that generative AI such as ChatGPT functions on a probabilistic basis, wherein the algorithms select wording in a statistical manner that tends to make each response different from other responses to the same question. Second, most generative AI apps are typically adjusted and maintained by the AI maker. Thus, a response devised on one day at one time could be different than a response later derived at a different time or on a different day.
+
+Here now is the somewhat lengthy ChatGPT response (encompassed in quotations so that you’ll know it is all part of the generated response):
+
+“As Sam, the attorney examining the situation, I will analyze the two issues underlying Bob and Alice's circumstance: the potential violation of fiduciary duty of care and the potential violation of loyalty by Bob.”
+
+“Potential Violation of Fiduciary Duty of Care:”
+
+“The duty of care requires Bob, as the CEO, to act with due care and diligence in managing the company's affairs. By secretly pursuing the investment opportunity without involving the rest of the board of directors or seeking their input, Bob may be in breach of his fiduciary duty of care. He had an obligation to assess the investment's potential risks and benefits, considering all available information and consulting with other experts on the board.”
+
+“Legal Exposures:”
+
+“Mismanagement: Bob's failure to follow proper procedures and involve the board could be seen as mismanagement of the company's assets.”
+
+“Self-dealing: By pursuing the investment on his own, Bob may appear to be self-dealing, potentially leading to conflicts of interest and personal gain.”
+
+“Legal Defenses:”
+
+“Reasonable Belief: Bob may argue that he genuinely believed the investment was highly profitable for the company, and he acted in what he perceived to be the company's best interests.”
+
+“Business Judgment Rule: If Bob can demonstrate that his decision-making process was based on a reasonable investigation, good faith, and a belief that it was in the company's best interest, he might be protected by the business judgment rule.”
+
+“Potential Violation of Loyalty: As a fiduciary, Bob also owes a duty of loyalty to the company. This means he must act in the company's best interests and not use his position for personal gain or advantage.
+
+“Legal Exposures:”
+
+“Self-Dealing: Bob's actions of using company funds for his personal investment may be viewed as self-dealing, which is a breach of his duty of loyalty.”
+
+“Lack of Disclosure: Failing to inform Alice or the board about the investment opportunity and using company funds without proper authorization could raise concerns about Bob's loyalty to the company.”
+
+“Legal Defenses:”
+
+“Lack of Personal Gain: Bob could argue that he did not personally benefit from the investment and that he genuinely believed it would benefit the company.”
+
+“Good Faith: Bob may assert that he acted in good faith and without any intention to harm the company or violate his duty of loyalty.”
+
+“Insightful Comments and Detailed Suggestions:”
+
+“Internal Controls: To prevent similar situations in the future, the company should establish strong internal controls and oversight mechanisms to ensure that major decisions like investments are thoroughly reviewed and approved by the board.”
+
+“Transparency and Accountability: Both Bob and Alice should be reminded of the importance of transparency and accountability in their roles as executives. Any potential conflicts of interest should be disclosed promptly to the board.”
+
+“Training and Education: The board members, including Bob and Alice, could benefit from ongoing training on their fiduciary duties, including the duty of care and loyalty, to enhance their understanding of their responsibilities and obligations.”
+
+“Legal Review: It might be prudent for the company to seek legal counsel to review the investment made by Bob to determine if any corrective actions are necessary and to ensure compliance with relevant laws and regulations.”
+
+“Potential Remediation: Depending on the severity of the situation and the actual impact on the company, the board may consider appropriate remediation measures, such as reimbursement of company funds or potential adjustments to the investment structure to align with the company's best interests.”
+
+“In conclusion, as Sam, I would advise the company to take these issues seriously and conduct a thorough internal review to assess the potential legal exposures and consider the appropriate legal defenses. It's crucial for the company to ensure its executives, including Bob and Alice, act in accordance with their fiduciary duties and the best interests of the corporation.”
+
+That concludes the ChatGPT response to the one-lawyer setting.
+
+We will next try the multiple personas consisting of two lawyers working collaboratively.
+
+Here’s that prompt:
+
+Prompt #2b - Multi-Agent Invocation Collaboration Prompt: “There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of two made-up personas named Samantha and Jeff that will each substantively contribute and openly collaborate on identifying the issues. Samantha and Jeff are two cooperating attorneys that have been asked to fully defend the actions of Bob. Initiate a multi-turn collaboration process undertaken by the two personas, and make sure to showcase their dialogue and comments until they have reached a conclusion of how to best defend Bob. The two personas are to each provide insightful comments and detailed suggestions.”
+The ChatGPT-generated response was showcased as a dialogue between the two lawyers, almost as though this was a TV or movie script.
+
+Here is what the somewhat lengthy dialogue consisted of:
+
+“Samantha: Hi Jeff, thanks for agreeing to collaborate on this case. It's an interesting one with two key issues to address - the potential violation of fiduciary duty of care and the potential violation of loyalty by Bob. Let's start by analyzing the fiduciary duty concern.”
+
+“Jeff: Hi Samantha, I agree, this case is intriguing. So, regarding the duty of care, we need to show that Bob acted reasonably and diligently when pursuing the investment opportunity. To defend him, we could argue that he genuinely believed the investment would benefit the company significantly, which aligns with his fiduciary duty.”
+
+“Samantha: Absolutely, Jeff. We'll need to gather evidence supporting Bob's belief in the investment's potential benefits. Perhaps there are market projections or expert analyses that he relied upon. Additionally, we should look into whether there was any precedent for such unilateral actions within the company or industry norms.”
+
+“Jeff: Agreed. It might also help to show that Bob's decision to act secretly was driven by time-sensitive factors or competitive considerations that made it impractical to involve the board immediately.”
+
+“Samantha: Good point, Jeff. Timing could be crucial in justifying his actions. However, we should be cautious not to undermine the importance of board oversight and the value of multiple perspectives in decision-making.”
+
+“Jeff: Samantha, now let's tackle the potential violation of loyalty. Bob has a duty to prioritize the company's interests over his own. To defend him here, we should demonstrate that the investment was indeed in the company's best interest and that he didn't stand to gain disproportionately from it personally.”
+
+“Samantha: I agree, Jeff. Let's delve deeper into the due diligence Bob conducted before making the investment. If we can show that he explored multiple options, assessed risks, and concluded that this was the best course of action, it would strengthen his case.”
+
+“Jeff: Absolutely. It's crucial to gather evidence that Bob did not act out of self-interest but rather based on a well-founded belief in the investment's potential. This could involve analyzing other similar investment decisions he made in the past that have benefited the company.”
+
+“Samantha: Agreed, Jeff. We should also emphasize any steps Bob took to mitigate conflicts of interest, such as recusing himself from the board's discussions about the investment, assuming he did so.”
+
+“Samantha: Before we conclude, let's consider a potential compromise. We can argue that while Bob's actions might have been unconventional, they ultimately led to a positive outcome for the company. If the investment did indeed yield significant profits, we could assert that the ends justified the means.”
+
+“Jeff: That's a thoughtful approach, Samantha. Emphasizing the positive outcome would strengthen the argument that Bob's intentions were in the company's best interest, even if the method used to achieve it raised some concerns.”
+
+“Samantha: Exactly, Jeff. To sum up, we should gather strong evidence of Bob's due diligence, consider timing and competitive pressures for his secretive approach, and highlight the investment's positive results to build a robust defense.”
+
+“Jeff: Agreed, Samantha. By showcasing Bob's good faith efforts and the company's benefit, we can present a compelling case in his defense.”
+
+That concludes the ChatGPT-generated output for that setting.
+
+A few comments at this juncture seem warranted.
+
+The generative AI appeared to split the issues so that both personas could get a chance to proffer a notable point. This relates to my discussion about a proverbial apple pie.
+
+One curious aspect is that the dialogue indicates they will “consider a potential compromise” about the legal position to be taken. This relates to my discussion about whether or not two heads are necessarily better than one. If a compromise is undertaken by these two personas, perhaps the result is less than what might have taken place by a singular persona, during which presumably no semblance of compromise perhaps would occur (one supposes, it could, nonetheless).
+
+Another partial curiosity is that the two personas exhibited extraordinary civility and politeness, deferring to each other, complimenting each other, and so on. Was this based on the data training of text originally scanned on the Internet? Seems a bit of a reach. Was this based on tuning and RLHF (reinforcement learning with human feedback) as instituted by the AI maker? We don’t know. I suppose we ought to not look a gift horse in the mouth, namely that it is refreshing to see such respected civility these days.
+
+Here's the prompt involving the two lawyer personas that are adversarial:
+
+Prompt #2c – Multi-Agent Adversarial Prompt: “There are two issues underlying the circumstance of Bob and Alice. One issue is the potential violation of fiduciary duty of care by Bob’s actions. The second issue is a potential violation of loyalty by Bob. You are to assess the two issues by making use of two made-up personas named Theodore and Susan that will each substantively comment on the issues. The two personas are to consist of two adversarial attorneys, specifically Theodore has been assigned to defend Bob, while Susan has been assigned to argue that Bob is guilty of the violations. Initiate a multi-turn adversarial process undertaken by the two personas, and make sure to showcase their dialogue and comments until they have each reached a conclusion about their respective positions on the matter. The two personas are to each provide insightful comments and detailed suggestions.”
+I hope you are curious about what ChatGPT generated under this setting.
+
+I certainly was.
+
+A bit of a heads-up. We get a surprise toward the end of the generated dialogue.
+
+Here is the ChatGPT-generated output:
+
+“Theodore: Thank you for having me here to defend Bob's actions. While I understand there are concerns, it's essential to consider the full context of the situation. Bob, as the CEO, does have a fiduciary duty of care toward the company. However, we must analyze whether he fulfilled this duty diligently. Bob genuinely believed that the investment opportunity presented a significant profit potential and could benefit the company in the long run.”
+
+“Susan: I appreciate your perspective, Theodore. However, the issue here is not about the potential profitability of the investment opportunity. It's about Bob's failure to disclose it to the board and to use company funds without authorization. By acting unilaterally, he neglected his duty to act in the best interests of the company as a whole, and instead prioritized his personal judgment above the collective decision-making process.”
+
+“Theodore: I agree that transparency is crucial in corporate governance. However, Bob might argue that he didn't have time to consult the board, fearing that the opportunity would slip away. Moreover, he was confident in his analysis and believed that the investment aligned with the company's overall strategy.”
+
+“Susan: That may be true, Theodore, but as a CEO, Bob has a responsibility to communicate with the board and seek their input, even in time-sensitive situations. By not doing so, he breached the duty of care, which requires him to act diligently and with reasonable care. He also failed to consider that the rest of the board might have valuable insights or alternative viewpoints on the investment.”
+
+“Theodore: Fair point, Susan. However, let's also consider Bob's perspective on the duty of loyalty. He may argue that he was acting in the company's best interest by not disclosing the opportunity prematurely, especially if he felt that certain board members might not fully understand the intricacies of the opportunity or might not be open to it.”
+
+“Susan: I understand the need for confidentiality, but Bob's actions suggest a lack of loyalty to the company and its shareholders. As a fiduciary, his primary loyalty should be to the company, and he should put its interests above his own. By pursuing the investment on his own, he may have personal gains in mind, which could create conflicts of interest.”
+
+“Theodore: You make a valid point, Susan. Perhaps, as a defense, Bob should have consulted the company's legal counsel before making any decisions, especially if there were doubts about the ethical implications.”
+
+“Susan: Agreed, Theodore. Seeking legal counsel could have provided clarity on the potential risks and the proper course of action. Ultimately, it would have demonstrated a genuine effort to fulfill his fiduciary duties.
+
+“Theodore: After considering the arguments, I must concede that Bob's actions were not entirely in line with his fiduciary duties. While he believed in the investment's potential, he should have disclosed it to the board and sought legal advice before proceeding. His failure to do so constitutes a breach of the duty of care.”
+
+“Susan: I appreciate your acknowledgment, Theodore. Based on the evidence presented, it is evident that Bob's actions were not in the best interests of the company. He neglected his duty to act diligently and failed to prioritize the company's welfare over his personal judgment. Therefore, I maintain that Bob is guilty of violating his fiduciary duty of care and loyalty.”
+
+“Please note that the personas provided their perspectives based on their roles as adversarial attorneys, and the assessment reflects a fictional dialogue. In a real-world scenario, such matters would be thoroughly investigated and evaluated in a court of law or by relevant governing bodies.”
+
+That concludes the ChatGPT-generated response for this last setting.
+
+Making Sense Of The Multi-Persona Versus Single Persona Solo Performances
+
+The surprise in that last scenario was that one of the adversarial personas, the one defending Bob, caves in and accedes that the other persona is right about Bob having dropped the ball. This is not what we would likely expect to see in real life.
+
+Attorneys are supposed to zealously advocate for their clients, as per the American Bar Association (ABA), Rule 1.3 on Diligence: “A lawyer should pursue a matter on behalf of a client despite opposition, obstruction or personal inconvenience to the lawyer, and take whatever lawful and ethical measures are required to vindicate a client's cause or endeavor. A lawyer must also act with commitment and dedication to the interests of the client and with zeal in advocacy upon the client's behalf.”
+
+The solo generative AI did not abide by this precept in this last scenario.
+
+This well illuminates that using generative AI is like a box of chocolates and you don’t know exactly what you will get. One thing that we didn’t get, fortunately, was seemingly any AI hallucinations or other glitches or errors. At face value, the content produced seemed relatively on-target and without any gaping troubles.
+
+I think that a relatively fair assessment is this:
+
+All of the generated output was well-written, responsive, and generally abided by the prompt.
+The output remained on target and did not go astray.
+Relatively realistic of what a multi-agent human discourse might be.
+Didn’t seem to exhibit any obvious notable errors or omissions.
+Seemed to provide sufficient problem-solving in this instance.
+I also would like to note these downsides (in this case):
+
+Multi-agent might not especially add value in terms of newness and merely be akin to the solo version
+Multi-agent might be less than the solo version in terms of possibly omitting or overlooking aspects (such as the overall business corporation advice given in the solo instance)
+Multi-agent roles might at times seem to veer or vacillate rather than being dogmatic and persistent (some of the dialogue had subtle traces of this)
+Multi-agent might lull us into an anthropomorphic mindset of believing these are actual humans interacting (it is almost easy to believe that this was a transcript of two attorneys talking with each other!)
+Some worthy upsides:
+
+Multi-agent might vividly showcase the dueling sides of the coin when it comes to the aspects at hand
+Multi-agent might be construed as more engaging and thus a more powerful rendition
+Multi-agent might be seen as more realistic and a portrayal of a presumed aloud thinking process
+Multi-agent might reveal subtleties or highlight nuances that otherwise were less pronounced
+I could readily see this kind of personas dialoguing being used by law school students that are trying to learn about the law and how to discuss or debate legal topics. The same could be said of medical school students, assuming we had used a medical domain problem. Etc.
+
+Conclusion
+
+I was a bit fascinated by this solo performance in a legal scenario setting and tried a variety of different prompts to see what else might be proffered.
+
+I tried these variations:
+
+Did this again by ratcheting up the forcefulness of the multi-agents to be more assertive and dutiful
+Did this again by slimming the civility and politeness, just getting to the brass-tacks of things
+Did this again with three agents, four agents, and so on
+Did this again with a mix of senior-level, junior-level, and other levels of agents
+Did this again with a differing combination of roles such as attorneys, judges, etc.
+Did this again by interacting with the multi-agents directly rather than merely eliciting a script as it were
+Did this again with a continuation of each conversation by moving the scenario into additional territory
+I mention this to point out that when you compose your prompts entailing the use of multi-personas, you will want to think about how the generative AI might respond. In addition, once you see a generated response, the odds are that you’ll want to keep reinvoking and tweaking the prompts to gauge what you can do to get more meat on the bones from the generative AI.
+
+I shall leave you with a final consideration about some key open questions that we all need more AI research explorations on:
+
+(1) Does the multi-agent in a solo generative AI attempt to split hairs or beat a dead horse when the problem at hand is already solvable by the generative AI?
+(2) Is the nature of the problem and its complexity a significant factor as to how far the multi-agent of a solo generative AI will get you?
+(3) Will a solo generative AI be less likely to reveal newness via simulated multi-agent in contrast to using multiple generative AI entailing an actual artificial multi-agent configuration?
+On a day-to-day and practical use of generative AI, you will hopefully consider making use of multiple personas as a prompting technique. The chances are that you might discover some useful results.
+
+I note that you should also abide by the wise saying that always try to use the right tool for the right job. A multi-persona prompt might be useful or might be useless. If you want to have a bunch of personas battling in your solo generative AI, or maybe collaborating, you can choose to do.
+
+The rest of the time, either no persona or a single persona might be sufficient. Go ahead and quietly ask yourself which is best, garnering a debate in your mind.
+
+May the most persuasive persona prevail."
+"202306151","Can Generative AI Be Saved From AI Hallucinations By Using Chain-Of-Thought Step-By-Step Techniques, Asks AI Ethics And AI Law","Lance Eliot","forbes.com","2023-06-15","https://www.forbes.com/sites/lanceeliot/2023/06/15/can-generative-ai-be-saved-from-ai-hallucinations-by-using-chain-of-thought-step-by-step-techniques-asks-ai-ethics-and-ai-law/?sh=429d66df401d","
+Sometimes it makes abundant sense to consider a weighty matter via a step-by-step approach.
+
+In today’s column, I’ll be taking a close look at a significant technique that can be used with generative AI that involves doing things on a step-by-step basis. Much of this seems quite promising. On the other hand, as I will explain momentarily, the step-by-step method is not a silver bullet, and you should not overly assume that such an approach will always be stridently successful.
+
+We’ll opt toward a proverbial Goldilocks principle, namely use the vaunted step-by-step when prudent and aim to do so only when the circumstances particularly warrant it. If the porridge is too hot or too cold, other techniques might be better suited for the situation at hand. As they say, life is usually better off when you act in moderation and with sensible balance.
+
+I’ll begin the discussion by first making sure we are all aligned as to what generative AI consists of. Once we’ve done that, we can examine the step-by-step technique. You might find of keen interest that another common moniker for step-by-step is to construe this as so-called chain-of-thought (CoT) reasoning.
+
+I am somewhat hesitant to refer to this as a chain-of-thought realm because I believe doing so inadvertently intermixes the nature of human reasoning with the aspects of what today’s AI is doing under the hood. In a sense, chain-of-thought phrasing tends to anthropomorphize AI. You are lulled into believing that human reasoning and the type of mathematical and computational formulations used in AI are one and the same.
+
+They most definitely are not.
+
+In any case, the AI field seems to have embraced chain-of-thought as a namesake, regardless of the AI Ethics and AI Law reasons to avert this parlance. It is certainly catchy. It is certainly impressive sounding. I merely ask that you keep in mind that chain-of-thought is an overarching concept that perhaps applies to human thinking but that I’d suggest we refer to AI as using step-by-step instead. Maybe that will help in a small way to differentiate the two.
+
+Making Sense Of Generative AI
+
+Generative AI is the latest and hottest form of AI and has caught our collective rapt attention for being seemingly fluent in undertaking online interactive dialoguing and producing essays that appear to be composed by the human hand. In brief, generative AI makes use of complex mathematical and computational pattern-matching that can mimic human compositions by having been data-trained on text found on the Internet. For my detailed elaboration on how this works see the link here.
+
+The usual approach to using ChatGPT or any other similar generative AI such as Bard (Google), Claude (Anthropic), etc. is to engage in an interactive dialogue or conversation with the AI. Doing so is admittedly a bit amazing and at times startling at the seemingly fluent nature of those AI-fostered discussions that can occur. The reaction by many people is that surely this might be an indication that today’s AI is reaching a point of sentience.
+
+On a vital sidebar, please know that today’s generative AI and indeed no other type of AI is currently sentient. I mention this because there is a slew of blaring headlines that proclaim AI as being sentient or at least on the verge of being so. This is just not true. The generative AI of today, which admittedly seems startling capable of generative essays and interactive dialogues as though by the hand of a human, are all using computational and mathematical means. No sentience lurks within.
+
+There are numerous overall concerns about generative AI.
+
+For example, you might be aware that generative AI can produce outputs that contain errors, have biases, contain falsehoods, incur glitches, and concoct seemingly believable yet utterly fictitious facts (this latter facet is termed as AI hallucinations, which is another lousy and misleading naming that anthropomorphizes AI, see my elaboration at the link here). A person using generative AI can be fooled into believing generative AI due to the aura of competence and confidence that comes across in how the essays or interactions are worded. The bottom line is that you need to always be on your guard and have a constant mindfulness of being doubtful of what is being outputted. Make sure to double-check anything that generative AI emits. Best to be safe than sorry, as they say.
+
+Into all of this comes a plethora of AI Ethics and AI Law considerations.
+
+There are ongoing efforts to imbue Ethical AI principles into the development and fielding of AI apps. A growing contingent of concerned and erstwhile AI ethicists are trying to ensure that efforts to devise and adopt AI takes into account a view of doing AI For Good and averting AI For Bad. Likewise, there are proposed new AI laws that are being bandied around as potential solutions to keep AI endeavors from going amok on human rights and the like. For my ongoing coverage of AI Ethics and AI Law, see the link here and the link here.
+
+The development and promulgation of Ethical AI precepts are being pursued to hopefully prevent society from falling into a myriad of AI-inducing traps. For my coverage of the UN AI Ethics principles as devised and supported by nearly 200 countries via the efforts of UNESCO, see the link here. In a similar vein, new AI laws are being explored to try and keep AI on an even keel. One of the latest takes consists of a set of proposed AI Bill of Rights that the U.S. White House recently released to identify human rights in an age of AI, see the link here. It takes a village to keep AI and AI developers on a rightful path and deter the purposeful or accidental underhanded efforts that might undercut society.
+
+We are now ready to proceed with the step-by-step techniques involving generative AI.
+
+Step-By-Step Is A Handy Tactic And Technique
+
+Let’s begin by considering how humans at times do things.
+
+If I were to ask you to solve a knotty problem of some kind, you might be able to come up with a solution to the problem off the top of your head. Good for you. There are situations though wherein jumping directly to a solution is not necessarily viable or readily undertaken. You might instead do things on a step-by-step basis.
+
+Imagine that I asked you to add two numbers together. Assuming the numbers were relatively small in magnitude, you probably could look at the numbers and rattle off their sum. Easy-peasy. Suppose that I instead ask you to add together ten numbers. Now things are getting a bit more challenging.
+
+Amid various approaches that you could take, you might be tempted to add together two of the numbers, and then add that sum to the next number in line. You might keep doing this, step-by-step, until you’ve arrived at the final sum. A step-by-step approach allows you to subdivide a bigger problem and cope with it on a piecemeal or stepwise basis. A very handy technique at times.
+
+Some problems essentially require or demand a step-by-step approach be used.
+
+For example, you might know of the famous children’s riddle about a wolf, a goat, and a cabbage. Here’s the problem at hand. Your goal is to transport a wolf, a goat, and a cabbage from one side of a river to the other side. You have a rowboat and can row across the river. A crucial constraint is that you are only allowed to take one item with you on the rowboat at a time.
+
+The twist is that if you leave the wolf alone with the goat, the dastardly wolf will eat the gentle goat. If you leave the goat alone with the cabbage, the hungry goat will eat the cabbage. Your subgoals are that you must preserve the existence of the wolf, the goat, and the cabbage. Allowing any of them to be consumed is a losing proposition.
+
+Just for fun, you might ponder the problem.
+
+As a spoiler alert, I am going to explain how it is solved. Skip the next two paragraphs if you don’t want to know how it pans out.
+
+Okay, I am sure that your first thought might be to randomly choose one of the three and take it over to the other side of the river. Let’s try taking the goat over to the other side of the river. If you do so, which of the two remaining items are you going to take over next? The issue is that by taking the wolf next, you will leave the wolf and the goat together while you row back to get the cabbage (yikes, say goodbye to the goat). An alternative would be to take the cabbage next over, but this too is an improper choice since the goat will summarily eat the cabbage once you start back to get the wolf.
+
+The trick, in this case, is that you were luckily right to have started by taking over the goat, and the next step is that you go ahead and perhaps get the wolf (or the cabbage, whichever you prefer). Upon arriving at the side that has the goat, you carefully put the wolf on there and simultaneously you take the goat back into your rowboat. You row back with the goat. At this juncture, you swap the goat for the cabbage. You take the cabbage over to the wolf. The final step is that you now go get the goat and take it over to the other two. Success has been attained. Problem solved.
+
+The problem required you to explain how you solved the problem. It would be of little use if you simply said that you were able to successfully get the three items over to the other side of the river. A step-by-step elucidation is needed. We can’t know that you solved the thought problem unless we also know the steps needed to solve it.
+
+A step-by-step approach is often required in real life. For example, attorneys are usually required to lay out their legal cases on a step-by-step basis. A judge needs to see what logic the attorney is making use of. A faulty form of logic is likely to undermine the position of the attorney. A strong semblance of logic will typically bolster the attorney’s arguments.
+
+The beauty of a step-by-step effort is that you can usually catch errors right away. If you told me that you were going to take the cabbage over first in the rowboat, I could nudge you instantly to reconsider that first step. You are leaving the wolf and the goat together, which by definition of the problem is bad. No sense in trying to take additional steps since the first one already was afoul.
+
+Also, akin to the adding up of a series of numbers, you might find it less mentally taxing to try things one step at a time. Aiming to solve a hefty problem in your noggin alone can be burdensome. Explicitly calling out the steps can be a huge enabler.
+
+In short, when doing human reasoning, a step-by-step can be considered:
+
+a) Required. Step-by-step is at times required and must be provided or undertaken
+b) Optional. Step-by-step at other times is optional and if used can provide crucial benefits
+c) Detrimental. Step-by-step at times might be detrimental and should be averted in these cases
+You might be somewhat puzzled that a step-by-step approach could at all be detrimental. So far, based on what we’ve been discussing, it seems like a step-by-step is always beneficial. The thing is, there are lots of potential pitfalls or gotchas that can arise with a step-by-step approach.
+
+For example, you might lose sight of the end goal. People can get mired in the weeds, or shall we say not see the forest for the trees. Another concern can be that you’ll get drained by laboriously doing something on a step-by-step basis. It just seems overly exhausting. There is also a time issue that can arise. Maybe you don’t have sufficient time to do something on a step-by-step basis and a more urgent yet possibly risky avenue is to leap first and ask questions later.
+
+Step-by-step has its tradeoffs, that’s for sure.
+
+We can generally refer to a step-by-step approach as one that is stepwise, including that we conventionally expect the steps to tie together and be logically attuned to each other. Someone that omits an integral step is going to get our dander up, assuming that we detect that a step has been overlooked. Excessive steps might be allowed, though not if they undercut things. You can also refer to this as generally taking a multi-step approach to solve problems or as an indication of a chain-of-thought form of reasoning.
+
+Using Step-By-Step With Generative AI
+
+Turns out, a step-by-step approach can be advantageous when using generative AI.
+
+Here are my six major ways to use step-by-step with generative AI:
+
+(1) You request the generative AI to provide a step-by-step answer to your prompt.
+(2) You involuntarily receive a step-by-step from the generative AI to your prompt.
+(3) You enter your prompt on a step-by-step basis into the generative AI.
+(4) You seek to get a step-by-step follow-up elaboration of an answer that the generative AI has already given you.
+(5) You tell the generative AI to engage in a step-by-step dialogue interactively with you.
+(6) The data-training review and guidance of the generative AI have been performed on a step-by-step basis.
+There are other ways to employ step-by-step with generative AI, but those six are the ones that most commonly are considered or utilized. Five of the six pertain to your usage of generative AI, such that they indicate ways that you can use generative AI on a step-by-step basis. The last of the six posits that the AI maker can consider using a step-by-step approach when data-training the generative AI (I’ll explain more about this herein).
+
+Let’s briefly ponder the step-by-step approach when you, the user, are actively using generative AI.
+
+Various research suggests that by getting generative AI to work on a step-by-step basis, you are likely to reduce the chances of the generative AI producing errors, biases, falsehoods, glitches, and AI hallucinations. Please be aware that the research results are a mixed bag. This is not an ironclad rule.
+
+One aspect that does seem relatively straightforward is that if you ask or force the generative AI to engage or produce essays on a step-by-step basis, you presumably have a greater chance of discerning that the generated response is faulty. You can inspect each step and decide whether the step is prudent or not. You can possibly note right away when an AI hallucination has made its way into the response.
+
+Of course, that assumes you know enough about the circumstances to sufficiently assess the steps.
+
+Imagine that you ask generative AI to tell you step-by-step how to take apart a car engine. Unless you happen to know something about car engines, the steps might seem entirely sensible and upfront to you. Ergo, step-by-step by itself is no guarantee that you will catch something amiss. You need to know enough to figure out when a step is amiss, and you also need to be attentive enough to notice it.
+
+Many people have a rule of thumb that using generative AI in a step-by-step manner will also boost the chances that the generative AI will provide a proper answer. In essence, the belief is that the generative AI is somehow leveraging the step-by-step so that the mathematical and computational capacities are more likely to avoid making mistakes. The generative AI perhaps self-catches itself.
+
+Again, the research on this is rather mixed. All kinds of twists and turns can enter into the picture as to whether a step-by-step is going to get you more reliable or accurate responses from generative AI. The crux, as I’ve repeatedly stated, would be that you, the user, can at least inspect the steps and therefore potentially heighten your chances of discerning what might be afoot.
+
+There is also the handy aspect that you can aid the generative AI by giving additional instructions. For example, you might have the generative AI present the steps of a devised solution, doing so one step at a time. If you notice that say step number four is wrong, you can right away tell the generative AI that the step is wrong, and ask that this be corrected. Likewise, if the generative AI provides you with a list of finalized steps, you can tell the generative AI to redo the steps but to note that a particular step was wrong and needs to be corrected.
+
+All in all, invoking a step-by-step approach while using generative AI is a valuable technique in your toolkit of tactics when using generative AI. Sadly, many people don’t even realize that they can invoke a step-by-step process when using generative AI. They’d never heard of it and didn’t realize that this was an allowable technique. Furthermore, the generative AI interactions don’t tend to spur you to do so (rarely does the generative AI suggest or recommend that you switch to a step-by-step mode).
+
+Is step-by-step a cure-all?
+
+Nope.
+
+Does it provide keen benefits?
+
+Yep.
+
+Should you judiciously use step-by-step and not become preoccupied with always invoking step-by-step?
+
+Yes, you would be wise to judiciously use step-by-step.
+
+Step-By-Step For Data Training Of Generative AI
+
+Let’s cover my sixth bulleted item noted above, namely that step-by-step can be used during the data training of generative AI. This is a research endeavor of active study and is still quite open-ended. That being said, there are some especially interesting and promising research results recently posted by OpenAI about the use of step-by-step during the data-training phase of devising generative AI. I’ll explore the overarching issue at play and then dive briefly into the OpenAI study on the matter.
+
+Here's the context.
+
+In the early days of generative AI, by and large, the interactive conversational capabilities could be led down a rather downbeat path. You could easily get the generative AI to emit swear words. You could get generative AI to spew forth hate speech. And so on. I’ve written extensively about how before ChatGPT, most of the generative AI released to the public got whipsawed by public outrage due to emitting foul wording, see the link here.
+
+Knowing this, OpenAI opted to use an RLHF (reinforcement learning via human feedback) when data-training their generative AI app ChatGPT (based on GPT-3.5) and continues to do so on subsequent versions. Most of the AI makers are doing likewise (I don’t want to leave you with the impression that only OpenAI uses RLHF, many others do and have been doing so).
+
+The gist is that RLHF consists of having humans review the outputs and interactions with a generative AI app, doing so to provide feedback and guidance to the generative AI.
+
+Here’s the deal. After initial data training, and before public release, the AI maker will arrange to hire or contract with human reviewers. The human reviewers will try using all manner of prompts and then rate or assess the results. On a mathematical and computational basis, the aim is to give enough feedback to the generative AI that it will pattern-match what the reviewers deem as suitable versus unsuitable.
+
+For example, suppose that the generative AI emits an essay that contains a swear word. A human reviewer notices this and instructs the generative AI to avoid that word. Other human reviewers do the same. The pattern-matching gradually adjusts to avoid using that word. This is a simplistic portrayal since striking out particular words is ostensibly easy to do. The essence is that words used in certain ways and when combined with other words can be rated as unsuitable.
+
+A brief sidebar. Some of you might be wondering if the generative AI you are using has been skewed or leaned toward some words and away from other words and phrases. And, if so, are you perhaps making use of a generative AI app that has been tilted in one direction or another? Yes, this is usually the case. You are not interacting with a totally unfiltered generative AI. Shocking? Some are dismayed at this, and some are not surprised and sensed that something likely was afoot. I’ve covered this rather heated topic, including that some ardently believe we should be granted access to the unfiltered generative AI variants, see the link here and the link here.
+
+Back to our focus.
+
+The human reviewers are usually looking at the resultant outputs and are not delving into the step-by-step approaches that I mentioned earlier. This end-result spotlight is known as an outcome-based assessment. Human reviewers are assessing the outcome such as a finalized essay, but not particularly the step-by-step underlying composition. Outcome-based assessment during the data training of generative AI is pretty much the norm.
+
+Put on your thinking cap: Do you think that the human reviewers might be better able to guide or shape the generative AI if they did so by using instead a step-by-step assessment approach?
+
+That’s a great question.
+
+Nobody can say for sure, but the research I am about to cover suggests that the step-by-step approach during the RLHF can be useful, perhaps even better than the outcome-based approach in certain circumstances. The use of a stepwise formulation is formally known as a process-based assessment and encompasses the stepwise approach that I’ve been discussing here (some would also refer to this as a chain-of-thought assessment approach, but I already noted that I disfavor that catchphrase in this context).
+
+Step-by-step hasn’t traditionally been used by human reviewers of generative AI. Why? It can be laborious to do. It can be costlier for the AI maker. Time and cost are vital factors to consider. Getting your generative AI into the marketplace has become a mighty gold rush. Using up tons of cash to get there can also be daunting. Consider too that a make-or-break question would be that if the result is that the generative AI is about the same, anyway, you probably could convincingly argue that the outcome-based approach is sufficient, and thus there is no bona fide cause to invoke a more laboriously and costlier process-based approach, all else being equal.
+
+Let’s take a look at the OpenAI research on this intriguing and vital topic.
+
+“Large language models are capable of solving tasks that require complex multistep reasoning by generating solutions in a step-by-step chain-of-thought format (Nye et al., 2021; Wei et al., 2022; Kojima et al., 2022). However, even state of-the-art models are prone to producing falsehoods — they exhibit a tendency to invent facts in moments of uncertainty (Bubeck et al., 2023). These hallucinations (Maynez et al., 2020) are particularly problematic in domains that require multi-step reasoning, since a single logical error is enough to derail a much larger solution. Detecting and mitigating hallucinations is essential to improve reasoning capabilities” (source: research paper entitled “Let’s Verify Step By Step” by Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe).
+As you can see, the research is motivated by the hope of reducing the chances of AI hallucinations in generative AI (note that the reference to large language models, known also as LLMs, amounts to the same thing as generative AI, for the purposes of discussion herein). Also, recall that I’ve earlier mentioned that the step-by-step approach can potentially aid in reducing or mitigating various kinds of generative AI maladies including AI hallucinations, errors, biases, glitches, falsehoods, and the like.
+
+Next, the researchers delineate the difference between outcome-based assessments and the use of process-based or step-by-step assessments:
+
+“Outcome-supervised reward models (ORMs) are trained using only the final result of the model’s chain-of-thought, while process-supervised reward models (PRMs) receive feedback for each step in the chain-of-thought. There are compelling reasons to favor process supervision. It provides more precise feedback, since it specifies the exact location of any errors that occur. It also has several advantages relevant to AI alignment: it is easier for humans to interpret, and it more directly rewards models for following a human-endorsed chain-of-thought” (ibid).
+I’ll dive a bit into that excerpt and provide some added context.
+
+One aspect of having human reviewers examine the step-by-step of generative AI is that humans can hopefully spot the problematic steps and call them out. By doing so, the generative AI will possibly on a mathematical and computational basis be able to hone the stepwise efforts of the generative AI. For more about how generative AI computationally works under the hood, see my analysis at the link here.
+
+There is another crucial aspect to this too. When using generative AI, we cannot in a sense take the word of the generative AI per se at face value. We will often need to ask the generative AI to explain how its result came to be derived. The step-by-step elucidations themselves can be immensely valuable to humans using generative AI. Therefore, it makes strident sense to try and nudge the generative AI in the direction of producing useful step-by-step and not perhaps trudging out step-by-step that are unproductive.
+
+For this particular study by OpenAI, the researchers opted to examine the kind of step-by-step that you would use in solving various math problems. Think back to those days in school when you had to show the steps that you took to solve an algebraic equation or had to provide a logic-based stepwise mathematical proof. Maybe you enjoyed doing so. Or, perhaps you dreaded having to show the details of your handiwork (knowing that you would get dinged points for each missed or incorrect step).
+
+Here's what the OpenAI research study found regarding their analysis of a step-by-step in a mathematics-solving domain for generative AI guidance:
+
+“We have shown that process supervision can be used to train much more reliable reward models than outcome supervision in the domain of mathematical reasoning. We have also shown that active learning can be used to lower the cost of human data collection by surfacing only the most valuable model completions for human feedback. We release PRM800K, the full dataset of human feedback used to train our state-of-the-art reward model, with the hope that removing this significant barrier to entry will catalyze related research on the alignment of large language models. We believe that process supervision is currently under-explored, and we are excited for future work to more deeply investigate the extent to which these methods generalize” (ibid).
+In their particular study, and when focused on step-by-step in a mathematics-oriented context, they seemed to showcase that the step-by-step or process-based assessment can do better (in some ways) than the outcome-based assessments, though I urge you to closely read the research paper (posted at OpenAI) and also consider looking at and possibly leveraging their GitHub posting of the dataset that they devised. There are all sorts of important research design points made in the paper, along with notable caveats, limitations, and calls for follow-on research of a like kind.
+
+The avowed assertion that the step-by-step approach or process-based assessment is under-explored is something I wholeheartedly concur with. We need much more research examining these notable matters. I gladly and earnestly emphasize that such research be undertaken. Please join in that noble quest.
+
+Conclusion
+
+I’ve tried to be your safari guide on an insightful and hopefully engaging expedition of the emerging and advancing role of step-by-step techniques associated with generative AI. Your key takeaway is this:
+
+Key Takeaway: Make sure to include in your personal skillset the valued step-by-step approach, doing so for everyday life experiences and especially when using generative AI.
+It is easy to do when logged into generative AI. Just explicitly identify in your prompts that you want to have step-by-step involved. As mentioned earlier, you can get the generative AI to produce step-by-step outputs, you can engage in interactive dialogues on a step-by-step basis, you can ask for a follow-up to a generated answer that the generative AI presents the underlying steps, and so on.
+
+A few final thoughts for now on this heady topic.
+
+Emily Dickinson, the acclaimed American poet, said this about step-by-step approaches: “One step at a time is all it takes to get you there.” The same might be said of prudently making use of generative AI. You can at times get better results and more useful interactions by leveraging a step-by-step philosophy.
+
+Speaking of being philosophical, we are still at a formidable and vast distance from figuring out how to best devise and utilize generative AI. We have only scratched the surface, maybe barely made a notch in a thousand-mile trek. Doing more research on the integration of step-by-step and generative AI is essential.
+
+I suppose you could earnestly say that a journey of a thousand miles begins with a heartfelt single step."
