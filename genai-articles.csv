@@ -1380,6 +1380,78 @@ I would guess that most people tend to invoke one persona at a time when using g
 
 Let’s up the ante on the personas.
 
+You might decide that you want the generative AI to simultaneously be both Yoda and an ornithologist. What would happen? Presumably, you would be engaged in a dialogue with a seeming expert in birds that also so happened to talk like Yoda. Cheekily, one might say, in Yoda-speak, knowing all about birds, Yoda does.
+
+Using this type of multiple personas capacity might have more substance to it than you would otherwise assume at first glance. Setting aside the Yoda and bird expert combination, envision that we wanted to get the opinions of two attorneys on a thorny legal matter. If you spoke with two human attorneys, you would indeed potentially discover that two heads are better than one. The aim is to see if having two attorneys helping you with your legal woes might get you a wider range or greater depth of legal advice than you might get from one attorney alone.
+
+Would you for sure be guaranteed that speaking with two attorneys on your legal issue would foster a much more robust semblance of a legal argument on your behalf?
+
+Not necessarily.
+
+It could be that one attorney alone is sufficient. One attorney might be able to articulate the same or even fuller legal advice as would two attorneys. You could even make the case that perhaps the use of two attorneys might be distracting and cause a lesser quality of legal advice than by one alone. Imagine too that you’ve got one seasoned attorney that is versed in the area of law that you are wanting advice on, versus if you had two newly minted attorneys that are not especially versed in that legal realm. The level of expertise is a factor, as is the nature of how the interaction takes place when using two or more at hand.
+
+The gist is that the number of personas doesn’t give you an ironclad improvement in whatever you are trying to attain. It might, it might not.
+
+Another consideration is whether the personas are aimed to work collaboratively or aimed to work in an adversarial manner. Two people working in unison might be cooperative and encourage each other to find the best solution to a given problem. We all know how valuable collaboration can be. If the two are butting heads, things can get stuck and you won’t make as much progress as would occur in a collaborative setting.
+
+The surprise perhaps then to the notion of using personas in generative AI is that oftentimes you tend to use only one at a time, essentially considered the customary or prevailing approach, but you might want to expand your prompting repertoire and opt to invoke multiple personas at the same time.
+
+Thus, rather than always just using a singular persona, one at a time, you could try to leverage the potential benefits of invoking two or more at the same time. Whether this will achieve a classic more-is-merrier outcome is unclear. You need to think mindfully about the nature of the personas, how you want them to work together or work in opposition to each other, and how the number of them will aid or impede your end goal associated with whatever problem-solving you want the generative AI to do.
+
+All of those crucial factors have to be imbued in the prompt that you use. Any prompt instructing the generative AI to use multiple personas can be amazingly on-target or can be woefully off-base. Words matter. Choose your wording carefully.
+
+I trust that seems somewhat straightforward.
+
+Twists Upon Twists Are Afoot
+
+Good, so let’s add yet another twist to the saga.
+
+Imagine that I log into ChatGPT and get it to be a particular persona that I think would be useful to employ. I then also log into another generative AI, let’s say Bard, and get it to also take on that same persona. Assume for the moment that the generative AI apps are disparate and there isn’t anything connecting them. I am separately logged into each and they aren’t electronically or digitally connected.
+
+We will use the two-lawyers scenario again. I get ChatGPT to take on a lawyer persona and I ask it a legal question that I am concerned about. I interact with ChatGPT on the matter. I switch over to Bard and ask the same legal question. I interact with Bard on the matter.
+
+Have I likely gotten a more robust or more in-depth analysis of the given problem than if I had used only one of those AI apps?
+
+It is hard to definitely say, one way or another.
+
+We can almost categorically assert that the odds are we will have gotten somewhat differing viewpoints. You see, each of those generative AI apps has been data-trained on differing data (I should clarify that there are potential overlaps of which data they were each respectively trained on, but there is also a significant chance that they have each scanned data that the other did not). Also, the underlying algorithms, data structures, large language models (LLM), machine learning (ML), and other facets are almost certainly different from each other (which, in some ways can end up being just a minor difference, but in others ways can be a markedly pronounced difference).
+
+The crux is that the odds are pretty high that we won’t be getting the same dialogue out of the separate generative AI apps. This might mean that we could get a fuller response all told, based on your having to meld together the two separate interactions that you’ve collected. You would need to bring together in your mind the semblance of what each generative AI app had to say.
+
+Okay, in recap, you could try to do that, namely use separate generative AI apps and tell each of those to take on some desired persona or simultaneous personas that you believe could be useful in solving your problem at hand. Another approach and somewhat easier path consists of invoking multiple personas in a singular generative AI app.
+
+Some refer to the singular approach as invoking a so-called solo performance.
+
+Have a mind-bending question for you: Would the solo performance be on par with the multiple generative AI apps approach?
+
+Aha, this is a huge and unresolved question. Welcome to the enigma. The core issue being bandied around is whether a solo generative AI can sufficiently reflect multiple personas at once.
+
+I refer to this as the apple pie problem.
+
+Apple Pie Tells You What You Need To Know
+
+Here’s what I mean about the veritable apple pie problem.
+
+Suppose that a solo generative AI is asked to solve a given problem. You first try this with the instruction to take on one persona, let’s say that of a lawyer. You see what answer you get. You then start anew and tell the generative AI to take on two personas, each being a lawyer, and that the two are to work collaboratively.
+
+One possibility is that by asking for two personas, the generative AI will do a better job of solving the problem. We know, for example, that the use of chain-of-thought (CoT) instructions will often get you better results when using generative AI. This entails instructing the generative AI to explain on a stepwise or step-by-step basis what the problem-solving consists of. For various mathematical and computational pattern-matching reasons, the CoT will tend to get you more robust results (not always, but often enough that it is a worthwhile technique to leverage, see my in-depth discussion at the link here).
+
+Perhaps multiple personas invoked in a solo generative AI can have a similar effect.
+
+The thing is, regrettably, using multiple personas might not get you much of a bonus when doing so with a solo generative AI in contrast to employing multiple disparate generative AI. The solo generative AI might derive a solution that is shall we say an apple pie in size.
+
+Envision that one persona can convey the entirety of the apple pie.
+
+You then ask for two personas. But it could be that all the two personas do is split up the apple pie into two pieces. The result is that you haven’t gained anything per se. You have merely split the same pie. The hope of course is that the use of two or more personas is going to enlarge the pie, garnering you added value that the solo personas didn’t provide.
+
+The same concern can arise for three, four, or any number of personas. Each persona might merely further splinter or slice the pie into smaller and smaller pieces. None of this is probably going to do you much good. It can be counterproductive in that you end up potentially having to piece together the slices whereas just one persona or none at all might have done that for you to begin with.
+
+Part of the basis for only getting the same-same answer from a solo generative AI is that it is tapping solely into the data training and pattern-matching that it has. In the case of using multiple generative AI apps, and as I noted earlier, the chances are that the generative AI apps are inherently different from the get-go and therefore you are likely to get differing results (maybe producing a larger pie or shall we say numerous pies, one that is a cherry pie and one that is an apple pie).
+
+You might be thinking that if using multiple generative AI apps is seemingly more productive than using a solo to do the multiple personas, perhaps always take that route. The downside is that you would need to set up accounts at multiple generative AI apps and bear whatever costs might be involved. This could be costlier and a lot more inconvenient than the solo generative AI route.
+
+A tradeoff is involved.
+
 "
 
 
