@@ -1003,11 +1003,11 @@ A tidal wave of generative AI users will undoubtedly and inevitably adopt persis
 
 Before diving into the details, I’ve got two famous and quite pertinent quotes for you to contemplate.
 
-Let’s try this first one on for size: “Those who cannot remember the past are condemned to repeat it.” 
+Let’s try this first one on for size: Those who cannot remember the past are condemned to repeat it. 
 
 That is a highly memorable and exceedingly popular quote by the legendary George Santayana, a Spanish-American philosopher and poet. I think we can all readily grasp the vital notion that was expressed. It seems exceedingly sensible and altogether smart to remember the past versus allowing the past to be slipped away into nothingness and ostensibly forgotten. We can all hopefully learn useful lessons from what happened in the past.
 
-Moving on, the second quote is perhaps not as well-known but nonetheless carries a powerful punch: “Always and never are two words you should always remember never to use.”
+Moving on, the second quote is perhaps not as well-known but nonetheless carries a powerful punch: “Always and never are two words you should always remember never to use.
 
 This remarkable quote is attributed to Wendell Johnson, the eminent American psychologist and author. Exhibiting a bit of clever whimsy, there are several distinguished messages hidden within. One worthy meaning is that you should mindfully choose the words that you opt to use. Another is that you can be on thin ice when proclaiming that something always happens, or asserting that something never ever happens. In the first instance, a disruptive force might break the streak of an assumed always-occurring phenomenon. For the second instance, all you need is for the thing that never happens to arise just once, and, presto, you’ve broken the emptiness pledge.
 
@@ -1065,7 +1065,7 @@ Think of persistent context as consisting of these two factors:
 (2) Invocation. Something later occurs that invokes or engages the earlier established context.
 The handy thing about persistent context is that once you’ve established it, you can presumably always later on invoke it when needed. In the case of your friend, you possibly do not need to ever again tell them the story about your bear encounter per se, assuming that your friend has a good enough memory that they will permanently remember the tale.
 
-I certainly don’t want to though create the impression that persistent context is necessarily flawless. Imagine that a year later you get together with your friend and go to a park. If somehow the prior tale comes up, it is quite possible that your friend will say that they “remember” the time that you had a harrowing experience with a wolf. Oops, your friend is misremembering your long-ago story. Worse still, the friend might have entirely forgotten your tale (friends carry no irrefutable obligation that they must remember every utterance you have ever made).
+I certainly don’t want to though create the impression that persistent context is necessarily flawless. Imagine that a year later you get together with your friend and go to a park. If somehow the prior tale comes up, it is quite possible that your friend will say that they remember the time that you had a harrowing experience with a wolf. Oops, your friend is misremembering your long-ago story. Worse still, the friend might have entirely forgotten your tale (friends carry no irrefutable obligation that they must remember every utterance you have ever made).
 
 That’s enough about bears, dogs, and wolves.
 
@@ -1139,28 +1139,28 @@ OpenAI announced the release of their new custom instructions feature and provid
 
 Here are some salient highlights posted on the OpenAI blog about custom instructions:
 
-“Custom instructions allow you to add preferences or requirements that you’d like ChatGPT to consider when generating its responses.”
-“ChatGPT will consider your custom instructions for every conversation going forward.”
-“The model will consider the instructions every time it responds, so you won’t have to repeat your preferences or information in every conversation.”
-“For example, a teacher crafting a lesson plan no longer has to repeat that they're teaching 3rd grade science. A developer preferring efficient code in a language that’s not Python – they can say it once, and it's understood. Grocery shopping for a big family becomes easier, with the model accounting for 6 servings in the grocery list.”
+Custom instructions allow you to add preferences or requirements that you’d like ChatGPT to consider when generating its responses.
+ChatGPT will consider your custom instructions for every conversation going forward.
+The model will consider the instructions every time it responds, so you won’t have to repeat your preferences or information in every conversation.
+For example, a teacher crafting a lesson plan no longer has to repeat that they're teaching 3rd grade science. A developer preferring efficient code in a language that’s not Python – they can say it once, and it's understood. Grocery shopping for a big family becomes easier, with the model accounting for 6 servings in the grocery list.
 I trust that you can readily see from those excerpts that this is a feature for entering your starter or establishing prompts and then having those persist contextually throughout your use of the generative AI app.
 
 Let’s take a look at one of the examples that they provided (based on the above-bulleted point about grocery shopping for a family of six).
 
 Envision that you go to do the setup of your starter or establishing prompts. When doing so, let’s essentially assume that the generative AI asks you some questions or at least provides a spot for you to enter your establishing prompts, such as these for the grocery shopping example:
 
-ChatGPT Question Asked Of You: “What would you like ChatGPT to know about you to provide better responses?”
-Your Response Or Establishing Prompt: “I live in North Carolina with my four children and wife.”
-ChatGPT Question Asked Of You: “How would you like ChatGPT to respond?”
-Your Response Or Establishing Prompt: “When planning meals, consider that I need to cater to a family of six. Ensure that recipe recommendations are suitable for larger groups and offer meal options that can be easily scaled up.”
+ChatGPT Question Asked Of You: What would you like ChatGPT to know about you to provide better responses?
+Your Response Or Establishing Prompt: I live in North Carolina with my four children and wife.
+ChatGPT Question Asked Of You: How would you like ChatGPT to respond?
+Your Response Or Establishing Prompt: When planning meals, consider that I need to cater to a family of six. Ensure that recipe recommendations are suitable for larger groups and offer meal options that can be easily scaled up.
 This example has the person indicating that they consist presumably of two adults and four children, thus consisting of a family of six people. There is admittedly a lot of other nuances and information that have been tossed into this establishing prompt such as they live in North Carolina, etc. I’ll get to that in a moment.
 
 My hint for you is that you should be notably mindful and cautious of whatever you decide to put in your establishing prompts. More on that shortly.
 
 The example continues by having the person ask ChatGPT to come up with a grocery list of what to get at the store. Specifically, they want to make pizza for their nighttime meal.
 
-Your Prompt To ChatGPT: “What should I get at the store for pizza night?”
-ChatGPT Generated Response (Custom Instructions enabled): “Great! Planning for pizza night is always fun. Here's a shopping list for a pizza night for six people, assuming you'll be making two large pizzas. Pizza Dough: (1) Bread flour - 1kg (enough for two large pizza doughs), (2) Dry yeast - 2 packets (14 grams) Sugar - small pack (you'll need 4 teaspoons), (3) Olive oil - 1 small bottle (you'll need 4 tablespoons), (4) Salt - small pack (you'll need 2 teaspoons)…” {side note that the rest of recipe contains info on pizza sauce, toppings, and optional add-ons}.
+Your Prompt To ChatGPT: What should I get at the store for pizza night?
+ChatGPT Generated Response (Custom Instructions enabled): Great! Planning for pizza night is always fun. Here's a shopping list for a pizza night for six people, assuming you'll be making two large pizzas. Pizza Dough: (1) Bread flour - 1kg (enough for two large pizza doughs), (2) Dry yeast - 2 packets (14 grams) Sugar - small pack (you'll need 4 teaspoons), (3) Olive oil - 1 small bottle (you'll need 4 tablespoons), (4) Salt - small pack (you'll need 2 teaspoons)… {side note that the rest of recipe contains info on pizza sauce, toppings, and optional add-ons}.
 The response by ChatGPT seems nifty. The ingredients are listed. The amount needed is shown as based on feeding six people. This all appears to be making use of the establishing prompt that was stored in the custom instructions.
 
 Let’s look closer.
@@ -1175,7 +1175,7 @@ Moving on, you might be wondering what ChatGPT might have generated as a respons
 
 Here’s what the OpenAI blog indicates would have happened:
 
-ChatGPT Generated Response (Custom Instructions turned off): “Pizza night can be a great opportunity to get creative and involve everyone in the preparation process. Here's a general shopping list that should cover a variety of tastes. Pizza Dough: You can buy pre-made pizza dough at most grocery stores, or you can make your own from scratch. You will need flour, yeast, sugar, salt, and olive oil if you decide to make your own…” {side note that the rest of the recipe contains info on pizza sauce, cheese, toppings, extras, drinks, desserts}.
+ChatGPT Generated Response (Custom Instructions turned off): Pizza night can be a great opportunity to get creative and involve everyone in the preparation process. Here's a general shopping list that should cover a variety of tastes. Pizza Dough: You can buy pre-made pizza dough at most grocery stores, or you can make your own from scratch. You will need flour, yeast, sugar, salt, and olive oil if you decide to make your own… {side note that the rest of the recipe contains info on pizza sauce, cheese, toppings, extras, drinks, desserts}.
 The crux is that this generative AI produced a detailed grocery list but does not indicate the number of ingredients needed. This makes sense. Without having a prior indication via the establishing prompt or custom instructions that the number of people to be fed is six, there are no viable means for the generative AI to indicate how much pizza you ought to be likely making.
 
 There is something else about this example that you should in a Sherlock Holmes manner be observing.
@@ -1223,7 +1223,7 @@ You might want that to happen so that whatever other app will be aware of your p
 
 Per the OpenAI blog about how custom instructions work in ChatGPT pertaining to plugins:
 
-“Adding custom instructions can also help improve your experience with plugins by sharing relevant information with the plugins that you use. For example, if you specify the city you live in within your instructions and use a plugin that helps you make restaurant reservations, the model might include your city when it calls the plugin.”
+Adding custom instructions can also help improve your experience with plugins by sharing relevant information with the plugins that you use. For example, if you specify the city you live in within your instructions and use a plugin that helps you make restaurant reservations, the model might include your city when it calls the plugin.
 In the example about the family of six, the establishing prompt indicated that they live in North Carolina. That info can be advantageous to have automatically passed over to any plugins or other affiliated apps. A disadvantage is that you opted to freely and wantonly give away your location, at least as to which state you live in, and this might be paired up with other demographic data and used in all sorts of ways, such as for telemarketing, etc.
 
 My cautionary thoughts are this:
@@ -1240,7 +1240,7 @@ Whenever you use any generative AI app, it is crucial that you read the licensin
 
 Here's what the OpenAI blog says about privacy associated with the custom instructions feature:
 
-“We may use your custom instructions to improve model performance for our users, but you can disable this via your data controls. As with ChatGPT conversations, we take steps to remove personal identifiers found in custom instructions before they are used to improve model performance. Learn more about how we use conversations to improve model performance and your choices in our Help Center.”
+We may use your custom instructions to improve model performance for our users, but you can disable this via your data controls. As with ChatGPT conversations, we take steps to remove personal identifiers found in custom instructions before they are used to improve model performance. Learn more about how we use conversations to improve model performance and your choices in our Help Center.
 Note that the default mode is that your custom instructions can be used by the AI maker, purportedly to improve the generative AI app.
 
 Read my lips, it is on your shoulders to then potentially disable that usage by adjusting the data controls for your generative AI account.
@@ -1255,25 +1255,25 @@ More so, OpenAI notes in their blog about the custom instructions feature that y
 
 Here’s what the blog says:
 
-“We’ve adapted our safety measures to account for the new ways that users can instruct the model. For example, our Moderation API is designed to help ensure instructions won't be saved if they violate our Usage Policies. The model can also refuse or ignore instructions that lead to responses that violate our usage policies.”
+We’ve adapted our safety measures to account for the new ways that users can instruct the model. For example, our Moderation API is designed to help ensure instructions won't be saved if they violate our Usage Policies. The model can also refuse or ignore instructions that lead to responses that violate our usage policies.
 If you are unsure of what the usage policies encompass, take a look at the OpenAI website, plus I’ve discussed on an overview basis in a prior column at the link here. For example, you aren’t supposed to use ChatGPT for the generation of hateful, harassing, or violent content. Nor can you use the generative AI app for fraudulent or deceptive activity. You aren’t supposed to do any political campaigning or lobbying with the AI app. Etc.
 
 Thus, whatever you put into your custom instructions is supposed to equally abide by those stipulations.
 
 The Interpretation Of Your Custom Instructions Is Open-Ended
 
-The OpenAI blog notes that the custom instructions feature is considered in beta, which only right now is available in the ChatGPT Plus plan, and that the feature will be “expanding to all users in the coming weeks.”
+The OpenAI blog notes that the custom instructions feature is considered in beta, which only right now is available in the ChatGPT Plus plan, and that the feature will be expanding to all users in the coming weeks.
 
 An intriguing statement made in the blog is this:
 
-“Especially during the beta period, ChatGPT won’t always interpret custom instructions perfectly—at times it might overlook instructions, or apply them when not intended.”
+Especially during the beta period, ChatGPT won’t always interpret custom instructions perfectly—at times it might overlook instructions, or apply them when not intended.
 I earlier herein pointed out that you cannot be sure about how your custom instructions or persistent context-establishing prompts will be interpreted by the generative AI.
 
-The somewhat curious aspect about the wording of the notification in the blog post is that we are told that during the beta, especially, the custom instructions won’t be “perfectly” interpreted. This seems to imply that post-beta we can potentially expect that the custom instructions will unerringly and perfectly always be interpreted. That is one heck of a tall order.
+The somewhat curious aspect about the wording of the notification in the blog post is that we are told that during the beta, especially, the custom instructions won’t be perfectly interpreted. This seems to imply that post-beta we can potentially expect that the custom instructions will unerringly and perfectly always be interpreted. That is one heck of a tall order.
 
 Here’s why.
 
-Natural language inherently is imbued with semantic ambiguity. Words are always open to interpretation. You might vaguely be aware that entire court cases have dragged on and on about the meaning of even the smallest of words such as the word “is” and the word “the” (based on the context of their usage, see my analysis at the link here).
+Natural language inherently is imbued with semantic ambiguity. Words are always open to interpretation. You might vaguely be aware that entire court cases have dragged on and on about the meaning of even the smallest of words such as the word is and the word the (based on the context of their usage, see my analysis at the link here).
 
 Frankly, I find it highly unlikely that we will somehow miraculously overcome the semantic ambiguity of natural language. It is part and parcel of the creature at hand. Attempts have been made to devise new languages, especially in mathematical form, which can stave off ambiguity. But the natural language we all use today has baggage that just seems to be a futile case to perfectly interpret.
 
@@ -1328,14 +1328,13 @@ Now, for my concluding remarks, you might remember that I asked you to remember 
 
 Here they are:
 
-“Those who cannot remember the past are condemned to repeat it.” 
-“Always and never are two words you should always remember never to use.”
-I brought up the Santayana quote to highlight that making use of establishing prompts is really handy for setting up a productive contextual sphere when using generative AI. When you go from one generative AI conversation to the next, you can relish that your preferred context has been established and will be “remembered” rather than either forgotten or not present at all.
+Those who cannot remember the past are condemned to repeat it. 
+Always and never are two words you should always remember never to use.
+I brought up the Santayana quote to highlight that making use of establishing prompts is really handy for setting up a productive contextual sphere when using generative AI. When you go from one generative AI conversation to the next, you can relish that your preferred context has been established and will be remembered rather than either forgotten or not present at all.
 
 My reason for bringing up the mind-bending quote about the use of the words always and never is that you have to realize that natural language comprises semantic ambiguity. The words of an establishing prompt can readily be interpreted by the generative AI in a multitude of ways. Try as best you can to figure out wording that gets the generative AI closest possible to your desired intentions.
 
-I’d like to say that if you follow this advice that you will always get the maximum out of generative AI, but I dare not use the always word since I seem to faintly remember that it is a word I should never use. I read that somewhere.
-"
+I’d like to say that if you follow this advice that you will always get the maximum out of generative AI, but I dare not use the always word since I seem to faintly remember that it is a word I should never use. I read that somewhere."
 
 
 
